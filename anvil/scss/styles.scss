@@ -6,7 +6,8 @@
 .user-css,
 .user-css-extended {
   &.page-article {
-    background: url('https://blogule.com/wp-content/uploads/2017/07/dark-wood-flooring-texture-google-search-mini-capstone-project-dark-wood-pattern.jpg');
+    background-color: $t1_bg;
+    background-image: url('https://blogule.com/wp-content/uploads/2017/07/dark-wood-flooring-texture-google-search-mini-capstone-project-dark-wood-pattern.jpg');
     color: white;
     background-size: 100%;
     background-repeat: repeat-y;
