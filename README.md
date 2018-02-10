@@ -1,5 +1,7 @@
 # WA CSS Builder
 
+Switch to the clean-version branch for all the sample scss removed!
+
 ## Installation
 
 Run the following commands to get this going!
