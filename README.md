@@ -1,4 +1,4 @@
-# Gulp Seed
+# WA CSS Builder
 
 ## Installation
 
@@ -6,9 +6,7 @@ Run the following commands to get this going!
 
 ## NOTE
 
-This relies on npm to install the packages so you'll need to install that first if you don't have it already:
-
-[How To Install npm](https://www.npmjs.com/get-npm)
+This relies on npm to install the packages so you'll need to install that first if you don't have it already: [How To Install npm](https://www.npmjs.com/get-npm)
 
 ### 1. Open up a terminal or cmd window in the directory where you downloaded this repo
 
