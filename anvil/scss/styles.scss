@@ -110,6 +110,23 @@
         }
       }
       .timeline-panel {
+        .history-timelines {
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          justify-content: space-evenly;
+          position: relative;
+          text-align: center;
+          * {
+            flex-basis: 33%;
+          }
+          br {
+            display: none;
+          }
+          strong {
+            flex-basis: 100%;
+          }
+        }
         @media not all and (hover: none) {
           &:hover {
             background-color: $soft-black;
