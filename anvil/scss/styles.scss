@@ -97,6 +97,18 @@
   .timeline {
     padding: 0;
     .timeline-entry {
+      text-align: right;
+      .header-icon {
+        right: unset;
+        left: 20px;
+      }
+      &-inverted {
+        text-align: left;
+        .header-icon {
+          right: 20px;
+          left: unset;
+        }
+      }
       .timeline-panel {
         @media not all and (hover: none) {
           &:hover {
@@ -152,13 +164,5 @@
         }
       }
     }
-  }
-}
-
-.user-css-extended {
-  text-align: center;
-  margin-bottom: 20px;
-  &:after {
-    content: "Disclaimer - Any content derived from Wil and Ryan Wheaton's Titansgrave is theirs alone. Please check out Titansgrave on YouTube for some great RPG play.";
   }
 }
