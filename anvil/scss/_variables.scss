@@ -26,11 +26,12 @@ $timeline_era--trace-color: #800000;
 
 //theme test
 $t1_bg: #242331;
-$t1_h1: #067bc2;
-$t1_h2: #368cc1;
-$t1_h3: #5b9ac1;
-$t1_h4: #d56062;
-$t1_h5: #ed5355;
+$t1_base-color: #067bc2;
+$t1_h1: $t1_base-color;
+$t1_h2: lighten(desaturate($t1_base-color, 37.72), 9.22);
+$t1_h3: lighten(desaturate($t1_base-color, 48.87), 16.47);
+$t1_h4: lighten(desaturate(adjust-hue($t1_base-color, 156), 35.79), 21.37);
+$t1_h5: lighten(desaturate(adjust-hue($t1_base-color, 157), 12.95), 23.53);
 $t1_link: #f37748;
 
 $theme: '$t1';
