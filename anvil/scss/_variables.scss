@@ -1,0 +1,36 @@
+//@import './node_modules/vue-material/dist/theme/engine';
+// @include md-register-theme('default', (
+// 	primary: md-get-palette-color(blue, A200),
+// 	accent: md-get-palette-color(red, A200)
+//   ));
+
+// @import './node_modules/vue-material/dist/theme/all';
+
+// @import url('https://fonts.googleapis.com/css?family=Raleway:300,300i,400,400i,500');
+// @import url('https://fonts.googleapis.com/css?family=Ubuntu:300,400,500');
+
+// // Fonts
+// $font_Primary: 'Ubuntu' sans-serif;
+// $font_Secondary: 'Raleway', sans-serif;
+
+// Colors
+$active-color: #323283;
+$soft-black: #333;
+$link-orange: #db8b0a;
+
+//Thresholds
+$threshold-m: 'screen and (max-width: 700px)';
+
+// Timeline Colors
+$timeline_era--trace-color: #800000;
+
+//theme test
+$t1_bg: #242331;
+$t1_h1: #067bc2;
+$t1_h2: #368cc1;
+$t1_h3: #5b9ac1;
+$t1_h4: #d56062;
+$t1_h5: #ed5355;
+$t1_link: #f37748;
+
+$theme: '$t1';
