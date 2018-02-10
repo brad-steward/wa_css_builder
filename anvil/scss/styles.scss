@@ -2,51 +2,19 @@
 @import '_components';
 @import '_waOverrides';
 @import '_animation';
+@import '_themes';
 
 .user-css,
 .user-css-extended {
   &.page-article {
-    background-color: $t1_bg;
-    background-image: url('https://blogule.com/wp-content/uploads/2017/07/dark-wood-flooring-texture-google-search-mini-capstone-project-dark-wood-pattern.jpg');
-    color: white;
+    @include set-theme();
     background-size: 100%;
     background-repeat: repeat-y;
-    .panel.panel-default {
-      color: $soft-black;
-      a,
-      a:hover,
-      a:focus {
-        color: #a94442;
-      }
-    }
-
-    .article-title {
-      h1 {
-        color: white;
-      }
-    }
 
     .article-content {
-      h1 {
-        color: $t1_h1;
-      }
-      h2 {
-        color: $t1_h2;
-      }
-      h3 {
-        color: $t1_h3;
-      }
-      h4 {
-        color: $t1_h4;
-      }
-      h5 {
-        color: $t1_h5;
-      }
-
       a,
       a:hover,
       a:focus {
-        color: $t1_link;
         font-weight: bold;
 
         &.text-danger {
@@ -57,12 +25,14 @@
     }
   }
 
-  // //.world-title
-  // * {
-  //   animation: $a_gentlywaft;
-  // }
+  a:hover,
+  a:active {
+    text-decoration: none !important;
+  }
 
-  .nav-strip a {
+  .nav-strip a,
+  .backtoworld a,
+  a.menu-control {
     color: white !important;
   }
 
@@ -117,6 +87,7 @@
           justify-content: space-evenly;
           position: relative;
           text-align: center;
+          align-items: center;
           * {
             flex-basis: 33%;
           }
@@ -125,6 +96,15 @@
           }
           strong {
             flex-basis: 100%;
+          }
+          a {
+            $gap: 5px;
+            flex-basis: calc(33% - (#{$gap} * 2));
+            margin: $gap;
+            align-self: center;
+            padding: #{$gap} 0;
+            border: 2px solid $soft-black;
+            background-color: white;
           }
         }
         @media not all and (hover: none) {
@@ -140,6 +120,16 @@
               }
               .header-icon {
                 background: $soft-black;
+              }
+            }
+
+            .history-timelines {
+              a {
+                border-color: white;
+                background: $soft-black;
+                &:hover {
+                  background: white;
+                }
               }
             }
 

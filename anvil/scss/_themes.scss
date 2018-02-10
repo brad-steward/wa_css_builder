@@ -1,0 +1,89 @@
+%theme-1 {
+  $t1_base-color: #067bc2;
+  $t1_bg: url('https://blogule.com/wp-content/uploads/2017/07/dark-wood-flooring-texture-google-search-mini-capstone-project-dark-wood-pattern.jpg');
+  $t1_text-color: white;
+  $t1_link: #f37748;
+
+  background: $t1_bg;
+  color: $t1_text-color;
+  h1 {
+    color: $t1_base-color;
+    .article-title & {
+      color: $t1_base-color;
+    }
+  }
+  h2 {
+    color: lighten(desaturate($t1_base-color, 37.72), 9.22);
+  }
+  h3 {
+    color: lighten(desaturate($t1_base-color, 48.87), 16.47);
+  }
+  h4 {
+    color: lighten(desaturate(adjust-hue($t1_base-color, 156), 35.79), 21.37);
+  }
+  h5 {
+    color: lighten(desaturate(adjust-hue($t1_base-color, 157), 12.95), 23.53);
+  }
+  a,
+  a:hover,
+  a:focus {
+    color: $t1_link;
+  }
+  .panel {
+    &.panel-default {
+      color: $soft-black;
+      a,
+      a:hover,
+      a:focus {
+        color: darken(desaturate(adjust-hue($t1_link, -15), 43.86), 15.69);
+      }
+    }
+  }
+}
+
+%theme-2 {
+  $t2_base-color: rgb(14, 63, 14);
+  $t2_bg: #8cc4d0;
+  $t2_text-color: $soft-black;
+  $t2_link: #f37748;
+
+  background: $t2_bg;
+  color: $t2_text-color;
+  h1 {
+    color: $t2_base-color;
+    .article-title & {
+      color: $t2_base-color;
+    }
+  }
+  h2 {
+    color: lighten(desaturate($t2_base-color, 37.72), 9.22);
+  }
+  h3 {
+    color: lighten(desaturate($t2_base-color, 48.87), 16.47);
+  }
+  h4 {
+    color: lighten(desaturate(adjust-hue($t2_base-color, 156), 35.79), 21.37);
+  }
+  h5 {
+    color: lighten(desaturate(adjust-hue($t2_base-color, 157), 12.95), 23.53);
+  }
+  a,
+  a:hover,
+  a:focus {
+    color: $t2_link;
+  }
+  .panel {
+    &.panel-default {
+      color: $soft-black;
+      a,
+      a:hover,
+      a:focus {
+        color: darken(desaturate(adjust-hue($t2_link, -15), 43.86), 15.69);
+      }
+    }
+  }
+}
+
+@mixin set-theme() {
+  @extend %theme-#{$theme};
+}
