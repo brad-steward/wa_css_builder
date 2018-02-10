@@ -122,7 +122,7 @@ So instead of all this...
 ```css
 .user-css.page-article,
 .user-css-extended.page-article {
-  background: url('https://blogule.com/wp-content/uploads/2017/07/dark-wood-flooring-texture-google-search-mini-capstone-project-dark-wood-pattern.jpg');
+  background: url('url/shortened/so-the-block-wont-be-too-big');
   color: white;
   background-size: 100%;
   background-repeat: repeat-y;
@@ -173,7 +173,7 @@ So instead of all this...
 ```scss
 .user-css {
   &.page-article {
-    background: url('https://blogule.com/wp-content/uploads/2017/07/dark-wood-flooring-texture-google-search-mini-capstone-project-dark-wood-pattern.jpg');
+    background: url('url/shortened/so-the-block-wont-be-too-big');
     color: white;
     background-size: 100%;
     background-repeat: repeat-y;
