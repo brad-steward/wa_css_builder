@@ -30,7 +30,7 @@ Your css will output into `tongs`, with which you can carry your code into WA, j
 
 ### 5. Rinse and repeat
 
-Leave it running in your terminal window and make changes to any of the `.scss` files. The `tongs` files will automatically update when you save! If you have to close the terminal window, just open a new one from this same directory and run `gulp hammer` again.
+Leave it running in your terminal window and make changes to any of the `.scss` files in `anvil`. The `tongs` files will automatically update when you save! If you have to close the terminal window, just open a new one from this same directory and run `gulp hammer` again.
 
 ## SCSS and SASS
 
