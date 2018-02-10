@@ -81,7 +81,8 @@ This basic CSS can be written more simply...
 ... like this!
 
 ```scss
-.user-css {
+.user-css,
+.user-css-extended {
   .article-title {
     h1 {
       color: white;
@@ -171,7 +172,8 @@ So instead of all this...
 ... you just add a bit more like this!
 
 ```scss
-.user-css {
+.user-css,
+.user-css-extended {
   &.page-article {
     background: url('url/shortened/so-the-block-wont-be-too-big');
     color: white;
