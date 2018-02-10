@@ -1,4 +1,6 @@
-# WA CSS Builder
+# WA CSS Builder - Clean Version
+
+This is the cleaned version of the code. Minimal examples save for what's in this README.
 
 ## Installation
 
