@@ -42,9 +42,9 @@ SCSS has a diverse set of skills to take advantage of, below are a few examples 
 
 ### Example:
 
-<table>
-<tr>
-<td>
+<table style="width: 100%;">
+<tr style="width: 100%;">
+<td style="width: 50%; position: relative; top: 0;">
 
 This basic CSS can be written more simply...
 
@@ -76,7 +76,7 @@ This basic CSS can be written more simply...
 ```
 
 </td>
-<td>
+<td style="width: 50%; position: relative; top: 0;">
 
 ... like this!
 
@@ -113,9 +113,9 @@ This basic CSS can be written more simply...
 
 You can even do more advanced referencing. Let's say you want to modify something specifically on article pages. It's as simple as adding another section. The `&` is like saying `This Selector I'm Under` so if you need to modify `.page-article` you don't have to start up a whole nother section for it, just add it under `.user-css` so everything stays together.
 
-<table>
-<tr>
-<td>
+<table style="width: 100%;">
+<tr style="width: 100%;">
+<td style="width: 50%; position: relative; top: 0;">
 
 So instead of all this...
 
@@ -166,7 +166,7 @@ So instead of all this...
 ```
 
 </td>
-<td>
+<td style="width: 50%; position: relative; top: 0;">
 
 ... you just add a bit more like this!
 
