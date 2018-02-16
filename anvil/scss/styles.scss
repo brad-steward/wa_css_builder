@@ -6,8 +6,8 @@
 
 .user-css,
 .user-css-extended {
+  @include set-theme();
   &.page-article {
-    @include set-theme();
     background-size: 100%;
     background-repeat: repeat-y;
 
@@ -23,11 +23,34 @@
         }
       }
     }
+
+    blockquote {
+      color: $soft-black;
+    }
+  }
+
+  .bookcover {
+    height: auto;
+    margin-bottom: 80px;
+    img {
+      display: none;
+    }
+    .booktitle {
+      text-align: center;
+    }
+  }
+
+  .map-box {
+    color: $soft-black;
   }
 
   a:hover,
   a:active {
     text-decoration: none !important;
+  }
+
+  .booktitle {
+    max-width: unset;
   }
 
   .nav-strip a,
@@ -80,6 +103,9 @@
         }
       }
       .timeline-panel {
+        color: $soft-black;
+        border-radius: 0px;
+        transition: background-color 0.5s;
         .history-timelines {
           display: flex;
           flex-direction: row;
@@ -107,7 +133,7 @@
             background-color: white;
           }
         }
-        @media not all and (hover: none) {
+        @media #{$hover-only} {
           &:hover {
             background-color: $soft-black;
             color: white;
@@ -125,10 +151,82 @@
 
             .history-timelines {
               a {
-                border-color: white;
-                background: $soft-black;
+                border-color: $timeline-tan;
                 &:hover {
-                  background: white;
+                  background: $timeline-tan;
+                }
+              }
+            }
+
+            a,
+            a:hover,
+            a:focus {
+              color: $link-orange;
+            }
+            &:after {
+              border-left-color: $soft-black;
+              border-right-color: $soft-black;
+            }
+          }
+        }
+      }
+    }
+    .milestone {
+      transition: background-color 0.5s;
+      .milestone-panel {
+        color: $soft-black;
+        border-radius: 0px;
+        .history-timelines {
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          justify-content: space-evenly;
+          position: relative;
+          text-align: center;
+          align-items: center;
+          * {
+            flex-basis: 33%;
+          }
+          br {
+            display: none;
+          }
+          strong {
+            flex-basis: 100%;
+          }
+          a {
+            $gap: 5px;
+            flex-basis: calc(33% - (#{$gap} * 2));
+            margin: $gap;
+            align-self: center;
+            padding: #{$gap} 0;
+            border: 2px solid $soft-black;
+            background-color: white;
+          }
+        }
+      }
+      @media #{$hover-only} {
+        &:hover {
+          background-color: $soft-black;
+          .milestone-panel {
+            background-color: transparent;
+            color: white;
+            .tl-heading {
+              h4 {
+                color: #b1c6d0;
+              }
+              small {
+                color: #97aac9;
+              }
+              .header-icon {
+                background: $soft-black;
+              }
+            }
+
+            .history-timelines {
+              a {
+                border-color: $timeline-tan;
+                &:hover {
+                  background: $timeline-tan;
                 }
               }
             }
@@ -172,4 +270,8 @@
       }
     }
   }
+}
+
+.user-css-extended {
+  background: unset;
 }

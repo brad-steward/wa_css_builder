@@ -1,33 +1,34 @@
 %theme-1 {
-  $t1_base-color: #067bc2;
-  $t1_bg: url('https://blogule.com/wp-content/uploads/2017/07/dark-wood-flooring-texture-google-search-mini-capstone-project-dark-wood-pattern.jpg');
-  $t1_text-color: white;
-  $t1_link: #f37748;
+  $base-color: #067bc2;
+  // $bg: url('https://blogule.com/wp-content/uploads/2017/07/dark-wood-flooring-texture-google-search-mini-capstone-project-dark-wood-pattern.jpg');
+  $bg: $soft-black;
+  $text-color: white;
+  $link: #f37748;
 
-  background: $t1_bg;
-  color: $t1_text-color;
+  background: $bg;
+  color: $text-color;
   h1 {
-    color: $t1_base-color;
+    color: $base-color;
     .article-title & {
-      color: $t1_base-color;
+      color: $base-color;
     }
   }
   h2 {
-    color: lighten(desaturate($t1_base-color, 37.72), 9.22);
+    color: lighten(desaturate($base-color, 37.72), 9.22);
   }
   h3 {
-    color: lighten(desaturate($t1_base-color, 48.87), 16.47);
+    color: lighten(desaturate($base-color, 48.87), 16.47);
   }
   h4 {
-    color: lighten(desaturate(adjust-hue($t1_base-color, 156), 35.79), 21.37);
+    color: lighten(desaturate(adjust-hue($base-color, 156), 35.79), 21.37);
   }
   h5 {
-    color: lighten(desaturate(adjust-hue($t1_base-color, 157), 12.95), 23.53);
+    color: lighten(desaturate(adjust-hue($base-color, 157), 12.95), 23.53);
   }
   a,
   a:hover,
   a:focus {
-    color: $t1_link;
+    color: $link;
   }
   .panel {
     &.panel-default {
@@ -35,42 +36,52 @@
       a,
       a:hover,
       a:focus {
-        color: darken(desaturate(adjust-hue($t1_link, -15), 43.86), 15.69);
+        color: darken(desaturate(adjust-hue($link, -15), 43.86), 15.69);
       }
+    }
+  }
+
+  .spoiler-content {
+    background-color: $base-color;
+  }
+
+  .relation {
+    h4 {
+      color: lighten(desaturate($base-color, 48.87), 16.47);
     }
   }
 }
 
 %theme-2 {
-  $t2_base-color: rgb(14, 63, 14);
-  $t2_bg: #8cc4d0;
-  $t2_text-color: $soft-black;
-  $t2_link: #f37748;
+  $base-color: rgb(14, 63, 14);
+  $bg: #8cc4d0;
+  $text-color: $soft-black;
+  $link: #f37748;
 
-  background: $t2_bg;
-  color: $t2_text-color;
+  background: $bg;
+  color: $text-color;
   h1 {
-    color: $t2_base-color;
+    color: $base-color;
     .article-title & {
-      color: $t2_base-color;
+      color: $base-color;
     }
   }
   h2 {
-    color: lighten(desaturate($t2_base-color, 37.72), 9.22);
+    color: lighten(desaturate($base-color, 37.72), 9.22);
   }
   h3 {
-    color: lighten(desaturate($t2_base-color, 48.87), 16.47);
+    color: lighten(desaturate($base-color, 48.87), 16.47);
   }
   h4 {
-    color: lighten(desaturate(adjust-hue($t2_base-color, 156), 35.79), 21.37);
+    color: lighten(desaturate(adjust-hue($base-color, 156), 35.79), 21.37);
   }
   h5 {
-    color: lighten(desaturate(adjust-hue($t2_base-color, 157), 12.95), 23.53);
+    color: lighten(desaturate(adjust-hue($base-color, 157), 12.95), 23.53);
   }
   a,
   a:hover,
   a:focus {
-    color: $t2_link;
+    color: $link;
   }
   .panel {
     &.panel-default {
@@ -78,8 +89,68 @@
       a,
       a:hover,
       a:focus {
-        color: darken(desaturate(adjust-hue($t2_link, -15), 43.86), 15.69);
+        color: darken(desaturate(adjust-hue($link, -15), 43.86), 15.69);
       }
+    }
+  }
+
+  .relation {
+    h4 {
+      color: lighten(desaturate($base-color, 48.87), 16.47);
+    }
+  }
+}
+
+%theme-beef {
+  $base-color: #beeeef;
+  // $bg: url('https://blogule.com/wp-content/uploads/2017/07/dark-wood-flooring-texture-google-search-mini-capstone-project-dark-wood-pattern.jpg');
+  $bg: $soft-black;
+  $text-color: white;
+  $link: #f37748;
+
+  background: $bg;
+  color: $text-color;
+  h1 {
+    color: $base-color;
+    .article-title & {
+      color: $base-color;
+    }
+  }
+  h2 {
+    color: lighten(desaturate($base-color, 37.72), 9.22);
+  }
+  h3 {
+    color: lighten(desaturate($base-color, 48.87), 16.47);
+  }
+  h4 {
+    color: lighten(desaturate(adjust-hue($base-color, 156), 35.79), 21.37);
+  }
+  h5 {
+    color: lighten(desaturate(adjust-hue($base-color, 157), 12.95), 23.53);
+  }
+  a,
+  a:hover,
+  a:focus {
+    color: $link;
+  }
+  .panel {
+    &.panel-default {
+      color: $soft-black;
+      a,
+      a:hover,
+      a:focus {
+        color: darken(desaturate(adjust-hue($link, -15), 43.86), 15.69);
+      }
+    }
+  }
+
+  .spoiler-content {
+    background-color: $base-color;
+  }
+
+  .relation {
+    h4 {
+      color: lighten(desaturate($base-color, 48.87), 16.47);
     }
   }
 }

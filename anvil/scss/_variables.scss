@@ -2,12 +2,50 @@
 $active-color: #323283;
 $soft-black: #333;
 $link-orange: #db8b0a;
+$timeline-tan: #eae9e2;
 
-//Thresholds
+// Media Queries
 $threshold-m: 'screen and (max-width: 700px)';
+$hover-only: 'not all and (hover: none)';
 
 // Timeline Colors
 $timeline_era--trace-color: #800000;
 
-// Current options: 1, 2 - any others will produce an error
-$theme: '2';
+// Current options: 1, 2, beef - any others will produce an error
+$theme: '1';
+
+%timeline-panel-hover-style {
+  background-color: $soft-black;
+  color: white;
+  .tl-heading {
+    h4 {
+      color: #b1c6d0;
+    }
+    small {
+      color: #97aac9;
+    }
+    .header-icon {
+      background: $soft-black;
+    }
+  }
+
+  .history-timelines {
+    a {
+      border-color: white;
+      background: $soft-black;
+      &:hover {
+        background: white;
+      }
+    }
+  }
+
+  a,
+  a:hover,
+  a:focus {
+    color: $link-orange;
+  }
+  &:after {
+    border-left-color: $soft-black;
+    border-right-color: $soft-black;
+  }
+}
