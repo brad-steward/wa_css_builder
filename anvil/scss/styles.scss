@@ -7,6 +7,18 @@
 .user-css,
 .user-css-extended {
   @include set-theme();
+
+  blockquote {
+    text-align: left;
+    border-left: none;
+    border-bottom-width: 5px;
+  }
+
+  #header {
+    p {
+      text-align: justify;
+    }
+  }
   &.page-article {
     background-size: 100%;
     background-repeat: repeat-y;

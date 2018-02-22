@@ -30,6 +30,12 @@
   a:focus {
     color: $link;
   }
+
+  blockquote {
+    color: $soft-black;
+    border-bottom: solid $base-color 3px;
+  }
+
   .panel {
     &.panel-default {
       color: $soft-black;
@@ -83,6 +89,12 @@
   a:focus {
     color: $link;
   }
+
+  blockquote {
+    color: $soft-black;
+    border-bottom: solid $base-color 3px;
+  }
+
   .panel {
     &.panel-default {
       color: $soft-black;
@@ -133,6 +145,19 @@
   a:focus {
     color: $link;
   }
+
+  blockquote {
+    color: $soft-black;
+    text-align: left;
+    border-left: none;
+    border-bottom: solid $base-color 3px;
+  }
+
+  blockquote {
+    color: $soft-black;
+    border-bottom: solid $base-color 3px;
+  }
+
   .panel {
     &.panel-default {
       color: $soft-black;
