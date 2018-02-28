@@ -49,3 +49,12 @@ $theme: '1';
     border-right-color: $soft-black;
   }
 }
+
+/*
+Fonts
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower');
+@import url('https://fonts.googleapis.com/css?family=Baloo+Bhaina|Kdam+Thmor&subset=khmer');
+$font_Baloo: Baloo Bhaina, cursive;
+$font_Kdam: Kdam Thmor, $font_Baloo;

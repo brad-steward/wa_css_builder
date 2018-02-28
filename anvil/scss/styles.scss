@@ -12,6 +12,13 @@
     text-align: left;
     border-left: none;
     border-bottom-width: 5px;
+    font-family: Indie Flower, cursive;
+  }
+
+  div.user-css-secret {
+    p {
+      font-family: $font_Baloo;
+    }
   }
 
   #header {
