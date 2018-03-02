@@ -1,0 +1,11 @@
+&.article-ea72bd28-28f3-4ff2-a7b3-3ad6aafb48aa {
+  @extend %theme-lightblue;
+  #cover {
+    img {
+      margin-top: -20%;
+      @media (max-width: 600px) {
+        margin-top: -10%;
+      }
+    }
+  }
+}

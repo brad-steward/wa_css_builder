@@ -1,0 +1,83 @@
+// Colors
+$active-color: #323283;
+$soft-black: #333;
+$soft-white: #c5c5bd;
+$link-orange: #db8b0a;
+$timeline-tan: #eae9e2;
+
+// Media Queries
+$threshold-m: 'screen and (max-width: 700px)';
+$hover-only: 'not all and (hover: none)';
+
+// Timeline Colors
+$timeline_era--trace-color: #800000;
+
+/* Current options: 
+lightblue, darkgreen, crimson, 
+black, beef, mango, 
+strawberry-mint, dijon, turquoise
+grape - any others will produce an error
+*/
+$theme: 'crimson';
+
+%timeline-panel-hover-style {
+  background-color: $soft-black;
+  color: white;
+  .tl-heading {
+    h4 {
+      color: #b1c6d0;
+    }
+    small {
+      color: #97aac9;
+    }
+    .header-icon {
+      background: $soft-black;
+    }
+  }
+
+  .history-timelines {
+    a {
+      border-color: white;
+      background: $soft-black;
+      &:hover {
+        background: white;
+      }
+    }
+  }
+
+  a,
+  a:hover,
+  a:focus {
+    color: $link-orange;
+  }
+  &:after {
+    border-left-color: $soft-black;
+    border-right-color: $soft-black;
+  }
+}
+
+/*
+Fonts
+*/
+$cursive-fallback: Wingdings, cursive;
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower');
+$font_handwriting: Indie Flower, $cursive-fallback;
+
+@import url('https://fonts.googleapis.com/css?family=Arima+Madurai:100,200,300,400,500,700,800,900|Buda:300|Cinzel+Decorative:400,700,900|Comfortaa:300,400,700|Crushed|Fredericka+the+Great|Libre+Barcode+39|Libre+Barcode+39+Extended|MedievalSharp|Megrim|Metamorphous|Nova+Slim|Overlock:400,400i,700,700i,900,900i|Poiret+One|Pompiere|Share:400,400i,700,700i|UnifrakturMaguntia');
+$font_Comfortaa: Comfortaa, $cursive-fallback;
+$font_PoiretOne: Poiret One, $cursive-fallback;
+$font_AdrimaMadurai: Arima Madurai, $cursive-fallback;
+$font_Share: Share, $cursive-fallback;
+$font_Overlock: Overlock, $cursive-fallback;
+$font_Pompiere: Pompiere, $cursive-fallback;
+$font_FrederickaTheGreat: Fredericka the Great, $cursive-fallback;
+$font_CinzelDecorative: Cinzel Decorative, $cursive-fallback;
+$font_Megrim: Megrim, $cursive-fallback;
+$font_UnirakturMaguntia: UnifrakturMaguntia, $cursive-fallback;
+$font_LibreBarcode39Extended: 'Libre Barcode 39 Extended', $cursive-fallback;
+$font_Crushed: Crushed, $cursive-fallback;
+$font_LibreBarcode39: 'Libre Barcode 39', $cursive-fallback;
+$font_Metamorphus: Metamorphous, $cursive-fallback;
+$font_NovaSlim: Nova Slim, $cursive-fallback;
+$font_Buda: Buda, $cursive-fallback;
+$font_MedievalSharp: MedievalSharp, $cursive-fallback;

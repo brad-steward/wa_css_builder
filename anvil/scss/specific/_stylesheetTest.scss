@@ -1,0 +1,115 @@
+&.article-b1a98234-ae8c-4f3f-9831-db564591eedb {
+  // Font tests
+
+  .col-md-8 {
+    .row {
+      &:first-child {
+        .col-md-6:first-child * {
+          font-family: $cursive-fallback;
+          font-family: $font_Comfortaa !important;
+        }
+        .col-md-6:last-child * {
+          font-family: $cursive-fallback;
+          font-family: $font_PoiretOne !important;
+        }
+      }
+      &:nth-child(2) {
+        .col-md-6:first-child * {
+          font-family: $cursive-fallback;
+          font-family: $font_AdrimaMadurai !important;
+        }
+        .col-md-6:last-child * {
+          font-family: $cursive-fallback;
+          font-family: $font_Share !important;
+        }
+      }
+      &:nth-child(3) {
+        .col-md-6:first-child * {
+          font-family: $cursive-fallback;
+          font-family: $font_Overlock !important;
+        }
+        .col-md-6:last-child * {
+          font-family: $cursive-fallback;
+          font-family: $font_Pompiere !important;
+        }
+      }
+      &:nth-child(4) {
+        .col-md-6:first-child * {
+          font-family: $cursive-fallback;
+          font-family: $font_FrederickaTheGreat !important;
+        }
+        .col-md-6:last-child * {
+          font-family: $cursive-fallback;
+          font-family: $font_CinzelDecorative !important;
+        }
+      }
+      &:nth-child(5) {
+        .col-md-6:first-child * {
+          font-family: $cursive-fallback;
+          font-family: $font_Megrim !important;
+        }
+        .col-md-6:last-child * {
+          font-family: $cursive-fallback;
+          font-family: $font_UnirakturMaguntia !important;
+        }
+      }
+      &:nth-child(6) {
+        .col-md-6:first-child * {
+          font-family: $cursive-fallback;
+          font-family: $font_LibreBarcode39Extended !important;
+        }
+        .col-md-6:last-child * {
+          font-family: $cursive-fallback;
+          font-family: $font_Crushed !important;
+        }
+      }
+      &:nth-child(7) {
+        .col-md-6:first-child * {
+          font-family: $cursive-fallback;
+          font-family: $font_LibreBarcode39 !important;
+        }
+        .col-md-6:last-child * {
+          font-family: $cursive-fallback;
+          font-family: $font_Metamorphus !important;
+        }
+      }
+      &:nth-child(8) {
+        .col-md-6:first-child * {
+          font-family: $cursive-fallback;
+          font-family: $font_NovaSlim !important;
+        }
+        .col-md-6:last-child * {
+          font-family: $cursive-fallback;
+          font-family: $font_Buda !important;
+        }
+      }
+      &:nth-child(9) {
+        .col-md-6:first-child * {
+          font-family: $cursive-fallback;
+          font-family: $font_MedievalSharp !important;
+        }
+      }
+    }
+  }
+
+  hr {
+    border: none !important;
+    background: url(https://worldanvil.com/uploads/images/a575b732080c2c096cd8e9f5319476ed.png);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  //For Hiding sidebar,
+  //just a test
+  #header {
+    &:hover {
+      & + #content {
+        .col-md-8 {
+          width: 100% !important;
+        }
+        .col-md-4 {
+          display: none;
+        }
+      }
+    }
+  }
+}

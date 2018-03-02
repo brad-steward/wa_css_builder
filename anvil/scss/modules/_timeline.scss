@@ -1,0 +1,207 @@
+.era {
+  .era-header {
+    p:nth-of-type(2) {
+      max-width: 60%;
+      margin: 0 auto;
+    }
+  }
+
+  @media #{$threshold-m} {
+    & {
+      .era-histories {
+        border: solid #{$timeline_era--trace-color} 1px;
+        border-radius: 20px;
+        padding: 20px 5px;
+      }
+      .era-header {
+        p:nth-of-type(2) {
+          max-width: 100%;
+        }
+      }
+    }
+  }
+}
+
+.timeline {
+  padding: 0;
+  .timeline-entry {
+    text-align: right;
+    .header-icon {
+      right: unset;
+      left: 20px;
+    }
+    &-inverted {
+      text-align: left;
+      .header-icon {
+        right: 20px;
+        left: unset;
+      }
+    }
+    .timeline-panel {
+      color: $soft-black;
+      border-radius: 0px;
+      transition: background-color 0.5s;
+      .history-timelines {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        position: relative;
+        text-align: center;
+        align-items: center;
+        * {
+          flex-basis: 33%;
+        }
+        br {
+          display: none;
+        }
+        strong {
+          flex-basis: 100%;
+        }
+        a {
+          $gap: 5px;
+          flex-basis: calc(33% - (#{$gap} * 2));
+          margin: $gap;
+          align-self: center;
+          padding: #{$gap} 0;
+          border: 2px solid $soft-black;
+          background-color: white;
+        }
+      }
+      @media #{$hover-only} {
+        &:hover {
+          background-color: $soft-black;
+          color: white;
+          .tl-heading {
+            h4 {
+              color: #b1c6d0;
+            }
+            small {
+              color: #97aac9;
+            }
+            .header-icon {
+              background: $soft-black;
+            }
+          }
+
+          .history-timelines {
+            a {
+              border-color: $timeline-tan;
+              &:hover {
+                background: $timeline-tan;
+              }
+            }
+          }
+
+          a,
+          a:hover,
+          a:focus {
+            color: $link-orange;
+          }
+          &:after {
+            border-left-color: $soft-black;
+            border-right-color: $soft-black;
+          }
+        }
+      }
+    }
+  }
+  .milestone {
+    transition: background-color 0.5s;
+    .milestone-panel {
+      color: $soft-black;
+      border-radius: 0px;
+      .history-timelines {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        position: relative;
+        text-align: center;
+        align-items: center;
+        * {
+          flex-basis: 33%;
+        }
+        br {
+          display: none;
+        }
+        strong {
+          flex-basis: 100%;
+        }
+        a {
+          $gap: 5px;
+          flex-basis: calc(33% - (#{$gap} * 2));
+          margin: $gap;
+          align-self: center;
+          padding: #{$gap} 0;
+          border: 2px solid $soft-black;
+          background-color: white;
+        }
+      }
+    }
+    @media #{$hover-only} {
+      &:hover {
+        background-color: $soft-black;
+        .milestone-panel {
+          background-color: transparent;
+          color: white;
+          .tl-heading {
+            h4 {
+              color: #b1c6d0;
+            }
+            small {
+              color: #97aac9;
+            }
+            .header-icon {
+              background: $soft-black;
+            }
+          }
+
+          .history-timelines {
+            a {
+              border-color: $timeline-tan;
+              &:hover {
+                background: $timeline-tan;
+              }
+            }
+          }
+
+          a,
+          a:hover,
+          a:focus {
+            color: $link-orange;
+          }
+          &:after {
+            border-left-color: $soft-black;
+            border-right-color: $soft-black;
+          }
+        }
+      }
+    }
+  }
+  @media #{$threshold-m} {
+    & {
+      &:before {
+        display: none;
+      }
+      .timeline-entry {
+        .tl-circ {
+          display: none;
+        }
+        .timeline-panel {
+          width: 100%;
+          &:before,
+          &:after {
+            display: none;
+          }
+          .header-icon {
+            top: -70px;
+            left: 50%;
+            right: unset;
+            transform: translateX(-50%);
+          }
+        }
+      }
+    }
+  }
+}

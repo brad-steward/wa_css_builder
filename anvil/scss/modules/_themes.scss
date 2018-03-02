@@ -1,0 +1,657 @@
+%theme-lightblue {
+  $base-color: #067bc2;
+  $bg: darken(desaturate(adjust-hue($base-color, 16), 74), 22.55);
+  $text-color: $soft-white;
+  $link: #f37748;
+
+  background: $bg;
+  color: $text-color;
+  h1 {
+    color: $base-color;
+    .article-title & {
+      color: $base-color;
+    }
+  }
+  h2 {
+    color: lighten(desaturate($base-color, 37.72), 9.22);
+  }
+  h3 {
+    color: lighten(desaturate($base-color, 48.87), 16.47);
+  }
+  h4 {
+    color: lighten(desaturate(adjust-hue($base-color, 156), 35.79), 21.37);
+  }
+  h5 {
+    color: lighten(desaturate(adjust-hue($base-color, 157), 12.95), 23.53);
+  }
+  a,
+  a:hover,
+  a:focus {
+    color: $link;
+  }
+
+  blockquote {
+    color: $soft-black;
+    border-bottom: solid $base-color 3px;
+  }
+
+  .panel {
+    &.panel-default {
+      color: $text-color;
+      a,
+      a:hover,
+      a:focus {
+        color: darken(desaturate(adjust-hue($link, -15), 43.86), 15.69);
+      }
+    }
+  }
+
+  .spoiler-content {
+    background-color: $base-color;
+  }
+
+  .relation {
+    h4 {
+      color: lighten(desaturate($base-color, 48.87), 16.47);
+    }
+  }
+}
+
+%theme-darkgreen {
+  $base-color: rgb(14, 63, 14);
+  $bg: darken(desaturate(adjust-hue($base-color, 16), 74), 22.55);
+  $text-color: $soft-white;
+  $link: #f37748;
+
+  background: $bg;
+  color: $text-color;
+  h1 {
+    color: $base-color;
+    .article-title & {
+      color: $base-color;
+    }
+  }
+  h2 {
+    color: lighten(desaturate($base-color, 37.72), 9.22);
+  }
+  h3 {
+    color: lighten(desaturate($base-color, 48.87), 16.47);
+  }
+  h4 {
+    color: lighten(desaturate(adjust-hue($base-color, 156), 35.79), 21.37);
+  }
+  h5 {
+    color: lighten(desaturate(adjust-hue($base-color, 157), 12.95), 23.53);
+  }
+  a,
+  a:hover,
+  a:focus {
+    color: $link;
+  }
+
+  blockquote {
+    color: $soft-black;
+    border-bottom: solid $base-color 3px;
+  }
+
+  .panel {
+    &.panel-default {
+      color: $text-color;
+      a,
+      a:hover,
+      a:focus {
+        color: darken(desaturate(adjust-hue($link, -15), 43.86), 15.69);
+      }
+    }
+  }
+
+  .spoiler-content {
+    background-color: $base-color;
+  }
+
+  .relation {
+    h4 {
+      color: lighten(desaturate($base-color, 48.87), 16.47);
+    }
+  }
+}
+
+%theme-crimson {
+  $base-color: #b52f03;
+  $bg: darken(desaturate(adjust-hue($base-color, 16), 74), 22.55);
+  $text-color: $soft-white;
+  $link: #f37748;
+
+  background: $bg;
+  color: $text-color;
+  h1 {
+    color: $base-color;
+    .article-title & {
+      color: $base-color;
+    }
+  }
+  h2 {
+    color: lighten(desaturate($base-color, 37.72), 9.22);
+  }
+  h3 {
+    color: lighten(desaturate($base-color, 48.87), 16.47);
+  }
+  h4 {
+    color: lighten(desaturate(adjust-hue($base-color, 156), 35.79), 21.37);
+  }
+  h5 {
+    color: lighten(desaturate(adjust-hue($base-color, 157), 12.95), 23.53);
+  }
+  a,
+  a:hover,
+  a:focus {
+    color: $link;
+  }
+
+  blockquote {
+    color: $soft-black;
+    border-bottom: solid $base-color 3px;
+  }
+
+  .panel {
+    &.panel-default {
+      color: $text-color;
+      a,
+      a:hover,
+      a:focus {
+        color: darken(desaturate(adjust-hue($link, -15), 43.86), 15.69);
+      }
+    }
+  }
+
+  .spoiler-content {
+    background-color: $base-color;
+  }
+
+  .relation {
+    h4 {
+      color: lighten(desaturate($base-color, 48.87), 16.47);
+    }
+  }
+}
+
+%theme-black {
+  $base-color: black;
+  $bg: darken(desaturate(adjust-hue($base-color, 16), 74), 22.55);
+  $text-color: $soft-white;
+  $link: #f37748;
+
+  background: $bg;
+  color: $text-color;
+  h1 {
+    color: $base-color;
+    .article-title & {
+      color: $base-color;
+    }
+  }
+  h2 {
+    color: lighten(desaturate($base-color, 37.72), 9.22);
+  }
+  h3 {
+    color: lighten(desaturate($base-color, 48.87), 16.47);
+  }
+  h4 {
+    color: lighten(desaturate(adjust-hue($base-color, 156), 35.79), 21.37);
+  }
+  h5 {
+    color: lighten(desaturate(adjust-hue($base-color, 157), 12.95), 23.53);
+  }
+  a,
+  a:hover,
+  a:focus {
+    color: $link;
+  }
+
+  blockquote {
+    color: $soft-black;
+    border-bottom: solid $base-color 3px;
+  }
+
+  .panel {
+    &.panel-default {
+      color: $text-color;
+      a,
+      a:hover,
+      a:focus {
+        color: darken(desaturate(adjust-hue($link, -15), 43.86), 15.69);
+      }
+    }
+  }
+
+  .spoiler-content {
+    background-color: $base-color;
+  }
+
+  .relation {
+    h4 {
+      color: lighten(desaturate($base-color, 48.87), 16.47);
+    }
+  }
+}
+
+%theme-beef {
+  $base-color: #beeeef;
+  $bg: darken(desaturate(adjust-hue($base-color, 16), 74), 22.55);
+  $text-color: $soft-white;
+  $link: #f37748;
+
+  background: $bg;
+  color: $text-color;
+  h1 {
+    color: $base-color;
+    .article-title & {
+      color: $base-color;
+    }
+  }
+  h2 {
+    color: lighten(desaturate($base-color, 37.72), 9.22);
+  }
+  h3 {
+    color: lighten(desaturate($base-color, 48.87), 16.47);
+  }
+  h4 {
+    color: lighten(desaturate(adjust-hue($base-color, 156), 35.79), 21.37);
+  }
+  h5 {
+    color: lighten(desaturate(adjust-hue($base-color, 157), 12.95), 23.53);
+  }
+  a,
+  a:hover,
+  a:focus {
+    color: $link;
+  }
+
+  blockquote {
+    color: $soft-black;
+    border-bottom: solid $base-color 3px;
+  }
+
+  .panel {
+    &.panel-default {
+      color: $text-color;
+      a,
+      a:hover,
+      a:focus {
+        color: darken(desaturate(adjust-hue($link, -15), 43.86), 15.69);
+      }
+    }
+  }
+
+  .spoiler-content {
+    background-color: $base-color;
+  }
+
+  .relation {
+    h4 {
+      color: lighten(desaturate($base-color, 48.87), 16.47);
+    }
+  }
+}
+
+%theme-mango {
+  $base-color: #f48d07;
+  /// Overriding background because the translated version is pretty bad
+  //$bg: darken(desaturate(adjust-hue($base-color, 16), 74), 22.55);
+  $bg: $soft-black;
+  $text-color: $soft-white;
+  $link: #f37748;
+
+  background: $bg;
+  color: $text-color;
+  h1 {
+    color: $base-color;
+    .article-title & {
+      color: $base-color;
+    }
+  }
+  h2 {
+    color: lighten(desaturate($base-color, 37.72), 9.22);
+  }
+  h3 {
+    color: lighten(desaturate($base-color, 48.87), 16.47);
+  }
+  h4 {
+    color: lighten(desaturate(adjust-hue($base-color, 156), 35.79), 21.37);
+  }
+  h5 {
+    color: lighten(desaturate(adjust-hue($base-color, 157), 12.95), 23.53);
+  }
+  a,
+  a:hover,
+  a:focus {
+    color: $link;
+  }
+
+  blockquote {
+    color: $soft-black;
+    border-bottom: solid $base-color 3px;
+  }
+
+  .panel {
+    &.panel-default {
+      color: $text-color;
+      a,
+      a:hover,
+      a:focus {
+        color: darken(desaturate(adjust-hue($link, -15), 43.86), 15.69);
+      }
+    }
+  }
+
+  .spoiler-content {
+    background-color: $base-color;
+  }
+
+  .relation {
+    h4 {
+      color: lighten(desaturate($base-color, 48.87), 16.47);
+    }
+  }
+}
+
+%theme-strawberry-mint {
+  $base-color: #dd48e2;
+  $bg: darken(desaturate(adjust-hue($base-color, 16), 74), 22.55);
+  $text-color: $soft-white;
+  $link: #f37748;
+
+  background: $bg;
+  color: $text-color;
+  h1 {
+    color: $base-color;
+    .article-title & {
+      color: $base-color;
+    }
+  }
+  h2 {
+    color: lighten(desaturate($base-color, 37.72), 9.22);
+  }
+  h3 {
+    color: lighten(desaturate($base-color, 48.87), 16.47);
+  }
+  h4 {
+    color: lighten(desaturate(adjust-hue($base-color, 156), 35.79), 21.37);
+  }
+  h5 {
+    color: lighten(desaturate(adjust-hue($base-color, 157), 12.95), 23.53);
+  }
+  a,
+  a:hover,
+  a:focus {
+    color: $link;
+  }
+
+  blockquote {
+    color: $soft-black;
+    border-bottom: solid $base-color 3px;
+  }
+
+  .panel {
+    &.panel-default {
+      color: $text-color;
+      a,
+      a:hover,
+      a:focus {
+        color: darken(desaturate(adjust-hue($link, -15), 43.86), 15.69);
+      }
+    }
+  }
+
+  .spoiler-content {
+    background-color: $base-color;
+  }
+
+  .relation {
+    h4 {
+      color: lighten(desaturate($base-color, 48.87), 16.47);
+    }
+  }
+}
+
+%theme-dijon {
+  $base-color: #a5a313;
+  $bg: darken(desaturate(adjust-hue($base-color, 16), 74), 22.55);
+  $text-color: $soft-white;
+  $link: #f37748;
+
+  background: $bg;
+  color: $text-color;
+  h1 {
+    color: $base-color;
+    .article-title & {
+      color: $base-color;
+    }
+  }
+  h2 {
+    color: lighten(desaturate($base-color, 37.72), 9.22);
+  }
+  h3 {
+    color: lighten(desaturate($base-color, 48.87), 16.47);
+  }
+  h4 {
+    color: lighten(desaturate(adjust-hue($base-color, 156), 35.79), 21.37);
+  }
+  h5 {
+    color: lighten(desaturate(adjust-hue($base-color, 157), 12.95), 23.53);
+  }
+  a,
+  a:hover,
+  a:focus {
+    color: $link;
+  }
+
+  blockquote {
+    color: $soft-black;
+    border-bottom: solid $base-color 3px;
+  }
+
+  .panel {
+    &.panel-default {
+      color: $text-color;
+      a,
+      a:hover,
+      a:focus {
+        color: darken(desaturate(adjust-hue($link, -15), 43.86), 15.69);
+      }
+    }
+  }
+
+  .spoiler-content {
+    background-color: $base-color;
+  }
+
+  .relation {
+    h4 {
+      color: lighten(desaturate($base-color, 48.87), 16.47);
+    }
+  }
+}
+
+%theme-turquoise {
+  $base-color: #7bf7ce;
+  $bg: darken(desaturate(adjust-hue($base-color, 16), 74), 22.55);
+  $text-color: $soft-white;
+  $link: #f37748;
+
+  background: $bg;
+  color: $text-color;
+  h1 {
+    color: $base-color;
+    .article-title & {
+      color: $base-color;
+    }
+  }
+  h2 {
+    color: lighten(desaturate($base-color, 37.72), 9.22);
+  }
+  h3 {
+    color: lighten(desaturate($base-color, 48.87), 16.47);
+  }
+  h4 {
+    color: lighten(desaturate(adjust-hue($base-color, 156), 35.79), 21.37);
+  }
+  h5 {
+    color: lighten(desaturate(adjust-hue($base-color, 157), 12.95), 23.53);
+  }
+  a,
+  a:hover,
+  a:focus {
+    color: $link;
+  }
+
+  blockquote {
+    color: $soft-black;
+    border-bottom: solid $base-color 3px;
+  }
+
+  .panel {
+    &.panel-default {
+      color: $text-color;
+      a,
+      a:hover,
+      a:focus {
+        color: darken(desaturate(adjust-hue($link, -15), 43.86), 15.69);
+      }
+    }
+  }
+
+  .spoiler-content {
+    background-color: $base-color;
+  }
+
+  .relation {
+    h4 {
+      color: lighten(desaturate($base-color, 48.87), 16.47);
+    }
+  }
+
+  .article-panel {
+    background: $soft-black;
+  }
+}
+
+%theme-grape {
+  $base-color: #4f40ad;
+  $bg: darken(desaturate(adjust-hue($base-color, 16), 74), 22.55);
+  $text-color: $soft-white;
+  $link: #f37748;
+
+  background: $bg;
+  color: $text-color;
+  h1 {
+    color: $base-color;
+    .article-title & {
+      color: $base-color;
+    }
+  }
+  h2 {
+    color: lighten(desaturate($base-color, 37.72), 9.22);
+  }
+  h3 {
+    color: lighten(desaturate($base-color, 48.87), 16.47);
+  }
+  h4 {
+    color: lighten(desaturate(adjust-hue($base-color, 156), 35.79), 21.37);
+  }
+  h5 {
+    color: lighten(desaturate(adjust-hue($base-color, 157), 12.95), 23.53);
+  }
+  a,
+  a:hover,
+  a:focus {
+    color: $link;
+  }
+
+  blockquote {
+    color: $soft-black;
+    border-bottom: solid $base-color 3px;
+  }
+
+  .panel {
+    &.panel-default {
+      color: $text-color;
+      a,
+      a:hover,
+      a:focus {
+        color: darken(desaturate(adjust-hue($link, -15), 43.86), 15.69);
+      }
+    }
+  }
+
+  .spoiler-content {
+    background-color: $base-color;
+  }
+
+  .relation {
+    h4 {
+      color: lighten(desaturate($base-color, 48.87), 16.47);
+    }
+  }
+}
+
+/** %theme-template {
+  $bg: darken(desaturate(adjust-hue($base-color, 16), 74), 22.55);
+  $text-color: $soft-white;
+  $link: #f37748;
+
+  background: $bg;
+  color: $text-color;
+  h1 {
+    color: $base-color;
+    .article-title & {
+      color: $base-color;
+    }
+  }
+  h2 {
+    color: lighten(desaturate($base-color, 37.72), 9.22);
+  }
+  h3 {
+    color: lighten(desaturate($base-color, 48.87), 16.47);
+  }
+  h4 {
+    color: lighten(desaturate(adjust-hue($base-color, 156), 35.79), 21.37);
+  }
+  h5 {
+    color: lighten(desaturate(adjust-hue($base-color, 157), 12.95), 23.53);
+  }
+  a,
+  a:hover,
+  a:focus {
+    color: $link;
+  }
+
+  blockquote {
+    color: $soft-black;
+    border-bottom: solid $base-color 3px;
+  }
+
+  .panel {
+    &.panel-default {
+      color: $text-color;
+      a,
+      a:hover,
+      a:focus {
+        color: darken(desaturate(adjust-hue($link, -15), 43.86), 15.69);
+      }
+    }
+  }
+
+  .spoiler-content {
+    background-color: $base-color;
+  }
+
+  .relation {
+    h4 {
+      color: lighten(desaturate($base-color, 48.87), 16.47);
+    }
+  }
+} */
+
+@mixin set-theme() {
+  @extend %theme-#{$theme};
+}

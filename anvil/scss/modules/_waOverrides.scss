@@ -1,0 +1,32 @@
+.user-css {
+  // &.page {
+  //   width: 80%;
+  //   max-width: 2000px;
+  // }
+  &.page-timeline {
+    .col-md-8 {
+      width: 100%;
+      margin: 0 auto;
+    }
+  }
+
+  .cover {
+    max-height: 200px;
+    overflow: hidden;
+  }
+
+  .nav-strip a,
+  .backtoworld a,
+  a.menu-control {
+    color: white !important;
+  }
+
+  .world-author a {
+    text-transform: uppercase;
+  }
+}
+
+.presentation-interface {
+  background: url(https://worldanvil.com/uploads/images/2f105caae87b0d2a59bc5708f2944a80.jpg);
+  background-size: auto;
+}

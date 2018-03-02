@@ -1,0 +1,78 @@
+// Inline Secret Blocks
+.user-css-secret {
+  background-color: white;
+  h5 {
+    font-family: $font_CinzelDecorative;
+    font-size: 30px;
+  }
+  p {
+    font-family: $font_Metamorphus;
+    color: $soft-black;
+  }
+}
+
+// blockquotes
+blockquote {
+  font-family: $font_FrederickaTheGreat;
+  color: black !important;
+  background: url('/images/bg-dark.jpg');
+  text-align: left;
+  border-left: none;
+  border-bottom-width: 5px;
+  .author.quote-author {
+    font-family: $font_CinzelDecorative;
+    color: rgba(0, 0, 0, 0.5);
+  }
+}
+
+// 'Books' on the home page
+.bookcover {
+  height: auto;
+  margin-bottom: 80px;
+  img {
+    display: none;
+  }
+  .booktitle {
+    text-align: center;
+    max-width: unset;
+  }
+}
+
+// Map blocks on category and homepages
+.map-box {
+  color: $soft-black;
+}
+
+//  Article Sidebar panel
+.panel.panel-default {
+  color: $soft-white;
+  background-color: rgba(0, 0, 0, 0.9);
+  dt {
+    color: navajowhite;
+    text-transform: uppercase;
+    font-size: 1.3em;
+  }
+}
+
+/// Category Link
+.nav-linear {
+  .text-center {
+    padding: 10px;
+    font-size: 20px;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 60px white;
+  }
+}
+
+.world-title,
+.world-currentDate,
+.world-author {
+  font-family: $font_CinzelDecorative;
+  text-transform: uppercase;
+}
+
+.statblock {
+  background: none;
+}
+
+@import '_timeline.scss';
