@@ -17,8 +17,7 @@ const rename = require('gulp-rename');
 // ---- config
 var config = {
   src: 'anvil',
-  dist: 'tongs',
-  upload: 'upload'
+  dist: 'tongs'
 };
 
 // ---- watchers
