@@ -55,6 +55,13 @@
       color: lighten(desaturate($base-color, 48.87), 16.47);
     }
   }
+
+  &.user-css-worldmenu {
+    background: transparent;
+    .worldmenu-inner {
+      background: $bg !important;
+    }
+  }
 }
 
 %theme-darkgreen {
@@ -112,6 +119,13 @@
   .relation {
     h4 {
       color: lighten(desaturate($base-color, 48.87), 16.47);
+    }
+  }
+
+  &.user-css-worldmenu {
+    background: transparent;
+    .worldmenu-inner {
+      background: $bg !important;
     }
   }
 }
@@ -173,6 +187,13 @@
       color: lighten(desaturate($base-color, 48.87), 16.47);
     }
   }
+
+  &.user-css-worldmenu {
+    background: transparent;
+    .worldmenu-inner {
+      background: $bg !important;
+    }
+  }
 }
 
 %theme-black {
@@ -232,6 +253,13 @@
       color: lighten(desaturate($base-color, 48.87), 16.47);
     }
   }
+
+  &.user-css-worldmenu {
+    background: transparent;
+    .worldmenu-inner {
+      background: $bg !important;
+    }
+  }
 }
 
 %theme-beef {
@@ -289,6 +317,13 @@
   .relation {
     h4 {
       color: lighten(desaturate($base-color, 48.87), 16.47);
+    }
+  }
+
+  &.user-css-worldmenu {
+    background: transparent;
+    .worldmenu-inner {
+      background: $bg !important;
     }
   }
 }
@@ -352,6 +387,13 @@
       color: lighten(desaturate($base-color, 48.87), 16.47);
     }
   }
+
+  &.user-css-worldmenu {
+    background: transparent;
+    .worldmenu-inner {
+      background: $bg !important;
+    }
+  }
 }
 
 %theme-strawberry-mint {
@@ -411,6 +453,13 @@
       color: lighten(desaturate($base-color, 48.87), 16.47);
     }
   }
+
+  &.user-css-worldmenu {
+    background: transparent;
+    .worldmenu-inner {
+      background: $bg !important;
+    }
+  }
 }
 
 %theme-dijon {
@@ -468,6 +517,13 @@
   .relation {
     h4 {
       color: lighten(desaturate($base-color, 48.87), 16.47);
+    }
+  }
+
+  &.user-css-worldmenu {
+    background: transparent;
+    .worldmenu-inner {
+      background: $bg !important;
     }
   }
 }
@@ -533,6 +589,13 @@
   .article-panel {
     background: $soft-black;
   }
+
+  &.user-css-worldmenu {
+    background: transparent;
+    .worldmenu-inner {
+      background: $bg !important;
+    }
+  }
 }
 
 %theme-grape {
@@ -592,9 +655,16 @@
       color: lighten(desaturate($base-color, 48.87), 16.47);
     }
   }
+
+  &.user-css-worldmenu {
+    background: transparent;
+    .worldmenu-inner {
+      background: $bg !important;
+    }
+  }
 }
 
-/** %theme-template {
+/*%theme-template {
   $bg: darken(desaturate(adjust-hue($base-color, 16), 74), 22.55);
   $text-color: $soft-white;
   $link: #f37748;
@@ -648,6 +718,12 @@
   .relation {
     h4 {
       color: lighten(desaturate($base-color, 48.87), 16.47);
+    }
+  }
+  &.user-css-worldmenu {
+    background: transparent;
+    .worldmenu-inner {
+      background: $bg !important;
     }
   }
 } */

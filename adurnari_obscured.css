@@ -1,0 +1,14 @@
+@font-face {
+  font-family: Adurnari_Obscured;
+  src: url('//s3.amazonaws.com/adurnari-fonts/adurnari_obscured/Adurnari-Obscured.eot');
+  src: url('//s3.amazonaws.com/adurnari-fonts/adurnari_obscured/Adurnari-Obscured.eot?#iefix')
+      format('embedded-opentype'),
+    url('//s3.amazonaws.com/adurnari-fonts/adurnari_obscured/Adurnari-Obscured.woff')
+      format('woff'),
+    url('//s3.amazonaws.com/adurnari-fonts/adurnari_obscured/Adurnari-Obscured.ttf')
+      format('truetype'),
+    url('//s3.amazonaws.com/adurnari-fonts/adurnari_obscured/Adurnari-Obscured.svg#Adurnari-Obscured')
+      format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
