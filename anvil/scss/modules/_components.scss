@@ -84,4 +84,9 @@ blockquote {
   }
 }
 
+#metadata {
+  color: $soft-black;
+  font-family: 'Courier New', Courier, monospace !important;
+}
+
 @import '_timeline.scss';
