@@ -10,11 +10,15 @@ const autoprefixer = require('autoprefixer');
 const del = require('del');
 const runSequence = require('run-sequence');
 const scss = require('postcss-scss');
+const keyConfig = require('./keys.json');
+const s3 = require('gulp-s3');
+const rename = require('gulp-rename');
 
 // ---- config
 var config = {
   src: 'anvil',
-  dist: 'tongs'
+  dist: 'tongs',
+  upload: 'upload'
 };
 
 // ---- watchers
@@ -52,9 +56,22 @@ gulp.task('clean:dist', function() {
   return del.sync(config.dist);
 });
 
+gulp.task('upload', function() {
+  return gulp
+    .src(config.dist + '/css/styles.css')
+    .pipe(rename('styles'))
+    .pipe(
+      s3(keyConfig, {
+        headers: {
+          'Content-Type': 'text/css'
+        }
+      })
+    );
+});
+
 // ---- task commands
 gulp.task('default', function(cb) {
-  runSequence('clean:dist', ['css'], cb);
+  runSequence('clean:dist', ['css'], ['upload'], cb);
 });
 
 gulp.task('hammer', function(cb) {

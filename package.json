@@ -1,8 +1,7 @@
 {
   "name": "wa_css_builder",
   "version": "1.0.0",
-  "description":
-    "This is a handy tool for building your custom CSS for WA. Check the Readme for more info.",
+  "description": "This is a handy tool for building your custom CSS for WA. Check the Readme for more info.",
   "main": "gulpfile.js",
   "repository": {},
   "keywords": [],
@@ -14,6 +13,8 @@
     "gulp-concat": "^2.6.0",
     "gulp-concat-css": "^2.3.0",
     "gulp-postcss": "^7.0.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-s3": "^0.11.0",
     "gulp-sass": "^3.0.0",
     "postcss-scss": "^1.0.1",
     "run-sequence": "^1.2.2"
