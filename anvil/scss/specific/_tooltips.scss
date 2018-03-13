@@ -1,0 +1,8 @@
+a[href~='kecksis'] {
+  position: relative;
+  &::before {
+    content: 'Kecksis is great';
+    position: absolute;
+    top: 100%;
+  }
+}
