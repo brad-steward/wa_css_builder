@@ -1,3 +1,74 @@
 @import 'specific/_lethe';
 @import 'specific/_stylesheetTest';
 @import 'specific/_tooltips';
+
+// The Onyx, The Rift, The Scar -- https://worldanvil.com/w/eddur-Adurnari/a/the-onyx-article
+&.article-dc129a9e-a060-4cd5-a13d-e31773858982,
+&.article-e34e9acf-3cb3-4024-8cb2-4186a5f75367,
+&.article-c0169e6e-6f68-4589-8a01-9824c133a708 {
+  @extend %theme-black;
+  #content {
+    .col-md-6.col-md-offset-3 {
+      p {
+        font-family: $font_Obscured !important;
+        b {
+          opacity: 100;
+          transition: opacity 100s ease-in 0s;
+          position: relative;
+        }
+
+        em {
+          transition: opacity 100s ease-in 0s;
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          opacity: 0;
+        }
+
+        &:hover {
+          b {
+            opacity: 0;
+          }
+
+          em {
+            opacity: 100;
+          }
+        }
+      }
+    }
+  }
+
+  // [concol]
+  // #content {
+  //   .col-md-6.col-md-offset-3 {
+  //     p {
+  //       font-family: $font_Obscured !important;
+  //     }
+  //   }
+  // }
+}
+
+// The Vile Races -- Category
+&.category-466dfb0a-8ce8-4535-9edc-65f0cfb59b03 {
+  @extend %theme-darkgreen;
+}
+
+// Flora -- Category
+&.category-0855bded-710a-4958-9436-68aa5f663950 {
+  @extend %theme-dijon;
+}
+
+// Gralnum
+&.article-64f398d9-f033-4946-913f-df038a8b12b1 {
+  @extend %theme-gralnum;
+}
+
+// Akta
+&.article-51722709-b0b6-4116-a3cc-9ebfd0427869 {
+  @extend %theme-lightblue;
+}
+
+// &.template-organization {
+//   @extend %theme-grape;
+// }

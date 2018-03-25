@@ -1,10 +1,13 @@
+$gradient: 0.75;
+
 %theme-lightblue {
   $base-color: #067bc2;
   $bg: darken(desaturate(adjust-hue($base-color, 16), 74), 22.55);
   $text-color: $soft-white;
-  $link: #f37748;
+  $link: lighten(desaturate(adjust-hue($base-color, -186), 6.31), 22.55);
 
-  background: $bg;
+  background: linear-gradient(to left, rgba($bg, $gradient), $bg),
+    $brick-bg-image;
   color: $text-color;
   h1 {
     color: $base-color;
@@ -24,6 +27,9 @@
   h5 {
     color: lighten(desaturate(adjust-hue($base-color, 157), 12.95), 23.53);
   }
+  * {
+    border-color: $base-color;
+  }
   a,
   a:hover,
   a:focus {
@@ -33,6 +39,15 @@
   blockquote {
     color: $soft-black;
     border-bottom: solid $base-color 3px;
+  }
+
+  .bookcover {
+    &:hover {
+      .booktitle {
+        color: white;
+        background: $link;
+      }
+    }
   }
 
   .panel {
@@ -61,6 +76,10 @@
     .worldmenu-inner {
       background: $bg !important;
     }
+  }
+
+  .timeline-panel {
+    background: white !important;
   }
 }
 
@@ -68,9 +87,10 @@
   $base-color: rgb(14, 63, 14);
   $bg: darken(desaturate(adjust-hue($base-color, 16), 74), 22.55);
   $text-color: $soft-white;
-  $link: #f37748;
+  $link: lighten(desaturate(adjust-hue($base-color, -186), 6.31), 22.55);
 
-  background: $bg;
+  background: linear-gradient(to left, rgba($bg, $gradient), $bg),
+    $brick-bg-image;
   color: $text-color;
   h1 {
     color: $base-color;
@@ -90,6 +110,9 @@
   h5 {
     color: lighten(desaturate(adjust-hue($base-color, 157), 12.95), 23.53);
   }
+  * {
+    border-color: $base-color;
+  }
   a,
   a:hover,
   a:focus {
@@ -99,6 +122,15 @@
   blockquote {
     color: $soft-black;
     border-bottom: solid $base-color 3px;
+  }
+
+  .bookcover {
+    &:hover {
+      .booktitle {
+        color: white;
+        background: $link;
+      }
+    }
   }
 
   .panel {
@@ -127,16 +159,21 @@
     .worldmenu-inner {
       background: $bg !important;
     }
+  }
+
+  .timeline-panel {
+    background: white !important;
   }
 }
 
-%theme-crimson {
+%theme-clay {
   $base-color: #b52f03;
   $bg: darken(desaturate(adjust-hue($base-color, 16), 74), 22.55);
   $text-color: $soft-white;
-  $link: #f37748;
+  $link: lighten(desaturate(adjust-hue($base-color, -186), 6.31), 22.55);
 
-  background: $bg;
+  background: linear-gradient(to left, rgba($bg, $gradient), $bg),
+    $brick-bg-image;
   color: $text-color;
   h1 {
     color: $base-color;
@@ -156,6 +193,9 @@
   h5 {
     color: lighten(desaturate(adjust-hue($base-color, 157), 12.95), 23.53);
   }
+  * {
+    border-color: $base-color;
+  }
   a,
   a:hover,
   a:focus {
@@ -165,6 +205,15 @@
   blockquote {
     color: $soft-black;
     border-bottom: solid $base-color 3px;
+  }
+
+  .bookcover {
+    &:hover {
+      .booktitle {
+        color: white;
+        background: $link;
+      }
+    }
   }
 
   .panel {
@@ -193,16 +242,21 @@
     .worldmenu-inner {
       background: $bg !important;
     }
+  }
+
+  .timeline-panel {
+    background: white !important;
   }
 }
 
 %theme-black {
   $base-color: black;
-  $bg: darken(desaturate(adjust-hue($base-color, 16), 74), 22.55);
-  $text-color: $soft-white;
-  $link: #f37748;
+  $bg: invert(darken(desaturate(adjust-hue($base-color, 16), 74), 22.55));
+  $text-color: invert($soft-white);
+  $link: lighten(desaturate(adjust-hue($base-color, -186), 6.31), 22.55);
 
-  background: $bg;
+  background: linear-gradient(to left, rgba($bg, 0.15), $bg),
+    url(//worldanvil.com/uploads/images/4ddc78dbf025a9e568ae1ed05d31dabd.png);
   color: $text-color;
   h1 {
     color: $base-color;
@@ -222,6 +276,9 @@
   h5 {
     color: lighten(desaturate(adjust-hue($base-color, 157), 12.95), 23.53);
   }
+  * {
+    border-color: $base-color;
+  }
   a,
   a:hover,
   a:focus {
@@ -233,13 +290,22 @@
     border-bottom: solid $base-color 3px;
   }
 
+  .bookcover {
+    &:hover {
+      .booktitle {
+        color: white;
+        background: $link;
+      }
+    }
+  }
+
   .panel {
     &.panel-default {
-      color: $text-color;
+      color: saturate(invert($text-color), 10);
       a,
       a:hover,
       a:focus {
-        color: darken(desaturate(adjust-hue($link, -15), 43.86), 15.69);
+        color: invert(darken(desaturate(adjust-hue($link, -15), 43.86), 15.69));
       }
     }
   }
@@ -259,6 +325,10 @@
     .worldmenu-inner {
       background: $bg !important;
     }
+  }
+
+  .timeline-panel {
+    background: white !important;
   }
 }
 
@@ -266,9 +336,10 @@
   $base-color: #beeeef;
   $bg: darken(desaturate(adjust-hue($base-color, 16), 74), 22.55);
   $text-color: $soft-white;
-  $link: #f37748;
+  $link: lighten(desaturate(adjust-hue($base-color, -186), 6.31), 22.55);
 
-  background: $bg;
+  background: linear-gradient(to left, rgba($bg, $gradient), $bg),
+    $brick-bg-image;
   color: $text-color;
   h1 {
     color: $base-color;
@@ -288,6 +359,9 @@
   h5 {
     color: lighten(desaturate(adjust-hue($base-color, 157), 12.95), 23.53);
   }
+  * {
+    border-color: $base-color;
+  }
   a,
   a:hover,
   a:focus {
@@ -297,6 +371,15 @@
   blockquote {
     color: $soft-black;
     border-bottom: solid $base-color 3px;
+  }
+
+  .bookcover {
+    &:hover {
+      .booktitle {
+        color: white;
+        background: $link;
+      }
+    }
   }
 
   .panel {
@@ -325,6 +408,10 @@
     .worldmenu-inner {
       background: $bg !important;
     }
+  }
+
+  .timeline-panel {
+    background: white !important;
   }
 }
 
@@ -334,9 +421,10 @@
   //$bg: darken(desaturate(adjust-hue($base-color, 16), 74), 22.55);
   $bg: $soft-black;
   $text-color: $soft-white;
-  $link: #f37748;
+  $link: lighten(desaturate(adjust-hue($base-color, -186), 6.31), 22.55);
 
-  background: $bg;
+  background: linear-gradient(to left, rgba($bg, $gradient), $bg),
+    $brick-bg-image;
   color: $text-color;
   h1 {
     color: $base-color;
@@ -356,6 +444,9 @@
   h5 {
     color: lighten(desaturate(adjust-hue($base-color, 157), 12.95), 23.53);
   }
+  * {
+    border-color: $base-color;
+  }
   a,
   a:hover,
   a:focus {
@@ -365,6 +456,15 @@
   blockquote {
     color: $soft-black;
     border-bottom: solid $base-color 3px;
+  }
+
+  .bookcover {
+    &:hover {
+      .booktitle {
+        color: white;
+        background: $link;
+      }
+    }
   }
 
   .panel {
@@ -393,6 +493,10 @@
     .worldmenu-inner {
       background: $bg !important;
     }
+  }
+
+  .timeline-panel {
+    background: white !important;
   }
 }
 
@@ -400,9 +504,10 @@
   $base-color: #dd48e2;
   $bg: darken(desaturate(adjust-hue($base-color, 16), 74), 22.55);
   $text-color: $soft-white;
-  $link: #f37748;
+  $link: lighten(desaturate(adjust-hue($base-color, -186), 6.31), 22.55);
 
-  background: $bg;
+  background: linear-gradient(to left, rgba($bg, $gradient), $bg),
+    $brick-bg-image;
   color: $text-color;
   h1 {
     color: $base-color;
@@ -422,6 +527,9 @@
   h5 {
     color: lighten(desaturate(adjust-hue($base-color, 157), 12.95), 23.53);
   }
+  * {
+    border-color: $base-color;
+  }
   a,
   a:hover,
   a:focus {
@@ -431,6 +539,15 @@
   blockquote {
     color: $soft-black;
     border-bottom: solid $base-color 3px;
+  }
+
+  .bookcover {
+    &:hover {
+      .booktitle {
+        color: white;
+        background: $link;
+      }
+    }
   }
 
   .panel {
@@ -459,6 +576,10 @@
     .worldmenu-inner {
       background: $bg !important;
     }
+  }
+
+  .timeline-panel {
+    background: white !important;
   }
 }
 
@@ -466,9 +587,10 @@
   $base-color: #a5a313;
   $bg: darken(desaturate(adjust-hue($base-color, 16), 74), 22.55);
   $text-color: $soft-white;
-  $link: #f37748;
+  $link: lighten(desaturate(adjust-hue($base-color, -186), 6.31), 22.55);
 
-  background: $bg;
+  background: linear-gradient(to left, rgba($bg, $gradient), $bg),
+    $bark-bg-image;
   color: $text-color;
   h1 {
     color: $base-color;
@@ -488,6 +610,9 @@
   h5 {
     color: lighten(desaturate(adjust-hue($base-color, 157), 12.95), 23.53);
   }
+  * {
+    border-color: $base-color;
+  }
   a,
   a:hover,
   a:focus {
@@ -497,6 +622,15 @@
   blockquote {
     color: $soft-black;
     border-bottom: solid $base-color 3px;
+  }
+
+  .bookcover {
+    &:hover {
+      .booktitle {
+        color: white;
+        background: $link;
+      }
+    }
   }
 
   .panel {
@@ -526,15 +660,20 @@
       background: $bg !important;
     }
   }
+
+  .timeline-panel {
+    background: white !important;
+  }
 }
 
 %theme-turquoise {
   $base-color: #7bf7ce;
   $bg: darken(desaturate(adjust-hue($base-color, 16), 74), 22.55);
   $text-color: $soft-white;
-  $link: #f37748;
+  $link: lighten(desaturate(adjust-hue($base-color, -186), 6.31), 22.55);
 
-  background: $bg;
+  background: linear-gradient(to left, rgba($bg, $gradient), $bg),
+    $brick-bg-image;
   color: $text-color;
   h1 {
     color: $base-color;
@@ -554,6 +693,9 @@
   h5 {
     color: lighten(desaturate(adjust-hue($base-color, 157), 12.95), 23.53);
   }
+  * {
+    border-color: $base-color;
+  }
   a,
   a:hover,
   a:focus {
@@ -563,6 +705,15 @@
   blockquote {
     color: $soft-black;
     border-bottom: solid $base-color 3px;
+  }
+
+  .bookcover {
+    &:hover {
+      .booktitle {
+        color: white;
+        background: $link;
+      }
+    }
   }
 
   .panel {
@@ -596,15 +747,20 @@
       background: $bg !important;
     }
   }
+
+  .timeline-panel {
+    background: white !important;
+  }
 }
 
 %theme-grape {
   $base-color: #4f40ad;
   $bg: darken(desaturate(adjust-hue($base-color, 16), 74), 22.55);
   $text-color: $soft-white;
-  $link: #f37748;
+  $link: lighten(desaturate(adjust-hue($base-color, -186), 6.31), 22.55);
 
-  background: $bg;
+  background: linear-gradient(to left, rgba($bg, $gradient), $bg),
+    $brick-bg-image;
   color: $text-color;
   h1 {
     color: $base-color;
@@ -624,6 +780,9 @@
   h5 {
     color: lighten(desaturate(adjust-hue($base-color, 157), 12.95), 23.53);
   }
+  * {
+    border-color: $base-color;
+  }
   a,
   a:hover,
   a:focus {
@@ -633,6 +792,15 @@
   blockquote {
     color: $soft-black;
     border-bottom: solid $base-color 3px;
+  }
+
+  .bookcover {
+    &:hover {
+      .booktitle {
+        color: white;
+        background: $link;
+      }
+    }
   }
 
   .panel {
@@ -661,15 +829,764 @@
     .worldmenu-inner {
       background: $bg !important;
     }
+  }
+
+  .timeline-panel {
+    background: white !important;
+  }
+}
+
+%theme-gralnum {
+  $base-color: #a35308;
+  $bg: darken(desaturate(adjust-hue($base-color, 16), 74), 22.55);
+  $text-color: $soft-white;
+  $link: lighten(desaturate(adjust-hue($base-color, -186), 6.31), 22.55);
+
+  background: linear-gradient(to left, rgba($bg, $gradient), $bg),
+    $brick-bg-image;
+  color: $text-color;
+  h1 {
+    color: $base-color;
+    .article-title & {
+      color: $base-color;
+    }
+  }
+  h2 {
+    color: lighten(desaturate($base-color, 37.72), 9.22);
+  }
+  h3 {
+    color: lighten(desaturate($base-color, 48.87), 16.47);
+  }
+  h4 {
+    color: lighten(desaturate(adjust-hue($base-color, 156), 35.79), 21.37);
+  }
+  h5 {
+    color: lighten(desaturate(adjust-hue($base-color, 157), 12.95), 23.53);
+  }
+  * {
+    border-color: $base-color;
+  }
+  a,
+  a:hover,
+  a:focus {
+    color: $link;
+  }
+
+  blockquote {
+    color: $soft-black;
+    border-bottom: solid $base-color 3px;
+  }
+
+  .bookcover {
+    &:hover {
+      .booktitle {
+        color: white;
+        background: $link;
+      }
+    }
+  }
+
+  .panel {
+    &.panel-default {
+      color: $text-color;
+      a,
+      a:hover,
+      a:focus {
+        color: darken(desaturate(adjust-hue($link, -15), 43.86), 15.69);
+      }
+    }
+  }
+
+  .spoiler-content {
+    background-color: $base-color;
+  }
+
+  .relation {
+    h4 {
+      color: lighten(desaturate($base-color, 48.87), 16.47);
+    }
+  }
+  &.user-css-worldmenu {
+    background: transparent;
+    .worldmenu-inner {
+      background: $bg !important;
+    }
+  }
+
+  .timeline-panel {
+    background: white !important;
+  }
+}
+
+%theme-lethe {
+  $base-color: #518e4b;
+  $bg: darken(desaturate(adjust-hue($base-color, 16), 74), 22.55);
+  $text-color: $soft-white;
+  $link: lighten(desaturate(adjust-hue($base-color, -186), 6.31), 22.55);
+
+  background: linear-gradient(to left, rgba($bg, $gradient), $bg),
+    $brick-bg-image;
+  color: $text-color;
+  h1 {
+    color: $base-color;
+    .article-title & {
+      color: $base-color;
+    }
+  }
+  h2 {
+    color: lighten(desaturate($base-color, 37.72), 9.22);
+  }
+  h3 {
+    color: lighten(desaturate($base-color, 48.87), 16.47);
+  }
+  h4 {
+    color: lighten(desaturate(adjust-hue($base-color, 156), 35.79), 21.37);
+  }
+  h5 {
+    color: lighten(desaturate(adjust-hue($base-color, 157), 12.95), 23.53);
+  }
+  * {
+    border-color: $base-color;
+  }
+  a,
+  a:hover,
+  a:focus {
+    color: $link;
+  }
+
+  blockquote {
+    color: $soft-black;
+    border-bottom: solid $base-color 3px;
+  }
+
+  .bookcover {
+    &:hover {
+      .booktitle {
+        color: white;
+        background: $link;
+      }
+    }
+  }
+
+  .panel {
+    &.panel-default {
+      color: $text-color;
+      a,
+      a:hover,
+      a:focus {
+        color: darken(desaturate(adjust-hue($link, -15), 43.86), 15.69);
+      }
+    }
+  }
+
+  .spoiler-content {
+    background-color: $base-color;
+  }
+
+  .relation {
+    h4 {
+      color: lighten(desaturate($base-color, 48.87), 16.47);
+    }
+  }
+  &.user-css-worldmenu {
+    background: transparent;
+    .worldmenu-inner {
+      background: $bg !important;
+    }
+  }
+
+  .timeline-panel {
+    background: white !important;
+  }
+}
+
+%theme-crimson {
+  $base-color: #b30000;
+  $bg: darken(desaturate(adjust-hue($base-color, 16), 74), 22.55);
+  $text-color: $soft-white;
+  $link: lighten(desaturate(adjust-hue($base-color, -186), 6.31), 22.55);
+
+  background: linear-gradient(to left, rgba($bg, $gradient), $bg),
+    $brick-bg-image;
+  color: $text-color;
+  h1 {
+    color: $base-color;
+    .article-title & {
+      color: $base-color;
+    }
+  }
+  h2 {
+    color: lighten(desaturate($base-color, 37.72), 9.22);
+  }
+  h3 {
+    color: lighten(desaturate($base-color, 48.87), 16.47);
+  }
+  h4 {
+    color: lighten(desaturate(adjust-hue($base-color, 156), 35.79), 21.37);
+  }
+  h5 {
+    color: lighten(desaturate(adjust-hue($base-color, 157), 12.95), 23.53);
+  }
+  * {
+    border-color: $base-color;
+  }
+  a,
+  a:hover,
+  a:focus {
+    color: $link;
+  }
+
+  blockquote {
+    color: $soft-black;
+    border-bottom: solid $base-color 3px;
+  }
+
+  .bookcover {
+    &:hover {
+      .booktitle {
+        color: white;
+        background: $link;
+      }
+    }
+  }
+
+  .panel {
+    &.panel-default {
+      color: $text-color;
+      a,
+      a:hover,
+      a:focus {
+        color: darken(desaturate(adjust-hue($link, -15), 43.86), 15.69);
+      }
+    }
+  }
+
+  .spoiler-content {
+    background-color: $base-color;
+  }
+
+  .relation {
+    h4 {
+      color: lighten(desaturate($base-color, 48.87), 16.47);
+    }
+  }
+  &.user-css-worldmenu {
+    background: transparent;
+    .worldmenu-inner {
+      background: $bg !important;
+    }
+  }
+
+  .timeline-panel {
+    background: white !important;
+  }
+}
+
+%theme-lemon-curd {
+  $base-color: #efd702;
+  $bg: darken(desaturate(adjust-hue($base-color, 16), 74), 22.55);
+  $text-color: $soft-white;
+  $link: lighten(desaturate(adjust-hue($base-color, -186), 6.31), 22.55);
+
+  background: linear-gradient(to left, rgba($bg, $gradient), $bg),
+    $brick-bg-image;
+  color: $text-color;
+  h1 {
+    color: $base-color;
+    .article-title & {
+      color: $base-color;
+    }
+  }
+  h2 {
+    color: lighten(desaturate($base-color, 37.72), 9.22);
+  }
+  h3 {
+    color: lighten(desaturate($base-color, 48.87), 16.47);
+  }
+  h4 {
+    color: lighten(desaturate(adjust-hue($base-color, 156), 35.79), 21.37);
+  }
+  h5 {
+    color: lighten(desaturate(adjust-hue($base-color, 157), 12.95), 23.53);
+  }
+  * {
+    border-color: $base-color;
+  }
+  a,
+  a:hover,
+  a:focus {
+    color: $link;
+  }
+
+  blockquote {
+    color: $soft-black;
+    border-bottom: solid $base-color 3px;
+  }
+
+  .bookcover {
+    &:hover {
+      .booktitle {
+        color: white;
+        background: $link;
+      }
+    }
+  }
+
+  .panel {
+    &.panel-default {
+      color: $text-color;
+      a,
+      a:hover,
+      a:focus {
+        color: darken(desaturate(adjust-hue($link, -15), 43.86), 15.69);
+      }
+    }
+  }
+
+  .spoiler-content {
+    background-color: $base-color;
+  }
+
+  .relation {
+    h4 {
+      color: lighten(desaturate($base-color, 48.87), 16.47);
+    }
+  }
+  &.user-css-worldmenu {
+    background: transparent;
+    .worldmenu-inner {
+      background: $bg !important;
+    }
+  }
+
+  .timeline-panel {
+    background: white !important;
+  }
+}
+
+%theme-sky {
+  $base-color: #8cfffd;
+  $bg: darken(desaturate(adjust-hue($base-color, 16), 74), 22.55);
+  $text-color: $soft-white;
+  $link: lighten(desaturate(adjust-hue($base-color, -186), 6.31), 22.55);
+
+  background: linear-gradient(to left, rgba($bg, $gradient), $bg),
+    $brick-bg-image;
+  color: $text-color;
+  h1 {
+    color: $base-color;
+    .article-title & {
+      color: $base-color;
+    }
+  }
+  h2 {
+    color: lighten(desaturate($base-color, 37.72), 9.22);
+  }
+  h3 {
+    color: lighten(desaturate($base-color, 48.87), 16.47);
+  }
+  h4 {
+    color: lighten(desaturate(adjust-hue($base-color, 156), 35.79), 21.37);
+  }
+  h5 {
+    color: lighten(desaturate(adjust-hue($base-color, 157), 12.95), 23.53);
+  }
+  * {
+    border-color: $base-color;
+  }
+  a,
+  a:hover,
+  a:focus {
+    color: $link;
+  }
+
+  blockquote {
+    color: $soft-black;
+    border-bottom: solid $base-color 3px;
+  }
+
+  .bookcover {
+    &:hover {
+      .booktitle {
+        color: white;
+        background: $link;
+      }
+    }
+  }
+
+  .panel {
+    &.panel-default {
+      color: $text-color;
+      a,
+      a:hover,
+      a:focus {
+        color: darken(desaturate(adjust-hue($link, -15), 43.86), 15.69);
+      }
+    }
+  }
+
+  .spoiler-content {
+    background-color: $base-color;
+  }
+
+  .relation {
+    h4 {
+      color: lighten(desaturate($base-color, 48.87), 16.47);
+    }
+  }
+  &.user-css-worldmenu {
+    background: transparent;
+    .worldmenu-inner {
+      background: $bg !important;
+    }
+  }
+
+  .timeline-panel {
+    background: white !important;
+  }
+}
+
+%theme-tardis {
+  $base-color: #273391;
+  $bg: darken(desaturate(adjust-hue($base-color, 16), 74), 22.55);
+  $text-color: $soft-white;
+  $link: lighten(desaturate(adjust-hue($base-color, -186), 6.31), 22.55);
+
+  background: linear-gradient(to left, rgba($bg, $gradient), $bg),
+    $brick-bg-image;
+  color: $text-color;
+  h1 {
+    color: $base-color;
+    .article-title & {
+      color: $base-color;
+    }
+  }
+  h2 {
+    color: lighten(desaturate($base-color, 37.72), 9.22);
+  }
+  h3 {
+    color: lighten(desaturate($base-color, 48.87), 16.47);
+  }
+  h4 {
+    color: lighten(desaturate(adjust-hue($base-color, 156), 35.79), 21.37);
+  }
+  h5 {
+    color: lighten(desaturate(adjust-hue($base-color, 157), 12.95), 23.53);
+  }
+  * {
+    border-color: $base-color;
+  }
+  a,
+  a:hover,
+  a:focus {
+    color: $link;
+  }
+
+  blockquote {
+    color: $soft-black;
+    border-bottom: solid $base-color 3px;
+  }
+
+  .bookcover {
+    &:hover {
+      .booktitle {
+        color: white;
+        background: $link;
+      }
+    }
+  }
+
+  .panel {
+    &.panel-default {
+      color: $text-color;
+      a,
+      a:hover,
+      a:focus {
+        color: darken(desaturate(adjust-hue($link, -15), 43.86), 15.69);
+      }
+    }
+  }
+
+  .spoiler-content {
+    background-color: $base-color;
+  }
+
+  .relation {
+    h4 {
+      color: lighten(desaturate($base-color, 48.87), 16.47);
+    }
+  }
+  &.user-css-worldmenu {
+    background: transparent;
+    .worldmenu-inner {
+      background: $bg !important;
+    }
+  }
+
+  .timeline-panel {
+    background: white !important;
+  }
+}
+
+%theme-bright-green {
+  $base-color: #27ce3a;
+  $bg: darken(desaturate(adjust-hue($base-color, 16), 74), 22.55);
+  $text-color: $soft-white;
+  $link: lighten(desaturate(adjust-hue($base-color, -186), 6.31), 22.55);
+
+  background: linear-gradient(to left, rgba($bg, $gradient), $bg),
+    $brick-bg-image;
+  color: $text-color;
+  h1 {
+    color: $base-color;
+    .article-title & {
+      color: $base-color;
+    }
+  }
+  h2 {
+    color: lighten(desaturate($base-color, 37.72), 9.22);
+  }
+  h3 {
+    color: lighten(desaturate($base-color, 48.87), 16.47);
+  }
+  h4 {
+    color: lighten(desaturate(adjust-hue($base-color, 156), 35.79), 21.37);
+  }
+  h5 {
+    color: lighten(desaturate(adjust-hue($base-color, 157), 12.95), 23.53);
+  }
+  * {
+    border-color: $base-color;
+  }
+  a,
+  a:hover,
+  a:focus {
+    color: $link;
+  }
+
+  blockquote {
+    color: $soft-black;
+    border-bottom: solid $base-color 3px;
+  }
+
+  .bookcover {
+    &:hover {
+      .booktitle {
+        color: white;
+        background: $link;
+      }
+    }
+  }
+
+  .panel {
+    &.panel-default {
+      color: $text-color;
+      a,
+      a:hover,
+      a:focus {
+        color: darken(desaturate(adjust-hue($link, -15), 43.86), 15.69);
+      }
+    }
+  }
+
+  .spoiler-content {
+    background-color: $base-color;
+  }
+
+  .relation {
+    h4 {
+      color: lighten(desaturate($base-color, 48.87), 16.47);
+    }
+  }
+  &.user-css-worldmenu {
+    background: transparent;
+    .worldmenu-inner {
+      background: $bg !important;
+    }
+  }
+
+  .timeline-panel {
+    background: white !important;
+  }
+}
+
+%theme-grey {
+  $base-color: #9b9796;
+  $bg: darken(desaturate(adjust-hue($base-color, 16), 74), 22.55);
+  $text-color: $soft-white;
+  $link: lighten(desaturate(adjust-hue($base-color, -186), 6.31), 22.55);
+
+  background: linear-gradient(to left, rgba($bg, $gradient), $bg),
+    $brick-bg-image;
+  color: $text-color;
+  h1 {
+    color: $base-color;
+    .article-title & {
+      color: $base-color;
+    }
+  }
+  h2 {
+    color: lighten(desaturate($base-color, 37.72), 9.22);
+  }
+  h3 {
+    color: lighten(desaturate($base-color, 48.87), 16.47);
+  }
+  h4 {
+    color: lighten(desaturate(adjust-hue($base-color, 156), 35.79), 21.37);
+  }
+  h5 {
+    color: lighten(desaturate(adjust-hue($base-color, 157), 12.95), 23.53);
+  }
+  * {
+    border-color: $base-color;
+  }
+  a,
+  a:hover,
+  a:focus {
+    color: $link;
+  }
+
+  blockquote {
+    color: $soft-black;
+    border-bottom: solid $base-color 3px;
+  }
+
+  .bookcover {
+    &:hover {
+      .booktitle {
+        color: white;
+        background: $link;
+      }
+    }
+  }
+
+  .panel {
+    &.panel-default {
+      color: $text-color;
+      a,
+      a:hover,
+      a:focus {
+        color: darken(desaturate(adjust-hue($link, -15), 43.86), 15.69);
+      }
+    }
+  }
+
+  .spoiler-content {
+    background-color: $base-color;
+  }
+
+  .relation {
+    h4 {
+      color: lighten(desaturate($base-color, 48.87), 16.47);
+    }
+  }
+  &.user-css-worldmenu {
+    background: transparent;
+    .worldmenu-inner {
+      background: $bg !important;
+    }
+  }
+
+  .timeline-panel {
+    background: white !important;
+  }
+}
+
+%theme-carnation {
+  $base-color: #f5c6ff;
+  $bg: darken(desaturate(adjust-hue($base-color, 16), 74), 22.55);
+  $text-color: invert($soft-white);
+  $link: invert(
+    lighten(desaturate(adjust-hue($base-color, -186), 6.31), 22.55)
+  );
+
+  background: linear-gradient(to left, rgba($bg, $gradient), $bg),
+    $brick-bg-image;
+  color: $text-color;
+  h1 {
+    color: $base-color;
+    .article-title & {
+      color: $base-color;
+    }
+  }
+  h2 {
+    color: lighten(desaturate($base-color, 37.72), 9.22);
+  }
+  h3 {
+    color: lighten(desaturate($base-color, 48.87), 16.47);
+  }
+  h4 {
+    color: invert(
+      lighten(desaturate(adjust-hue($base-color, 156), 35.79), 21.37)
+    );
+  }
+  h5 {
+    color: invert(
+      lighten(desaturate(adjust-hue($base-color, 157), 12.95), 23.53)
+    );
+  }
+  * {
+    border-color: $base-color;
+  }
+  a,
+  a:hover,
+  a:focus {
+    color: $link;
+  }
+
+  blockquote {
+    color: $soft-black;
+    border-bottom: solid $base-color 3px;
+  }
+
+  .bookcover {
+    &:hover {
+      .booktitle {
+        color: white;
+        background: $link;
+      }
+    }
+  }
+
+  .panel {
+    &.panel-default {
+      color: $text-color;
+      a,
+      a:hover,
+      a:focus {
+        color: darken(desaturate(adjust-hue($link, -15), 43.86), 15.69);
+      }
+    }
+  }
+
+  .spoiler-content {
+    background-color: $base-color;
+  }
+
+  .relation {
+    h4 {
+      color: lighten(desaturate($base-color, 48.87), 16.47);
+    }
+  }
+  &.user-css-worldmenu {
+    background: transparent;
+    .worldmenu-inner {
+      background: $bg !important;
+    }
+  }
+
+  .timeline-panel {
+    background: white !important;
   }
 }
 
 /*%theme-template {
   $bg: darken(desaturate(adjust-hue($base-color, 16), 74), 22.55);
   $text-color: $soft-white;
-  $link: #f37748;
+  $link: lighten(desaturate(adjust-hue($base-color, -186), 6.31), 22.55);
 
-  background: $bg;
+  background: linear-gradient(to left, rgba($bg, $gradient), $bg),
+    $brick-bg-image;
   color: $text-color;
   h1 {
     color: $base-color;
@@ -689,6 +1606,9 @@
   h5 {
     color: lighten(desaturate(adjust-hue($base-color, 157), 12.95), 23.53);
   }
+  * {
+    border-color: $base-color;
+  }
   a,
   a:hover,
   a:focus {
@@ -698,6 +1618,15 @@
   blockquote {
     color: $soft-black;
     border-bottom: solid $base-color 3px;
+  }
+
+  .bookcover {
+    &:hover {
+      .booktitle {
+        color: white;
+        background: $link;
+      }
+    }
   }
 
   .panel {
@@ -720,11 +1649,15 @@
       color: lighten(desaturate($base-color, 48.87), 16.47);
     }
   }
-  &.user-css-worldmenu {
+&.user-css-worldmenu {
     background: transparent;
     .worldmenu-inner {
       background: $bg !important;
     }
+  }
+
+  .timeline-panel {
+    background: white !important;
   }
 } */
 

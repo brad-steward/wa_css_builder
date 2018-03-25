@@ -13,12 +13,24 @@ $hover-only: 'not all and (hover: none)';
 $timeline_era--trace-color: #800000;
 
 /* Current options: 
-lightblue, darkgreen, crimson, 
-black, beef, mango, 
-strawberry-mint, dijon, turquoise
-grape - any others will produce an error
+lightblue -- Reserved for lethe,
+darkgreen -- used for vile races category,
+clay,
+crimson, 
+black -- used for the Onyx,
+beef,
+mango, 
+strawberry-mint,
+dijon,
+turquoise -- not balanced
+grape,
+lemon-curd,
+sky -- not balanced,
+tardis,
+bright-green
+- any others will produce an error
 */
-$theme: 'crimson';
+$theme: 'mango';
 
 %timeline-panel-hover-style {
   background-color: $soft-black;
@@ -72,15 +84,26 @@ $font_AdrimaMadurai: Arima Madurai, $cursive-fallback;
 $font_Share: Share, $cursive-fallback;
 $font_Overlock: Overlock, $cursive-fallback;
 $font_Pompiere: Pompiere, $cursive-fallback;
+// In use
 $font_FrederickaTheGreat: Fredericka the Great, $cursive-fallback;
+// in use
 $font_CinzelDecorative: Cinzel Decorative, $cursive-fallback;
 $font_Megrim: Megrim, $cursive-fallback;
 $font_UnirakturMaguntia: UnifrakturMaguntia, $cursive-fallback;
 $font_LibreBarcode39Extended: 'Libre Barcode 39 Extended', $cursive-fallback;
 $font_Crushed: Crushed, $cursive-fallback;
 $font_LibreBarcode39: 'Libre Barcode 39', $cursive-fallback;
+// In use
 $font_Metamorphus: Metamorphous, $cursive-fallback;
 $font_NovaSlim: Nova Slim, $cursive-fallback;
 $font_Buda: Buda, $cursive-fallback;
 $font_MedievalSharp: MedievalSharp, $cursive-fallback;
+// In use
 $font_Obscured: Adurnari_Obscured, $cursive-fallback;
+
+/// Images
+$brick-bg-image: url(//www.worldanvil.com/uploads/images/c1cce834ee5296c6729c249c2a8ef483.jpg);
+
+$building-bg-image: url('https://worldanvil.com/uploads/images/4da65aacd32feb135531f73eb45b81bd.jpg');
+
+$bark-bg-image: url(https://worldanvil.com/uploads/images/765ac2d97030a779d1956d4079791bdd.jpg);

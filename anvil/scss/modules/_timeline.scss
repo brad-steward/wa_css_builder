@@ -70,7 +70,7 @@
       }
       @media #{$hover-only} {
         &:hover {
-          background-color: $soft-black;
+          background-color: $soft-black !important;
           color: white;
           .tl-heading {
             h4 {

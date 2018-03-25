@@ -8,16 +8,16 @@
   @import '_modules';
   @include set-theme();
 
-  #header {
+  #header,
+  .heading {
     p {
-      text-align: justify;
+      text-align: center;
     }
   }
   &.page {
     background-size: 100%;
     background-repeat: repeat-y;
     font-family: $font_Metamorphus;
-    color: $soft-white;
     #header {
       h1 {
         font-family: $font_CinzelDecorative;

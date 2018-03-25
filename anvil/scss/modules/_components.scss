@@ -75,15 +75,6 @@ blockquote {
   background: none;
 }
 
-// [concol]
-#content {
-  .col-md-6.col-md-offset-3 {
-    p {
-      font-family: $font_Obscured !important;
-    }
-  }
-}
-
 #metadata {
   color: $soft-black;
   font-family: 'Courier New', Courier, monospace !important;
