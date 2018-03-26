@@ -1,0 +1,21 @@
+.user-css {
+  .template-character-dnd5e.statblock.system-dnd5e {
+    background-color: #ffffff80;
+    * {
+      color: black !important;
+    }
+
+    table.table {
+      th {
+        font-size: 12px;
+      }
+    }
+
+    .contentContainer {
+      padding: 10px 5px;
+      strong {
+        line-height: normal;
+      }
+    }
+  }
+}

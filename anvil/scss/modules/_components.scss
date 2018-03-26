@@ -80,4 +80,24 @@ blockquote {
   font-family: 'Courier New', Courier, monospace !important;
 }
 
+.campaign-protagonists {
+  background: transparent;
+}
+
+// Cover image hiding
+img[src='/images/placeholder-campaign.jpg'] {
+  display: none;
+}
+
+img[src='/images/leatherstrip2.png'] {
+  opacity: 0;
+  height: 140px;
+  z-index: -1;
+}
+
+.character-menu.nav.nav-tabs {
+  z-index: 1;
+}
+
+// End Cover Image Hiding
 @import '_timeline.scss';

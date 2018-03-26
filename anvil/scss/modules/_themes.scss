@@ -81,6 +81,21 @@ $gradient: 0.75;
   .timeline-panel {
     background: white !important;
   }
+
+  .character-menu.nav.nav-tabs {
+    li.active {
+      a,
+      a:hover,
+      a:focus {
+        background-color: $base-color;
+      }
+    }
+    li:not(.active) {
+      a {
+        background-color: $bg;
+      }
+    }
+  }
 }
 
 %theme-darkgreen {
@@ -163,6 +178,21 @@ $gradient: 0.75;
 
   .timeline-panel {
     background: white !important;
+  }
+
+  .character-menu.nav.nav-tabs {
+    li.active {
+      a,
+      a:hover,
+      a:focus {
+        background-color: $base-color;
+      }
+    }
+    li:not(.active) {
+      a {
+        background-color: $bg;
+      }
+    }
   }
 }
 
@@ -247,6 +277,21 @@ $gradient: 0.75;
   .timeline-panel {
     background: white !important;
   }
+
+  .character-menu.nav.nav-tabs {
+    li.active {
+      a,
+      a:hover,
+      a:focus {
+        background-color: $base-color;
+      }
+    }
+    li:not(.active) {
+      a {
+        background-color: $bg;
+      }
+    }
+  }
 }
 
 %theme-black {
@@ -330,6 +375,21 @@ $gradient: 0.75;
   .timeline-panel {
     background: white !important;
   }
+
+  .character-menu.nav.nav-tabs {
+    li.active {
+      a,
+      a:hover,
+      a:focus {
+        background-color: $base-color;
+      }
+    }
+    li:not(.active) {
+      a {
+        background-color: $bg;
+      }
+    }
+  }
 }
 
 %theme-beef {
@@ -412,6 +472,21 @@ $gradient: 0.75;
 
   .timeline-panel {
     background: white !important;
+  }
+
+  .character-menu.nav.nav-tabs {
+    li.active {
+      a,
+      a:hover,
+      a:focus {
+        background-color: $base-color;
+      }
+    }
+    li:not(.active) {
+      a {
+        background-color: $bg;
+      }
+    }
   }
 }
 
@@ -498,6 +573,21 @@ $gradient: 0.75;
   .timeline-panel {
     background: white !important;
   }
+
+  .character-menu.nav.nav-tabs {
+    li.active {
+      a,
+      a:hover,
+      a:focus {
+        background-color: $base-color;
+      }
+    }
+    li:not(.active) {
+      a {
+        background-color: $bg;
+      }
+    }
+  }
 }
 
 %theme-strawberry-mint {
@@ -581,6 +671,21 @@ $gradient: 0.75;
   .timeline-panel {
     background: white !important;
   }
+
+  .character-menu.nav.nav-tabs {
+    li.active {
+      a,
+      a:hover,
+      a:focus {
+        background-color: $base-color;
+      }
+    }
+    li:not(.active) {
+      a {
+        background-color: $bg;
+      }
+    }
+  }
 }
 
 %theme-dijon {
@@ -663,6 +768,21 @@ $gradient: 0.75;
 
   .timeline-panel {
     background: white !important;
+  }
+
+  .character-menu.nav.nav-tabs {
+    li.active {
+      a,
+      a:hover,
+      a:focus {
+        background-color: $base-color;
+      }
+    }
+    li:not(.active) {
+      a {
+        background-color: $bg;
+      }
+    }
   }
 }
 
@@ -751,6 +871,21 @@ $gradient: 0.75;
   .timeline-panel {
     background: white !important;
   }
+
+  .character-menu.nav.nav-tabs {
+    li.active {
+      a,
+      a:hover,
+      a:focus {
+        background-color: $base-color;
+      }
+    }
+    li:not(.active) {
+      a {
+        background-color: $bg;
+      }
+    }
+  }
 }
 
 %theme-grape {
@@ -834,6 +969,21 @@ $gradient: 0.75;
   .timeline-panel {
     background: white !important;
   }
+
+  .character-menu.nav.nav-tabs {
+    li.active {
+      a,
+      a:hover,
+      a:focus {
+        background-color: $base-color;
+      }
+    }
+    li:not(.active) {
+      a {
+        background-color: $bg;
+      }
+    }
+  }
 }
 
 %theme-gralnum {
@@ -915,6 +1065,21 @@ $gradient: 0.75;
 
   .timeline-panel {
     background: white !important;
+  }
+
+  .character-menu.nav.nav-tabs {
+    li.active {
+      a,
+      a:hover,
+      a:focus {
+        background-color: $base-color;
+      }
+    }
+    li:not(.active) {
+      a {
+        background-color: $bg;
+      }
+    }
   }
 }
 
@@ -998,6 +1163,21 @@ $gradient: 0.75;
   .timeline-panel {
     background: white !important;
   }
+
+  .character-menu.nav.nav-tabs {
+    li.active {
+      a,
+      a:hover,
+      a:focus {
+        background-color: $base-color;
+      }
+    }
+    li:not(.active) {
+      a {
+        background-color: $bg;
+      }
+    }
+  }
 }
 
 %theme-crimson {
@@ -1079,6 +1259,21 @@ $gradient: 0.75;
 
   .timeline-panel {
     background: white !important;
+  }
+
+  .character-menu.nav.nav-tabs {
+    li.active {
+      a,
+      a:hover,
+      a:focus {
+        background-color: $base-color;
+      }
+    }
+    li:not(.active) {
+      a {
+        background-color: $bg;
+      }
+    }
   }
 }
 
@@ -1162,6 +1357,21 @@ $gradient: 0.75;
   .timeline-panel {
     background: white !important;
   }
+
+  .character-menu.nav.nav-tabs {
+    li.active {
+      a,
+      a:hover,
+      a:focus {
+        background-color: $base-color;
+      }
+    }
+    li:not(.active) {
+      a {
+        background-color: $bg;
+      }
+    }
+  }
 }
 
 %theme-sky {
@@ -1243,6 +1453,21 @@ $gradient: 0.75;
 
   .timeline-panel {
     background: white !important;
+  }
+
+  .character-menu.nav.nav-tabs {
+    li.active {
+      a,
+      a:hover,
+      a:focus {
+        background-color: $base-color;
+      }
+    }
+    li:not(.active) {
+      a {
+        background-color: $bg;
+      }
+    }
   }
 }
 
@@ -1326,6 +1551,21 @@ $gradient: 0.75;
   .timeline-panel {
     background: white !important;
   }
+
+  .character-menu.nav.nav-tabs {
+    li.active {
+      a,
+      a:hover,
+      a:focus {
+        background-color: $base-color;
+      }
+    }
+    li:not(.active) {
+      a {
+        background-color: $bg;
+      }
+    }
+  }
 }
 
 %theme-bright-green {
@@ -1408,6 +1648,21 @@ $gradient: 0.75;
   .timeline-panel {
     background: white !important;
   }
+
+  .character-menu.nav.nav-tabs {
+    li.active {
+      a,
+      a:hover,
+      a:focus {
+        background-color: $base-color;
+      }
+    }
+    li:not(.active) {
+      a {
+        background-color: $bg;
+      }
+    }
+  }
 }
 
 %theme-grey {
@@ -1489,6 +1744,21 @@ $gradient: 0.75;
 
   .timeline-panel {
     background: white !important;
+  }
+
+  .character-menu.nav.nav-tabs {
+    li.active {
+      a,
+      a:hover,
+      a:focus {
+        background-color: $base-color;
+      }
+    }
+    li:not(.active) {
+      a {
+        background-color: $bg;
+      }
+    }
   }
 }
 
@@ -1578,6 +1848,21 @@ $gradient: 0.75;
   .timeline-panel {
     background: white !important;
   }
+
+  .character-menu.nav.nav-tabs {
+    li.active {
+      a,
+      a:hover,
+      a:focus {
+        background-color: $base-color;
+      }
+    }
+    li:not(.active) {
+      a {
+        background-color: $bg;
+      }
+    }
+  }
 }
 
 /*%theme-template {
@@ -1658,6 +1943,21 @@ $gradient: 0.75;
 
   .timeline-panel {
     background: white !important;
+  }
+
+  .character-menu.nav.nav-tabs {
+    li.active {
+      a,
+      a:hover,
+      a:focus {
+        background-color: $base-color;
+      }
+    }
+    li:not(.active) {
+      a {
+        background-color: $bg;
+      }
+    }
   }
 } */
 
