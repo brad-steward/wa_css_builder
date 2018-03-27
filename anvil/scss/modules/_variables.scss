@@ -30,7 +30,7 @@ tardis,
 bright-green
 - any others will produce an error
 */
-$theme: 'dijon';
+$theme: 'mango';
 
 %timeline-panel-hover-style {
   background-color: $soft-black;
@@ -68,6 +68,22 @@ $theme: 'dijon';
   }
 }
 
+%main-body-only {
+  #content {
+    .col-md-8 {
+      width: 100%;
+      .col-md-6.col-md-offset-3 {
+        width: 100%;
+        text-align: center;
+        margin: 0 auto;
+      }
+    }
+    .col-md-4 {
+      display: none;
+    }
+  }
+}
+
 /*
 Fonts
 */
@@ -102,8 +118,18 @@ $font_MedievalSharp: MedievalSharp, $cursive-fallback;
 $font_Obscured: Adurnari_Obscured, $cursive-fallback;
 
 /// Images
-$brick-bg-image: url(//www.worldanvil.com/uploads/images/c1cce834ee5296c6729c249c2a8ef483.jpg);
+$brick-bg-image: url(//worldanvil.com/uploads/images/c1cce834ee5296c6729c249c2a8ef483.jpg);
 
-$building-bg-image: url('https://worldanvil.com/uploads/images/4da65aacd32feb135531f73eb45b81bd.jpg');
+$building-bg-image: url(//worldanvil.com/uploads/images/4da65aacd32feb135531f73eb45b81bd.jpg);
 
-$bark-bg-image: url(https://worldanvil.com/uploads/images/765ac2d97030a779d1956d4079791bdd.jpg);
+$bark-bg-image: url(//worldanvil.com/uploads/images/765ac2d97030a779d1956d4079791bdd.jpg);
+
+$rope-bg-image: url(//worldanvil.com/uploads/images/7750552439448f5216745a1b818504b3.jpg);
+
+$woodpanel-bg-image: url(//worldanvil.com/uploads/images/d45c8258838bca1f38cdda89912d8127.jpg);
+
+$sand-bg-image: url(//worldanvil.com/uploads/images/ed5c5bc1d5666af832f2c34342b9f735.jpg);
+
+$marble-bg-image: url(//worldanvil.com/uploads/images/4ddc78dbf025a9e568ae1ed05d31dabd.png);
+
+$bloodcells-bg-image: url(//worldanvil.com/uploads/images/19c43efcb36c0c29f700cfe3087f4b5e.jpg);

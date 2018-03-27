@@ -8,6 +8,8 @@ $gradient: 0.75;
 
   background: linear-gradient(to left, rgba($bg, $gradient), $bg),
     $brick-bg-image;
+  background-attachment: fixed;
+  background-position: center;
   color: $text-color;
   h1 {
     color: $base-color;
@@ -106,6 +108,8 @@ $gradient: 0.75;
 
   background: linear-gradient(to left, rgba($bg, $gradient), $bg),
     $brick-bg-image;
+  background-attachment: fixed;
+  background-position: center;
   color: $text-color;
   h1 {
     color: $base-color;
@@ -203,7 +207,9 @@ $gradient: 0.75;
   $link: lighten(desaturate(adjust-hue($base-color, -186), 6.31), 22.55);
 
   background: linear-gradient(to left, rgba($bg, $gradient), $bg),
-    $brick-bg-image;
+    $rope-bg-image;
+  background-attachment: fixed;
+  background-position: center;
   color: $text-color;
   h1 {
     color: $base-color;
@@ -300,8 +306,9 @@ $gradient: 0.75;
   $text-color: invert($soft-white);
   $link: lighten(desaturate(adjust-hue($base-color, -186), 6.31), 22.55);
 
-  background: linear-gradient(to left, rgba($bg, 0.15), $bg),
-    url(//worldanvil.com/uploads/images/4ddc78dbf025a9e568ae1ed05d31dabd.png);
+  background: linear-gradient(to left, rgba($bg, 0.15), $bg), $marble-bg-image;
+  background-attachment: fixed;
+  background-position: center;
   color: $text-color;
   h1 {
     color: $base-color;
@@ -400,6 +407,8 @@ $gradient: 0.75;
 
   background: linear-gradient(to left, rgba($bg, $gradient), $bg),
     $brick-bg-image;
+  background-attachment: fixed;
+  background-position: center;
   color: $text-color;
   h1 {
     color: $base-color;
@@ -492,14 +501,14 @@ $gradient: 0.75;
 
 %theme-mango {
   $base-color: #f48d07;
-  /// Overriding background because the translated version is pretty bad
-  //$bg: darken(desaturate(adjust-hue($base-color, 16), 74), 22.55);
   $bg: $soft-black;
   $text-color: $soft-white;
   $link: lighten(desaturate(adjust-hue($base-color, -186), 6.31), 22.55);
 
   background: linear-gradient(to left, rgba($bg, $gradient), $bg),
-    $brick-bg-image;
+    $building-bg-image;
+  background-attachment: fixed;
+  background-position: center;
   color: $text-color;
   h1 {
     color: $base-color;
@@ -598,6 +607,8 @@ $gradient: 0.75;
 
   background: linear-gradient(to left, rgba($bg, $gradient), $bg),
     $brick-bg-image;
+  background-attachment: fixed;
+  background-position: center;
   color: $text-color;
   h1 {
     color: $base-color;
@@ -696,6 +707,8 @@ $gradient: 0.75;
 
   background: linear-gradient(to left, rgba($bg, $gradient), $bg),
     $bark-bg-image;
+  background-attachment: fixed;
+  background-position: center;
   color: $text-color;
   h1 {
     color: $base-color;
@@ -794,6 +807,8 @@ $gradient: 0.75;
 
   background: linear-gradient(to left, rgba($bg, $gradient), $bg),
     $brick-bg-image;
+  background-attachment: fixed;
+  background-position: center;
   color: $text-color;
   h1 {
     color: $base-color;
@@ -895,7 +910,9 @@ $gradient: 0.75;
   $link: lighten(desaturate(adjust-hue($base-color, -186), 6.31), 22.55);
 
   background: linear-gradient(to left, rgba($bg, $gradient), $bg),
-    $brick-bg-image;
+    $marble-bg-image;
+  background-attachment: fixed;
+  background-position: center;
   color: $text-color;
   h1 {
     color: $base-color;
@@ -994,6 +1011,8 @@ $gradient: 0.75;
 
   background: linear-gradient(to left, rgba($bg, $gradient), $bg),
     $brick-bg-image;
+  background-attachment: fixed;
+  background-position: center;
   color: $text-color;
   h1 {
     color: $base-color;
@@ -1089,8 +1108,9 @@ $gradient: 0.75;
   $text-color: $soft-white;
   $link: lighten(desaturate(adjust-hue($base-color, -186), 6.31), 22.55);
 
-  background: linear-gradient(to left, rgba($bg, $gradient), $bg),
-    $brick-bg-image;
+  background: linear-gradient(to left, rgba($bg, 0.3), $bg), $sand-bg-image;
+  background-attachment: fixed;
+  background-position: center;
   color: $text-color;
   h1 {
     color: $base-color;
@@ -1187,7 +1207,9 @@ $gradient: 0.75;
   $link: lighten(desaturate(adjust-hue($base-color, -186), 6.31), 22.55);
 
   background: linear-gradient(to left, rgba($bg, $gradient), $bg),
-    $brick-bg-image;
+    $rope-bg-image;
+  background-attachment: fixed;
+  background-position: center;
   color: $text-color;
   h1 {
     color: $base-color;
@@ -1277,6 +1299,115 @@ $gradient: 0.75;
   }
 }
 
+%theme-maevyn {
+  $base-color: #b30000;
+  $bg: darken(desaturate(adjust-hue($base-color, 16), 74), 22.55);
+  $text-color: $soft-white;
+  $link: lighten(desaturate(adjust-hue($base-color, -186), 6.31), 22.55);
+
+  background: linear-gradient(to left, rgba($bg, $gradient), $bg),
+    $bloodcells-bg-image;
+  background-attachment: fixed;
+  background-position: center;
+  color: $text-color;
+  h1 {
+    color: $base-color;
+    .article-title & {
+      color: $base-color;
+    }
+  }
+  h2 {
+    color: lighten(desaturate($base-color, 37.72), 9.22);
+  }
+  h3 {
+    color: lighten(desaturate($base-color, 48.87), 16.47);
+  }
+  h4 {
+    color: lighten(desaturate(adjust-hue($base-color, 156), 35.79), 21.37);
+  }
+  h5 {
+    color: lighten(desaturate(adjust-hue($base-color, 157), 12.95), 23.53);
+  }
+  * {
+    border-color: $base-color;
+  }
+  a,
+  a:hover,
+  a:focus {
+    color: $link;
+  }
+
+  blockquote {
+    color: $soft-black;
+    border-bottom: solid $base-color 3px;
+  }
+
+  .bookcover {
+    &:hover {
+      .booktitle {
+        color: white;
+        background: $link;
+      }
+    }
+  }
+
+  .panel {
+    &.panel-default {
+      color: $text-color;
+      a,
+      a:hover,
+      a:focus {
+        color: darken(desaturate(adjust-hue($link, -15), 43.86), 15.69);
+      }
+    }
+  }
+
+  .spoiler-content {
+    background-color: $base-color;
+  }
+
+  .relation {
+    h4 {
+      color: lighten(desaturate($base-color, 48.87), 16.47);
+    }
+  }
+  &.user-css-worldmenu {
+    background: transparent;
+    .worldmenu-inner {
+      background: $bg !important;
+    }
+  }
+
+  .timeline-panel {
+    background: white !important;
+  }
+
+  .character-menu.nav.nav-tabs {
+    li.active {
+      a,
+      a:hover,
+      a:focus {
+        background-color: $base-color;
+      }
+    }
+    li:not(.active) {
+      a {
+        background-color: $bg;
+      }
+    }
+  }
+
+  .table.table-striped {
+    tbody {
+      tr {
+        &:nth-of-type(odd) {
+          background: $bg;
+        }
+      }
+    }
+  }
+}
+
 %theme-lemon-curd {
   $base-color: #efd702;
   $bg: darken(desaturate(adjust-hue($base-color, 16), 74), 22.55);
@@ -1285,6 +1416,8 @@ $gradient: 0.75;
 
   background: linear-gradient(to left, rgba($bg, $gradient), $bg),
     $brick-bg-image;
+  background-attachment: fixed;
+  background-position: center;
   color: $text-color;
   h1 {
     color: $base-color;
@@ -1382,6 +1515,8 @@ $gradient: 0.75;
 
   background: linear-gradient(to left, rgba($bg, $gradient), $bg),
     $brick-bg-image;
+  background-attachment: fixed;
+  background-position: center;
   color: $text-color;
   h1 {
     color: $base-color;
@@ -1479,6 +1614,8 @@ $gradient: 0.75;
 
   background: linear-gradient(to left, rgba($bg, $gradient), $bg),
     $brick-bg-image;
+  background-attachment: fixed;
+  background-position: center;
   color: $text-color;
   h1 {
     color: $base-color;
@@ -1576,6 +1713,8 @@ $gradient: 0.75;
 
   background: linear-gradient(to left, rgba($bg, $gradient), $bg),
     $brick-bg-image;
+  background-attachment: fixed;
+  background-position: center;
   color: $text-color;
   h1 {
     color: $base-color;
@@ -1673,6 +1812,8 @@ $gradient: 0.75;
 
   background: linear-gradient(to left, rgba($bg, $gradient), $bg),
     $brick-bg-image;
+  background-attachment: fixed;
+  background-position: center;
   color: $text-color;
   h1 {
     color: $base-color;
@@ -1772,6 +1913,8 @@ $gradient: 0.75;
 
   background: linear-gradient(to left, rgba($bg, $gradient), $bg),
     $brick-bg-image;
+  background-attachment: fixed;
+  background-position: center;
   color: $text-color;
   h1 {
     color: $base-color;
@@ -1872,6 +2015,8 @@ $gradient: 0.75;
 
   background: linear-gradient(to left, rgba($bg, $gradient), $bg),
     $brick-bg-image;
+  background-attachment: fixed;
+  background-position: center;
   color: $text-color;
   h1 {
     color: $base-color;
