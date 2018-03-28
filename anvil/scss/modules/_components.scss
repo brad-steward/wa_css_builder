@@ -94,10 +94,21 @@ img[src='/images/leatherstrip2.png'] {
   opacity: 0;
   height: 140px;
   z-index: -1;
+
+  @media #{$threshold-m} {
+    height: 185px;
+  }
 }
 
 .character-menu.nav.nav-tabs {
   z-index: 1;
+  @media #{$threshold-m} {
+    display: flex;
+    left: 5%;
+    justify-content: center;
+    text-align: center;
+    flex-basis: 33%;
+  }
 }
 
 // End Cover Image Hiding

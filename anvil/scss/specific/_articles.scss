@@ -59,17 +59,3 @@
 &.article-5a82b250-af05-4fac-846f-569f19132b30 {
   @extend %theme-maevyn;
 }
-
-// Remove side bar from these articles
-&.article-026d1991-814e-4cb3-80a8-0dc146a01cfb {
-  @extend %main-body-only;
-
-  //specifically for Songs
-  #header {
-    .article-title {
-      h1 {
-        text-align: center;
-      }
-    }
-  }
-}

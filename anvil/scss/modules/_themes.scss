@@ -1207,7 +1207,7 @@ $gradient: 0.75;
   $link: lighten(desaturate(adjust-hue($base-color, -186), 6.31), 22.55);
 
   background: linear-gradient(to left, rgba($bg, $gradient), $bg),
-    $rope-bg-image;
+    $fancy_red_wallpaper-bg-image;
   background-attachment: fixed;
   background-position: center;
   color: $text-color;

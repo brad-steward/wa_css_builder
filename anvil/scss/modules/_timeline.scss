@@ -185,12 +185,17 @@
       &:before {
         display: none;
       }
-      .timeline-entry {
+      .timeline-entry,
+      .timeline-entry-milestone {
+        margin: 40px 0;
+        width: 100%;
         .tl-circ {
           display: none;
         }
-        .timeline-panel {
+        .timeline-panel,
+        .milestone-panel {
           width: 100%;
+          text-align: center;
           &:before,
           &:after {
             display: none;
@@ -202,6 +207,10 @@
             transform: translateX(-50%);
           }
         }
+      }
+
+      .timeline-entry-milestone {
+        margin-top: 80px;
       }
     }
   }

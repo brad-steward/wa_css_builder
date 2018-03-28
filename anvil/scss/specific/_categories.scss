@@ -12,3 +12,17 @@
 &.category-0855bded-710a-4958-9436-68aa5f663950 {
   @extend %theme-dijon;
 }
+
+// Z - Music
+&.category-dd147e8b-f3e1-4a96-b41d-4d955c12a153 {
+  @extend %main-body-only;
+
+  //specifically for Songs
+  #header {
+    .article-title {
+      h1 {
+        text-align: center;
+      }
+    }
+  }
+}
