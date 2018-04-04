@@ -1,8 +1,58 @@
-a[href~='kecksis'] {
+.tooltip {
   position: relative;
-  &::before {
-    content: 'Kecksis is great';
+  &:before {
     position: absolute;
-    top: 100%;
+    background: rgba(255, 255, 255, 1);
+    bottom: 20px;
+    left: 0;
+    width: 400px;
+    display: none;
+    padding: 10px;
+    z-index: 100000;
+  }
+  &:hover:before {
+    display: block;
+  }
+}
+
+a[href*='kecksis'] {
+  @extend .tooltip;
+  &:before {
+    content: 'Kecksis&nbsp;is great';
+  }
+}
+
+a[href*='akta'] {
+  @extend .tooltip;
+  &:before {
+    content: 'Akta is a Tiefling fighter travelling the world in search of her brother.  She’s made connections with a new group of travelers, and counts them among her close friends, but her drive to find her brother overrides all else.';
+  }
+}
+
+a[href*='pau'] {
+  @extend .tooltip;
+  &:before {
+    content: 'Vanaran Drunken Monk and Cleric of Son Wukong';
+  }
+}
+
+a[href*='the-league-of-farstriders'] {
+  @extend .tooltip;
+  &:before {
+    content: 'A group of adventurers who are all just trying to find their place in the world...';
+  }
+}
+
+a[href*='narolth'] {
+  @extend .tooltip;
+  &:before {
+    content: 'Saurian Queen with a knack for subtlety and deception.';
+  }
+}
+
+a[href*='sangoroth'] {
+  @extend .tooltip;
+  &:before {
+    content: "A former Saurian queen of the Ereina'ilitak empire, she ruled the Eastern Territories with brutality and fear.";
   }
 }

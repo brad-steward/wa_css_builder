@@ -7,6 +7,7 @@ $timeline-tan: #eae9e2;
 
 // Media Queries
 $threshold-m: 'screen and (max-width: 700px)';
+$threshold-l: 'screen and (max-width: 960px)';
 $hover-only: 'not all and (hover: none)';
 
 // Timeline Colors
@@ -30,7 +31,7 @@ tardis,
 bright-green
 - any others will produce an error
 */
-$theme: 'mango';
+$theme: 'bright-green';
 
 %timeline-panel-hover-style {
   background-color: $soft-black;
@@ -135,3 +136,5 @@ $marble-bg-image: url(//worldanvil.com/uploads/images/4ddc78dbf025a9e568ae1ed05d
 $bloodcells-bg-image: url(//worldanvil.com/uploads/images/19c43efcb36c0c29f700cfe3087f4b5e.jpg);
 
 $fancy_red_wallpaper-bg-image: url(//worldanvil.com/uploads/images/fc354ec1b5bb8f176ab88f08d4316ba6.jpg);
+
+$blue_crest_wallpaper-bg-image: url(//worldanvil.com/uploads/images/ed573acd4afb9885c85a1e8a2eda9128.png);

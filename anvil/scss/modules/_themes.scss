@@ -10,7 +10,35 @@ $gradient: 0.75;
     $brick-bg-image;
   background-attachment: fixed;
   background-position: center;
+  background-size: cover;
   color: $text-color;
+
+  .heading,
+  #header {
+    h1:before {
+      content: 'Theme: Light Blue';
+      position: fixed;
+      display: block;
+      bottom: 50%;
+      right: -200px;
+      width: 200px;
+      background: rgba(invert($bg), $gradient);
+      padding: 10px;
+      text-align: center;
+      transform: rotate(-90deg);
+      transform-origin: left bottom 0;
+      font-size: 50%;
+      opacity: 0.7;
+      line-height: normal;
+      @media #{$threshold-l} {
+        transform: none;
+        right: calc(50% - 100px);
+        bottom: 0;
+        position: fixed;
+        z-index: 10000;
+      }
+    }
+  }
   h1 {
     color: $base-color;
     .article-title & {
@@ -110,7 +138,35 @@ $gradient: 0.75;
     $brick-bg-image;
   background-attachment: fixed;
   background-position: center;
+  background-size: cover;
   color: $text-color;
+
+  .heading,
+  #header {
+    h1:before {
+      content: 'Theme: Dark Green';
+      position: fixed;
+      display: block;
+      bottom: 50%;
+      right: -200px;
+      width: 200px;
+      background: rgba(invert($bg), $gradient);
+      padding: 10px;
+      text-align: center;
+      transform: rotate(-90deg);
+      transform-origin: left bottom 0;
+      font-size: 50%;
+      opacity: 0.7;
+      line-height: normal;
+      @media #{$threshold-l} {
+        transform: none;
+        right: calc(50% - 100px);
+        bottom: 0;
+        position: fixed;
+        z-index: 10000;
+      }
+    }
+  }
   h1 {
     color: $base-color;
     .article-title & {
@@ -210,7 +266,35 @@ $gradient: 0.75;
     $rope-bg-image;
   background-attachment: fixed;
   background-position: center;
+  background-size: cover;
   color: $text-color;
+
+  .heading,
+  #header {
+    h1:before {
+      content: 'Theme: Clay';
+      position: fixed;
+      display: block;
+      bottom: 50%;
+      right: -200px;
+      width: 200px;
+      background: rgba(invert($bg), $gradient);
+      padding: 10px;
+      text-align: center;
+      transform: rotate(-90deg);
+      transform-origin: left bottom 0;
+      font-size: 50%;
+      opacity: 0.7;
+      line-height: normal;
+      @media #{$threshold-l} {
+        transform: none;
+        right: calc(50% - 100px);
+        bottom: 0;
+        position: fixed;
+        z-index: 10000;
+      }
+    }
+  }
   h1 {
     color: $base-color;
     .article-title & {
@@ -309,7 +393,35 @@ $gradient: 0.75;
   background: linear-gradient(to left, rgba($bg, 0.15), $bg), $marble-bg-image;
   background-attachment: fixed;
   background-position: center;
+  background-size: cover;
   color: $text-color;
+
+  .heading,
+  #header {
+    h1:before {
+      content: 'Theme: Black';
+      position: fixed;
+      display: block;
+      bottom: 50%;
+      right: -200px;
+      width: 200px;
+      background: rgba(invert($bg), $gradient);
+      padding: 10px;
+      text-align: center;
+      transform: rotate(-90deg);
+      transform-origin: left bottom 0;
+      font-size: 50%;
+      opacity: 0.7;
+      line-height: normal;
+      @media #{$threshold-l} {
+        transform: none;
+        right: calc(50% - 100px);
+        bottom: 0;
+        position: fixed;
+        z-index: 10000;
+      }
+    }
+  }
   h1 {
     color: $base-color;
     .article-title & {
@@ -409,7 +521,35 @@ $gradient: 0.75;
     $brick-bg-image;
   background-attachment: fixed;
   background-position: center;
+  background-size: cover;
   color: $text-color;
+
+  .heading,
+  #header {
+    h1:before {
+      content: 'Theme: BEEEEF';
+      position: fixed;
+      display: block;
+      bottom: 50%;
+      right: -200px;
+      width: 200px;
+      background: rgba(invert($bg), $gradient);
+      padding: 10px;
+      text-align: center;
+      transform: rotate(-90deg);
+      transform-origin: left bottom 0;
+      font-size: 50%;
+      opacity: 0.7;
+      line-height: normal;
+      @media #{$threshold-l} {
+        transform: none;
+        right: calc(50% - 100px);
+        bottom: 0;
+        position: fixed;
+        z-index: 10000;
+      }
+    }
+  }
   h1 {
     color: $base-color;
     .article-title & {
@@ -509,7 +649,35 @@ $gradient: 0.75;
     $building-bg-image;
   background-attachment: fixed;
   background-position: center;
+  background-size: cover;
   color: $text-color;
+
+  .heading,
+  #header {
+    h1:before {
+      content: 'Theme: Mango';
+      position: fixed;
+      display: block;
+      bottom: 50%;
+      right: -200px;
+      width: 200px;
+      background: rgba(invert($bg), $gradient);
+      padding: 10px;
+      text-align: center;
+      transform: rotate(-90deg);
+      transform-origin: left bottom 0;
+      font-size: 50%;
+      opacity: 0.7;
+      line-height: normal;
+      @media #{$threshold-l} {
+        transform: none;
+        right: calc(50% - 100px);
+        bottom: 0;
+        position: fixed;
+        z-index: 10000;
+      }
+    }
+  }
   h1 {
     color: $base-color;
     .article-title & {
@@ -609,7 +777,35 @@ $gradient: 0.75;
     $brick-bg-image;
   background-attachment: fixed;
   background-position: center;
+  background-size: cover;
   color: $text-color;
+
+  .heading,
+  #header {
+    h1:before {
+      content: 'Theme: Strawberry Mint';
+      position: fixed;
+      display: block;
+      bottom: 50%;
+      right: -200px;
+      width: 200px;
+      background: rgba(invert($bg), $gradient);
+      padding: 10px;
+      text-align: center;
+      transform: rotate(-90deg);
+      transform-origin: left bottom 0;
+      font-size: 50%;
+      opacity: 0.7;
+      line-height: normal;
+      @media #{$threshold-l} {
+        transform: none;
+        right: calc(50% - 100px);
+        bottom: 0;
+        position: fixed;
+        z-index: 10000;
+      }
+    }
+  }
   h1 {
     color: $base-color;
     .article-title & {
@@ -709,7 +905,35 @@ $gradient: 0.75;
     $bark-bg-image;
   background-attachment: fixed;
   background-position: center;
+  background-size: cover;
   color: $text-color;
+
+  .heading,
+  #header {
+    h1:before {
+      content: 'Theme: Dijon';
+      position: fixed;
+      display: block;
+      bottom: 50%;
+      right: -200px;
+      width: 200px;
+      background: rgba(invert($bg), $gradient);
+      padding: 10px;
+      text-align: center;
+      transform: rotate(-90deg);
+      transform-origin: left bottom 0;
+      font-size: 50%;
+      opacity: 0.7;
+      line-height: normal;
+      @media #{$threshold-l} {
+        transform: none;
+        right: calc(50% - 100px);
+        bottom: 0;
+        position: fixed;
+        z-index: 10000;
+      }
+    }
+  }
   h1 {
     color: $base-color;
     .article-title & {
@@ -809,7 +1033,35 @@ $gradient: 0.75;
     $brick-bg-image;
   background-attachment: fixed;
   background-position: center;
+  background-size: cover;
   color: $text-color;
+
+  .heading,
+  #header {
+    h1:before {
+      content: 'Theme: Turqoise';
+      position: fixed;
+      display: block;
+      bottom: 50%;
+      right: -200px;
+      width: 200px;
+      background: rgba(invert($bg), $gradient);
+      padding: 10px;
+      text-align: center;
+      transform: rotate(-90deg);
+      transform-origin: left bottom 0;
+      font-size: 50%;
+      opacity: 0.7;
+      line-height: normal;
+      @media #{$threshold-l} {
+        transform: none;
+        right: calc(50% - 100px);
+        bottom: 0;
+        position: fixed;
+        z-index: 10000;
+      }
+    }
+  }
   h1 {
     color: $base-color;
     .article-title & {
@@ -913,7 +1165,35 @@ $gradient: 0.75;
     $marble-bg-image;
   background-attachment: fixed;
   background-position: center;
+  background-size: cover;
   color: $text-color;
+
+  .heading,
+  #header {
+    h1:before {
+      content: 'Theme: Grape';
+      position: fixed;
+      display: block;
+      bottom: 50%;
+      right: -200px;
+      width: 200px;
+      background: rgba(invert($bg), $gradient);
+      padding: 10px;
+      text-align: center;
+      transform: rotate(-90deg);
+      transform-origin: left bottom 0;
+      font-size: 50%;
+      opacity: 0.7;
+      line-height: normal;
+      @media #{$threshold-l} {
+        transform: none;
+        right: calc(50% - 100px);
+        bottom: 0;
+        position: fixed;
+        z-index: 10000;
+      }
+    }
+  }
   h1 {
     color: $base-color;
     .article-title & {
@@ -1013,7 +1293,35 @@ $gradient: 0.75;
     $brick-bg-image;
   background-attachment: fixed;
   background-position: center;
+  background-size: cover;
   color: $text-color;
+
+  .heading,
+  #header {
+    h1:before {
+      content: 'Theme: Gralnum';
+      position: fixed;
+      display: block;
+      bottom: 50%;
+      right: -200px;
+      width: 200px;
+      background: rgba(invert($bg), $gradient);
+      padding: 10px;
+      text-align: center;
+      transform: rotate(-90deg);
+      transform-origin: left bottom 0;
+      font-size: 50%;
+      opacity: 0.7;
+      line-height: normal;
+      @media #{$threshold-l} {
+        transform: none;
+        right: calc(50% - 100px);
+        bottom: 0;
+        position: fixed;
+        z-index: 10000;
+      }
+    }
+  }
   h1 {
     color: $base-color;
     .article-title & {
@@ -1111,7 +1419,35 @@ $gradient: 0.75;
   background: linear-gradient(to left, rgba($bg, 0.3), $bg), $sand-bg-image;
   background-attachment: fixed;
   background-position: center;
+  background-size: cover;
   color: $text-color;
+
+  .heading,
+  #header {
+    h1:before {
+      content: 'Theme: Lethe';
+      position: fixed;
+      display: block;
+      bottom: 50%;
+      right: -200px;
+      width: 200px;
+      background: rgba(invert($bg), $gradient);
+      padding: 10px;
+      text-align: center;
+      transform: rotate(-90deg);
+      transform-origin: left bottom 0;
+      font-size: 50%;
+      opacity: 0.7;
+      line-height: normal;
+      @media #{$threshold-l} {
+        transform: none;
+        right: calc(50% - 100px);
+        bottom: 0;
+        position: fixed;
+        z-index: 10000;
+      }
+    }
+  }
   h1 {
     color: $base-color;
     .article-title & {
@@ -1210,7 +1546,35 @@ $gradient: 0.75;
     $fancy_red_wallpaper-bg-image;
   background-attachment: fixed;
   background-position: center;
+  background-size: cover;
   color: $text-color;
+
+  .heading,
+  #header {
+    h1:before {
+      content: 'Theme: Crimson';
+      position: fixed;
+      display: block;
+      bottom: 50%;
+      right: -200px;
+      width: 200px;
+      background: rgba(invert($bg), $gradient);
+      padding: 10px;
+      text-align: center;
+      transform: rotate(-90deg);
+      transform-origin: left bottom 0;
+      font-size: 50%;
+      opacity: 0.7;
+      line-height: normal;
+      @media #{$threshold-l} {
+        transform: none;
+        right: calc(50% - 100px);
+        bottom: 0;
+        position: fixed;
+        z-index: 10000;
+      }
+    }
+  }
   h1 {
     color: $base-color;
     .article-title & {
@@ -1309,7 +1673,35 @@ $gradient: 0.75;
     $bloodcells-bg-image;
   background-attachment: fixed;
   background-position: center;
+  background-size: cover;
   color: $text-color;
+
+  .heading,
+  #header {
+    h1:before {
+      content: 'Theme: Maevyn';
+      position: fixed;
+      display: block;
+      bottom: 50%;
+      right: -200px;
+      width: 200px;
+      background: rgba(invert($bg), $gradient);
+      padding: 10px;
+      text-align: center;
+      transform: rotate(-90deg);
+      transform-origin: left bottom 0;
+      font-size: 50%;
+      opacity: 0.7;
+      line-height: normal;
+      @media #{$threshold-l} {
+        transform: none;
+        right: calc(50% - 100px);
+        bottom: 0;
+        position: fixed;
+        z-index: 10000;
+      }
+    }
+  }
   h1 {
     color: $base-color;
     .article-title & {
@@ -1418,7 +1810,35 @@ $gradient: 0.75;
     $brick-bg-image;
   background-attachment: fixed;
   background-position: center;
+  background-size: cover;
   color: $text-color;
+
+  .heading,
+  #header {
+    h1:before {
+      content: 'Theme: Lemon Curd';
+      position: fixed;
+      display: block;
+      bottom: 50%;
+      right: -200px;
+      width: 200px;
+      background: rgba(invert($bg), $gradient);
+      padding: 10px;
+      text-align: center;
+      transform: rotate(-90deg);
+      transform-origin: left bottom 0;
+      font-size: 50%;
+      opacity: 0.7;
+      line-height: normal;
+      @media #{$threshold-l} {
+        transform: none;
+        right: calc(50% - 100px);
+        bottom: 0;
+        position: fixed;
+        z-index: 10000;
+      }
+    }
+  }
   h1 {
     color: $base-color;
     .article-title & {
@@ -1517,7 +1937,35 @@ $gradient: 0.75;
     $brick-bg-image;
   background-attachment: fixed;
   background-position: center;
+  background-size: cover;
   color: $text-color;
+
+  .heading,
+  #header {
+    h1:before {
+      content: 'Theme: Sky';
+      position: fixed;
+      display: block;
+      bottom: 50%;
+      right: -200px;
+      width: 200px;
+      background: rgba(invert($bg), $gradient);
+      padding: 10px;
+      text-align: center;
+      transform: rotate(-90deg);
+      transform-origin: left bottom 0;
+      font-size: 50%;
+      opacity: 0.7;
+      line-height: normal;
+      @media #{$threshold-l} {
+        transform: none;
+        right: calc(50% - 100px);
+        bottom: 0;
+        position: fixed;
+        z-index: 10000;
+      }
+    }
+  }
   h1 {
     color: $base-color;
     .article-title & {
@@ -1613,10 +2061,39 @@ $gradient: 0.75;
   $link: lighten(desaturate(adjust-hue($base-color, -186), 6.31), 22.55);
 
   background: linear-gradient(to left, rgba($bg, $gradient), $bg),
-    $brick-bg-image;
+    $blue_crest_wallpaper-bg-image;
   background-attachment: fixed;
   background-position: center;
+  background-size: cover;
   color: $text-color;
+
+  .heading,
+  #header {
+    h1:before {
+      content: 'Theme: TARDIS';
+      position: fixed;
+      display: block;
+      bottom: 50%;
+      right: -200px;
+      width: 200px;
+      background: rgba(invert($bg), $gradient);
+      padding: 10px;
+      text-align: center;
+      transform: rotate(-90deg);
+      transform-origin: left bottom 0;
+      font-size: 50%;
+      opacity: 0.7;
+      line-height: normal;
+      @media #{$threshold-l} {
+        transform: none;
+        right: calc(50% - 100px);
+        bottom: 0;
+        position: fixed;
+        z-index: 10000;
+      }
+    }
+  }
+
   h1 {
     color: $base-color;
     .article-title & {
@@ -1715,7 +2192,35 @@ $gradient: 0.75;
     $brick-bg-image;
   background-attachment: fixed;
   background-position: center;
+  background-size: cover;
   color: $text-color;
+
+  .heading,
+  #header {
+    h1:before {
+      content: 'Theme: Bright Green';
+      position: fixed;
+      display: block;
+      bottom: 50%;
+      right: -200px;
+      width: 200px;
+      background: rgba(invert($bg), $gradient);
+      padding: 10px;
+      text-align: center;
+      transform: rotate(-90deg);
+      transform-origin: left bottom 0;
+      font-size: 50%;
+      opacity: 0.7;
+      line-height: normal;
+      @media #{$threshold-l} {
+        transform: none;
+        right: calc(50% - 100px);
+        bottom: 0;
+        position: fixed;
+        z-index: 10000;
+      }
+    }
+  }
   h1 {
     color: $base-color;
     .article-title & {
@@ -1814,7 +2319,35 @@ $gradient: 0.75;
     $brick-bg-image;
   background-attachment: fixed;
   background-position: center;
+  background-size: cover;
   color: $text-color;
+
+  .heading,
+  #header {
+    h1:before {
+      content: 'Theme: Grey';
+      position: fixed;
+      display: block;
+      bottom: 50%;
+      right: -200px;
+      width: 200px;
+      background: rgba(invert($bg), $gradient);
+      padding: 10px;
+      text-align: center;
+      transform: rotate(-90deg);
+      transform-origin: left bottom 0;
+      font-size: 50%;
+      opacity: 0.7;
+      line-height: normal;
+      @media #{$threshold-l} {
+        transform: none;
+        right: calc(50% - 100px);
+        bottom: 0;
+        position: fixed;
+        z-index: 10000;
+      }
+    }
+  }
   h1 {
     color: $base-color;
     .article-title & {
@@ -1915,7 +2448,35 @@ $gradient: 0.75;
     $brick-bg-image;
   background-attachment: fixed;
   background-position: center;
+  background-size: cover;
   color: $text-color;
+
+  .heading,
+  #header {
+    h1:before {
+      content: 'Theme: Carnation';
+      position: fixed;
+      display: block;
+      bottom: 50%;
+      right: -200px;
+      width: 200px;
+      background: rgba(invert($bg), $gradient);
+      padding: 10px;
+      text-align: center;
+      transform: rotate(-90deg);
+      transform-origin: left bottom 0;
+      font-size: 50%;
+      opacity: 0.7;
+      line-height: normal;
+      @media #{$threshold-l} {
+        transform: none;
+        right: calc(50% - 100px);
+        bottom: 0;
+        position: fixed;
+        z-index: 10000;
+      }
+    }
+  }
   h1 {
     color: $base-color;
     .article-title & {
@@ -2017,7 +2578,35 @@ $gradient: 0.75;
     $brick-bg-image;
   background-attachment: fixed;
   background-position: center;
+  background-size: cover;
   color: $text-color;
+
+  .heading,
+  #header {
+    h1:before {
+      content: 'Theme: Template';
+      position: fixed;
+      display: block;
+      bottom: 50%;
+      right: -200px;
+      width: 200px;
+      background: rgba(invert($bg), $gradient);
+      padding: 10px;
+      text-align: center;
+      transform: rotate(-90deg);
+      transform-origin: left bottom 0;
+      font-size: 50%;
+      opacity: 0.7;
+      line-height: normal;
+      @media #{$threshold-l} {
+        transform: none;
+        right: calc(50% - 100px);
+        bottom: 0;
+        position: fixed;
+        z-index: 10000;
+      }
+    }
+  }
   h1 {
     color: $base-color;
     .article-title & {
