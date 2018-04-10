@@ -59,3 +59,18 @@
 &.article-5a82b250-af05-4fac-846f-569f19132b30 {
   @extend %theme-maevyn;
 }
+
+&.article-a3b4f5c9-3c5e-4f9b-890b-029441ef9410 {
+  #cover.row.cover {
+    max-height: 500px;
+    img.img-responsive {
+      margin-top: -280px;
+    }
+  }
+
+  .col-md-8.article-content-left {
+    p:last-child {
+      font-style: italic;
+    }
+  }
+}

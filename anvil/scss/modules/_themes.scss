@@ -1,5 +1,30 @@
 $gradient: 0.75;
 
+.theme-panel {
+  h1:before {
+    position: fixed;
+    display: block;
+    bottom: 50%;
+    right: -200px;
+    width: 200px;
+    background: #333;
+    padding: 10px;
+    text-align: center;
+    transform: rotate(-90deg);
+    transform-origin: left bottom 0;
+    font-size: 14px;
+    opacity: 0.7;
+    line-height: normal;
+    @media #{$threshold-l} {
+      transform: none;
+      right: calc(50% - 100px);
+      bottom: 0;
+      position: fixed;
+      z-index: 10000;
+    }
+  }
+}
+
 %theme-lightblue {
   $base-color: #067bc2;
   $bg: darken(desaturate(adjust-hue($base-color, 16), 74), 22.55);
@@ -15,30 +40,12 @@ $gradient: 0.75;
 
   .heading,
   #header {
+    @extend .theme-panel;
     h1:before {
       content: 'Theme: Light Blue';
-      position: fixed;
-      display: block;
-      bottom: 50%;
-      right: -200px;
-      width: 200px;
-      background: rgba(invert($bg), $gradient);
-      padding: 10px;
-      text-align: center;
-      transform: rotate(-90deg);
-      transform-origin: left bottom 0;
-      font-size: 50%;
-      opacity: 0.7;
-      line-height: normal;
-      @media #{$threshold-l} {
-        transform: none;
-        right: calc(50% - 100px);
-        bottom: 0;
-        position: fixed;
-        z-index: 10000;
-      }
     }
   }
+
   h1 {
     color: $base-color;
     .article-title & {
@@ -110,6 +117,20 @@ $gradient: 0.75;
 
   .timeline-panel {
     background: white !important;
+  }
+
+  .cover {
+    .nav-strip {
+      background-color: $base-color;
+    }
+  }
+
+  #header {
+    .backtoworld {
+      a {
+        background-color: $base-color;
+      }
+    }
   }
 
   .character-menu.nav.nav-tabs {
@@ -143,30 +164,12 @@ $gradient: 0.75;
 
   .heading,
   #header {
+    @extend .theme-panel;
     h1:before {
       content: 'Theme: Dark Green';
-      position: fixed;
-      display: block;
-      bottom: 50%;
-      right: -200px;
-      width: 200px;
-      background: rgba(invert($bg), $gradient);
-      padding: 10px;
-      text-align: center;
-      transform: rotate(-90deg);
-      transform-origin: left bottom 0;
-      font-size: 50%;
-      opacity: 0.7;
-      line-height: normal;
-      @media #{$threshold-l} {
-        transform: none;
-        right: calc(50% - 100px);
-        bottom: 0;
-        position: fixed;
-        z-index: 10000;
-      }
     }
   }
+
   h1 {
     color: $base-color;
     .article-title & {
@@ -238,6 +241,20 @@ $gradient: 0.75;
 
   .timeline-panel {
     background: white !important;
+  }
+
+  .cover {
+    .nav-strip {
+      background-color: $base-color;
+    }
+  }
+
+  #header {
+    .backtoworld {
+      a {
+        background-color: $base-color;
+      }
+    }
   }
 
   .character-menu.nav.nav-tabs {
@@ -271,30 +288,12 @@ $gradient: 0.75;
 
   .heading,
   #header {
+    @extend .theme-panel;
     h1:before {
       content: 'Theme: Clay';
-      position: fixed;
-      display: block;
-      bottom: 50%;
-      right: -200px;
-      width: 200px;
-      background: rgba(invert($bg), $gradient);
-      padding: 10px;
-      text-align: center;
-      transform: rotate(-90deg);
-      transform-origin: left bottom 0;
-      font-size: 50%;
-      opacity: 0.7;
-      line-height: normal;
-      @media #{$threshold-l} {
-        transform: none;
-        right: calc(50% - 100px);
-        bottom: 0;
-        position: fixed;
-        z-index: 10000;
-      }
     }
   }
+
   h1 {
     color: $base-color;
     .article-title & {
@@ -368,6 +367,20 @@ $gradient: 0.75;
     background: white !important;
   }
 
+  .cover {
+    .nav-strip {
+      background-color: $base-color;
+    }
+  }
+
+  #header {
+    .backtoworld {
+      a {
+        background-color: $base-color;
+      }
+    }
+  }
+
   .character-menu.nav.nav-tabs {
     li.active {
       a,
@@ -398,28 +411,9 @@ $gradient: 0.75;
 
   .heading,
   #header {
+    @extend .theme-panel;
     h1:before {
       content: 'Theme: Black';
-      position: fixed;
-      display: block;
-      bottom: 50%;
-      right: -200px;
-      width: 200px;
-      background: rgba(invert($bg), $gradient);
-      padding: 10px;
-      text-align: center;
-      transform: rotate(-90deg);
-      transform-origin: left bottom 0;
-      font-size: 50%;
-      opacity: 0.7;
-      line-height: normal;
-      @media #{$threshold-l} {
-        transform: none;
-        right: calc(50% - 100px);
-        bottom: 0;
-        position: fixed;
-        z-index: 10000;
-      }
     }
   }
   h1 {
@@ -495,6 +489,20 @@ $gradient: 0.75;
     background: white !important;
   }
 
+  .cover {
+    .nav-strip {
+      background-color: $base-color;
+    }
+  }
+
+  #header {
+    .backtoworld {
+      a {
+        background-color: $base-color;
+      }
+    }
+  }
+
   .character-menu.nav.nav-tabs {
     li.active {
       a,
@@ -526,28 +534,9 @@ $gradient: 0.75;
 
   .heading,
   #header {
+    @extend .theme-panel;
     h1:before {
       content: 'Theme: BEEEEF';
-      position: fixed;
-      display: block;
-      bottom: 50%;
-      right: -200px;
-      width: 200px;
-      background: rgba(invert($bg), $gradient);
-      padding: 10px;
-      text-align: center;
-      transform: rotate(-90deg);
-      transform-origin: left bottom 0;
-      font-size: 50%;
-      opacity: 0.7;
-      line-height: normal;
-      @media #{$threshold-l} {
-        transform: none;
-        right: calc(50% - 100px);
-        bottom: 0;
-        position: fixed;
-        z-index: 10000;
-      }
     }
   }
   h1 {
@@ -621,6 +610,20 @@ $gradient: 0.75;
 
   .timeline-panel {
     background: white !important;
+  }
+
+  .cover {
+    .nav-strip {
+      background-color: $base-color;
+    }
+  }
+
+  #header {
+    .backtoworld {
+      a {
+        background-color: $base-color;
+      }
+    }
   }
 
   .character-menu.nav.nav-tabs {
@@ -654,28 +657,9 @@ $gradient: 0.75;
 
   .heading,
   #header {
+    @extend .theme-panel;
     h1:before {
       content: 'Theme: Mango';
-      position: fixed;
-      display: block;
-      bottom: 50%;
-      right: -200px;
-      width: 200px;
-      background: rgba(invert($bg), $gradient);
-      padding: 10px;
-      text-align: center;
-      transform: rotate(-90deg);
-      transform-origin: left bottom 0;
-      font-size: 50%;
-      opacity: 0.7;
-      line-height: normal;
-      @media #{$threshold-l} {
-        transform: none;
-        right: calc(50% - 100px);
-        bottom: 0;
-        position: fixed;
-        z-index: 10000;
-      }
     }
   }
   h1 {
@@ -749,6 +733,20 @@ $gradient: 0.75;
 
   .timeline-panel {
     background: white !important;
+  }
+
+  .cover {
+    .nav-strip {
+      background-color: $base-color;
+    }
+  }
+
+  #header {
+    .backtoworld {
+      a {
+        background-color: $base-color;
+      }
+    }
   }
 
   .character-menu.nav.nav-tabs {
@@ -782,28 +780,9 @@ $gradient: 0.75;
 
   .heading,
   #header {
+    @extend .theme-panel;
     h1:before {
       content: 'Theme: Strawberry Mint';
-      position: fixed;
-      display: block;
-      bottom: 50%;
-      right: -200px;
-      width: 200px;
-      background: rgba(invert($bg), $gradient);
-      padding: 10px;
-      text-align: center;
-      transform: rotate(-90deg);
-      transform-origin: left bottom 0;
-      font-size: 50%;
-      opacity: 0.7;
-      line-height: normal;
-      @media #{$threshold-l} {
-        transform: none;
-        right: calc(50% - 100px);
-        bottom: 0;
-        position: fixed;
-        z-index: 10000;
-      }
     }
   }
   h1 {
@@ -877,6 +856,20 @@ $gradient: 0.75;
 
   .timeline-panel {
     background: white !important;
+  }
+
+  .cover {
+    .nav-strip {
+      background-color: $base-color;
+    }
+  }
+
+  #header {
+    .backtoworld {
+      a {
+        background-color: $base-color;
+      }
+    }
   }
 
   .character-menu.nav.nav-tabs {
@@ -910,28 +903,9 @@ $gradient: 0.75;
 
   .heading,
   #header {
+    @extend .theme-panel;
     h1:before {
       content: 'Theme: Dijon';
-      position: fixed;
-      display: block;
-      bottom: 50%;
-      right: -200px;
-      width: 200px;
-      background: rgba(invert($bg), $gradient);
-      padding: 10px;
-      text-align: center;
-      transform: rotate(-90deg);
-      transform-origin: left bottom 0;
-      font-size: 50%;
-      opacity: 0.7;
-      line-height: normal;
-      @media #{$threshold-l} {
-        transform: none;
-        right: calc(50% - 100px);
-        bottom: 0;
-        position: fixed;
-        z-index: 10000;
-      }
     }
   }
   h1 {
@@ -1007,6 +981,20 @@ $gradient: 0.75;
     background: white !important;
   }
 
+  .cover {
+    .nav-strip {
+      background-color: $base-color;
+    }
+  }
+
+  #header {
+    .backtoworld {
+      a {
+        background-color: $base-color;
+      }
+    }
+  }
+
   .character-menu.nav.nav-tabs {
     li.active {
       a,
@@ -1038,28 +1026,9 @@ $gradient: 0.75;
 
   .heading,
   #header {
+    @extend .theme-panel;
     h1:before {
       content: 'Theme: Turqoise';
-      position: fixed;
-      display: block;
-      bottom: 50%;
-      right: -200px;
-      width: 200px;
-      background: rgba(invert($bg), $gradient);
-      padding: 10px;
-      text-align: center;
-      transform: rotate(-90deg);
-      transform-origin: left bottom 0;
-      font-size: 50%;
-      opacity: 0.7;
-      line-height: normal;
-      @media #{$threshold-l} {
-        transform: none;
-        right: calc(50% - 100px);
-        bottom: 0;
-        position: fixed;
-        z-index: 10000;
-      }
     }
   }
   h1 {
@@ -1139,6 +1108,20 @@ $gradient: 0.75;
     background: white !important;
   }
 
+  .cover {
+    .nav-strip {
+      background-color: $base-color;
+    }
+  }
+
+  #header {
+    .backtoworld {
+      a {
+        background-color: $base-color;
+      }
+    }
+  }
+
   .character-menu.nav.nav-tabs {
     li.active {
       a,
@@ -1170,28 +1153,9 @@ $gradient: 0.75;
 
   .heading,
   #header {
+    @extend .theme-panel;
     h1:before {
       content: 'Theme: Grape';
-      position: fixed;
-      display: block;
-      bottom: 50%;
-      right: -200px;
-      width: 200px;
-      background: rgba(invert($bg), $gradient);
-      padding: 10px;
-      text-align: center;
-      transform: rotate(-90deg);
-      transform-origin: left bottom 0;
-      font-size: 50%;
-      opacity: 0.7;
-      line-height: normal;
-      @media #{$threshold-l} {
-        transform: none;
-        right: calc(50% - 100px);
-        bottom: 0;
-        position: fixed;
-        z-index: 10000;
-      }
     }
   }
   h1 {
@@ -1265,6 +1229,20 @@ $gradient: 0.75;
 
   .timeline-panel {
     background: white !important;
+  }
+
+  .cover {
+    .nav-strip {
+      background-color: $base-color;
+    }
+  }
+
+  #header {
+    .backtoworld {
+      a {
+        background-color: $base-color;
+      }
+    }
   }
 
   .character-menu.nav.nav-tabs {
@@ -1298,28 +1276,9 @@ $gradient: 0.75;
 
   .heading,
   #header {
+    @extend .theme-panel;
     h1:before {
       content: 'Theme: Gralnum';
-      position: fixed;
-      display: block;
-      bottom: 50%;
-      right: -200px;
-      width: 200px;
-      background: rgba(invert($bg), $gradient);
-      padding: 10px;
-      text-align: center;
-      transform: rotate(-90deg);
-      transform-origin: left bottom 0;
-      font-size: 50%;
-      opacity: 0.7;
-      line-height: normal;
-      @media #{$threshold-l} {
-        transform: none;
-        right: calc(50% - 100px);
-        bottom: 0;
-        position: fixed;
-        z-index: 10000;
-      }
     }
   }
   h1 {
@@ -1392,6 +1351,20 @@ $gradient: 0.75;
 
   .timeline-panel {
     background: white !important;
+  }
+
+  .cover {
+    .nav-strip {
+      background-color: $base-color;
+    }
+  }
+
+  #header {
+    .backtoworld {
+      a {
+        background-color: $base-color;
+      }
+    }
   }
 
   .character-menu.nav.nav-tabs {
@@ -1424,28 +1397,9 @@ $gradient: 0.75;
 
   .heading,
   #header {
+    @extend .theme-panel;
     h1:before {
       content: 'Theme: Lethe';
-      position: fixed;
-      display: block;
-      bottom: 50%;
-      right: -200px;
-      width: 200px;
-      background: rgba(invert($bg), $gradient);
-      padding: 10px;
-      text-align: center;
-      transform: rotate(-90deg);
-      transform-origin: left bottom 0;
-      font-size: 50%;
-      opacity: 0.7;
-      line-height: normal;
-      @media #{$threshold-l} {
-        transform: none;
-        right: calc(50% - 100px);
-        bottom: 0;
-        position: fixed;
-        z-index: 10000;
-      }
     }
   }
   h1 {
@@ -1518,6 +1472,20 @@ $gradient: 0.75;
 
   .timeline-panel {
     background: white !important;
+  }
+
+  .cover {
+    .nav-strip {
+      background-color: $base-color;
+    }
+  }
+
+  #header {
+    .backtoworld {
+      a {
+        background-color: $base-color;
+      }
+    }
   }
 
   .character-menu.nav.nav-tabs {
@@ -1551,28 +1519,9 @@ $gradient: 0.75;
 
   .heading,
   #header {
+    @extend .theme-panel;
     h1:before {
       content: 'Theme: Crimson';
-      position: fixed;
-      display: block;
-      bottom: 50%;
-      right: -200px;
-      width: 200px;
-      background: rgba(invert($bg), $gradient);
-      padding: 10px;
-      text-align: center;
-      transform: rotate(-90deg);
-      transform-origin: left bottom 0;
-      font-size: 50%;
-      opacity: 0.7;
-      line-height: normal;
-      @media #{$threshold-l} {
-        transform: none;
-        right: calc(50% - 100px);
-        bottom: 0;
-        position: fixed;
-        z-index: 10000;
-      }
     }
   }
   h1 {
@@ -1645,6 +1594,20 @@ $gradient: 0.75;
 
   .timeline-panel {
     background: white !important;
+  }
+
+  .cover {
+    .nav-strip {
+      background-color: $base-color;
+    }
+  }
+
+  #header {
+    .backtoworld {
+      a {
+        background-color: $base-color;
+      }
+    }
   }
 
   .character-menu.nav.nav-tabs {
@@ -1678,28 +1641,9 @@ $gradient: 0.75;
 
   .heading,
   #header {
+    @extend .theme-panel;
     h1:before {
       content: 'Theme: Maevyn';
-      position: fixed;
-      display: block;
-      bottom: 50%;
-      right: -200px;
-      width: 200px;
-      background: rgba(invert($bg), $gradient);
-      padding: 10px;
-      text-align: center;
-      transform: rotate(-90deg);
-      transform-origin: left bottom 0;
-      font-size: 50%;
-      opacity: 0.7;
-      line-height: normal;
-      @media #{$threshold-l} {
-        transform: none;
-        right: calc(50% - 100px);
-        bottom: 0;
-        position: fixed;
-        z-index: 10000;
-      }
     }
   }
   h1 {
@@ -1772,6 +1716,20 @@ $gradient: 0.75;
 
   .timeline-panel {
     background: white !important;
+  }
+
+  .cover {
+    .nav-strip {
+      background-color: $base-color;
+    }
+  }
+
+  #header {
+    .backtoworld {
+      a {
+        background-color: $base-color;
+      }
+    }
   }
 
   .character-menu.nav.nav-tabs {
@@ -1815,28 +1773,9 @@ $gradient: 0.75;
 
   .heading,
   #header {
+    @extend .theme-panel;
     h1:before {
       content: 'Theme: Lemon Curd';
-      position: fixed;
-      display: block;
-      bottom: 50%;
-      right: -200px;
-      width: 200px;
-      background: rgba(invert($bg), $gradient);
-      padding: 10px;
-      text-align: center;
-      transform: rotate(-90deg);
-      transform-origin: left bottom 0;
-      font-size: 50%;
-      opacity: 0.7;
-      line-height: normal;
-      @media #{$threshold-l} {
-        transform: none;
-        right: calc(50% - 100px);
-        bottom: 0;
-        position: fixed;
-        z-index: 10000;
-      }
     }
   }
   h1 {
@@ -1909,6 +1848,20 @@ $gradient: 0.75;
 
   .timeline-panel {
     background: white !important;
+  }
+
+  .cover {
+    .nav-strip {
+      background-color: $base-color;
+    }
+  }
+
+  #header {
+    .backtoworld {
+      a {
+        background-color: $base-color;
+      }
+    }
   }
 
   .character-menu.nav.nav-tabs {
@@ -1942,28 +1895,9 @@ $gradient: 0.75;
 
   .heading,
   #header {
+    @extend .theme-panel;
     h1:before {
       content: 'Theme: Sky';
-      position: fixed;
-      display: block;
-      bottom: 50%;
-      right: -200px;
-      width: 200px;
-      background: rgba(invert($bg), $gradient);
-      padding: 10px;
-      text-align: center;
-      transform: rotate(-90deg);
-      transform-origin: left bottom 0;
-      font-size: 50%;
-      opacity: 0.7;
-      line-height: normal;
-      @media #{$threshold-l} {
-        transform: none;
-        right: calc(50% - 100px);
-        bottom: 0;
-        position: fixed;
-        z-index: 10000;
-      }
     }
   }
   h1 {
@@ -2036,6 +1970,20 @@ $gradient: 0.75;
 
   .timeline-panel {
     background: white !important;
+  }
+
+  .cover {
+    .nav-strip {
+      background-color: $base-color;
+    }
+  }
+
+  #header {
+    .backtoworld {
+      a {
+        background-color: $base-color;
+      }
+    }
   }
 
   .character-menu.nav.nav-tabs {
@@ -2069,28 +2017,9 @@ $gradient: 0.75;
 
   .heading,
   #header {
+    @extend .theme-panel;
     h1:before {
       content: 'Theme: TARDIS';
-      position: fixed;
-      display: block;
-      bottom: 50%;
-      right: -200px;
-      width: 200px;
-      background: rgba(invert($bg), $gradient);
-      padding: 10px;
-      text-align: center;
-      transform: rotate(-90deg);
-      transform-origin: left bottom 0;
-      font-size: 50%;
-      opacity: 0.7;
-      line-height: normal;
-      @media #{$threshold-l} {
-        transform: none;
-        right: calc(50% - 100px);
-        bottom: 0;
-        position: fixed;
-        z-index: 10000;
-      }
     }
   }
 
@@ -2164,6 +2093,20 @@ $gradient: 0.75;
 
   .timeline-panel {
     background: white !important;
+  }
+
+  .cover {
+    .nav-strip {
+      background-color: $base-color;
+    }
+  }
+
+  #header {
+    .backtoworld {
+      a {
+        background-color: $base-color;
+      }
+    }
   }
 
   .character-menu.nav.nav-tabs {
@@ -2197,28 +2140,9 @@ $gradient: 0.75;
 
   .heading,
   #header {
+    @extend .theme-panel;
     h1:before {
       content: 'Theme: Bright Green';
-      position: fixed;
-      display: block;
-      bottom: 50%;
-      right: -200px;
-      width: 200px;
-      background: rgba(invert($bg), $gradient);
-      padding: 10px;
-      text-align: center;
-      transform: rotate(-90deg);
-      transform-origin: left bottom 0;
-      font-size: 50%;
-      opacity: 0.7;
-      line-height: normal;
-      @media #{$threshold-l} {
-        transform: none;
-        right: calc(50% - 100px);
-        bottom: 0;
-        position: fixed;
-        z-index: 10000;
-      }
     }
   }
   h1 {
@@ -2291,6 +2215,20 @@ $gradient: 0.75;
 
   .timeline-panel {
     background: white !important;
+  }
+
+  .cover {
+    .nav-strip {
+      background-color: $base-color;
+    }
+  }
+
+  #header {
+    .backtoworld {
+      a {
+        background-color: $base-color;
+      }
+    }
   }
 
   .character-menu.nav.nav-tabs {
@@ -2324,28 +2262,9 @@ $gradient: 0.75;
 
   .heading,
   #header {
+    @extend .theme-panel;
     h1:before {
       content: 'Theme: Grey';
-      position: fixed;
-      display: block;
-      bottom: 50%;
-      right: -200px;
-      width: 200px;
-      background: rgba(invert($bg), $gradient);
-      padding: 10px;
-      text-align: center;
-      transform: rotate(-90deg);
-      transform-origin: left bottom 0;
-      font-size: 50%;
-      opacity: 0.7;
-      line-height: normal;
-      @media #{$threshold-l} {
-        transform: none;
-        right: calc(50% - 100px);
-        bottom: 0;
-        position: fixed;
-        z-index: 10000;
-      }
     }
   }
   h1 {
@@ -2418,6 +2337,20 @@ $gradient: 0.75;
 
   .timeline-panel {
     background: white !important;
+  }
+
+  .cover {
+    .nav-strip {
+      background-color: $base-color;
+    }
+  }
+
+  #header {
+    .backtoworld {
+      a {
+        background-color: $base-color;
+      }
+    }
   }
 
   .character-menu.nav.nav-tabs {
@@ -2453,28 +2386,9 @@ $gradient: 0.75;
 
   .heading,
   #header {
+    @extend .theme-panel;
     h1:before {
       content: 'Theme: Carnation';
-      position: fixed;
-      display: block;
-      bottom: 50%;
-      right: -200px;
-      width: 200px;
-      background: rgba(invert($bg), $gradient);
-      padding: 10px;
-      text-align: center;
-      transform: rotate(-90deg);
-      transform-origin: left bottom 0;
-      font-size: 50%;
-      opacity: 0.7;
-      line-height: normal;
-      @media #{$threshold-l} {
-        transform: none;
-        right: calc(50% - 100px);
-        bottom: 0;
-        position: fixed;
-        z-index: 10000;
-      }
     }
   }
   h1 {
@@ -2553,6 +2467,20 @@ $gradient: 0.75;
     background: white !important;
   }
 
+  .cover {
+    .nav-strip {
+      background-color: $base-color;
+    }
+  }
+
+  #header {
+    .backtoworld {
+      a {
+        background-color: $base-color;
+      }
+    }
+  }
+
   .character-menu.nav.nav-tabs {
     li.active {
       a,
@@ -2583,28 +2511,9 @@ $gradient: 0.75;
 
   .heading,
   #header {
+    @extend .theme-panel;
     h1:before {
       content: 'Theme: Template';
-      position: fixed;
-      display: block;
-      bottom: 50%;
-      right: -200px;
-      width: 200px;
-      background: rgba(invert($bg), $gradient);
-      padding: 10px;
-      text-align: center;
-      transform: rotate(-90deg);
-      transform-origin: left bottom 0;
-      font-size: 50%;
-      opacity: 0.7;
-      line-height: normal;
-      @media #{$threshold-l} {
-        transform: none;
-        right: calc(50% - 100px);
-        bottom: 0;
-        position: fixed;
-        z-index: 10000;
-      }
     }
   }
   h1 {
@@ -2677,6 +2586,20 @@ $gradient: 0.75;
 
   .timeline-panel {
     background: white !important;
+  }
+
+  .cover {
+    .nav-strip {
+      background-color: $base-color;
+    }
+  }
+
+  #header {
+    .backtoworld {
+      a {
+        background-color: $base-color;
+      }
+    }
   }
 
   .character-menu.nav.nav-tabs {

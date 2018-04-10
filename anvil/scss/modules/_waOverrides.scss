@@ -105,8 +105,9 @@
 
 .presentation-interface {
   // default bg
-  background: url(https://worldanvil.com/uploads/images/2f105caae87b0d2a59bc5708f2944a80.jpg);
+  background: $black-gravel-bg-image;
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
+  background: #333;
 }
