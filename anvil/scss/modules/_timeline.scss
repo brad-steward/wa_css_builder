@@ -25,6 +25,7 @@
 .timeline {
   padding: 0;
   .timeline-entry {
+		margin-bottom: -175px;
     text-align: right;
     .header-icon {
       right: unset;
@@ -37,6 +38,9 @@
         left: unset;
       }
     }
+		&:last-child {
+			margin-bottom: 0;
+		}
     .timeline-panel {
       color: $soft-black;
       border-radius: 0px;
@@ -109,6 +113,7 @@
   .milestone {
     transition: background-color 0.5s;
     text-align: center;
+		margin-top: 235px;
     .milestone-panel {
       color: $soft-black;
       border-radius: 0px;
