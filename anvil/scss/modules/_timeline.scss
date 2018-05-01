@@ -5,7 +5,6 @@
       margin: 0 auto;
     }
   }
-
   @media #{$threshold-m} {
     & {
       .era-histories {
@@ -29,6 +28,16 @@
     .header-icon {
       right: unset;
       left: 20px;
+      top: -60px;
+      border-width: 5px;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      .ra {
+        margin: 0 auto;
+        display: block;
+      }
     }
     &-inverted {
       text-align: left;
@@ -40,7 +49,16 @@
     .timeline-panel {
       color: $soft-black;
       border-radius: 0px;
+      border-top-width: 5px;
       transition: background-color 0.5s;
+      &:before,
+      &:after {
+        transition: all 0.5s;
+      }
+      &:after {
+        border-left-color: white;
+        border-right-color: white;
+      }
       .history-timelines {
         display: flex;
         flex-direction: row;
@@ -83,7 +101,6 @@
               background: $soft-black;
             }
           }
-
           .history-timelines {
             a {
               border-color: $timeline-tan;
@@ -92,7 +109,6 @@
               }
             }
           }
-
           a,
           a:hover,
           a:focus {
@@ -109,6 +125,7 @@
   .milestone {
     transition: background-color 0.5s;
     text-align: center;
+    background-color: white;
     .milestone-panel {
       color: $soft-black;
       border-radius: 0px;
@@ -139,12 +156,16 @@
           background-color: white;
         }
       }
+      .header-icon {
+        left: 50%;
+        transform: translateX(-50%);
+      }
     }
     @media #{$hover-only} {
       &:hover {
         background-color: $soft-black;
         .milestone-panel {
-          background-color: transparent;
+          background-color: transparent !important;
           color: white;
           .tl-heading {
             h4 {
@@ -157,7 +178,6 @@
               background: $soft-black;
             }
           }
-
           .history-timelines {
             a {
               border-color: $timeline-tan;
@@ -166,7 +186,6 @@
               }
             }
           }
-
           a,
           a:hover,
           a:focus {
@@ -208,7 +227,6 @@
           }
         }
       }
-
       .timeline-entry-milestone {
         margin-top: 80px;
       }

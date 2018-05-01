@@ -1,5 +1,4 @@
 $gradient: 0.75;
-
 .theme-panel {
   h1:before {
     position: fixed;
@@ -30,14 +29,11 @@ $gradient: 0.75;
   $bg: darken(desaturate(adjust-hue($base-color, 16), 74), 22.55);
   $text-color: $soft-white;
   $link: lighten(desaturate(adjust-hue($base-color, -186), 6.31), 22.55);
-
-  background: linear-gradient(to left, rgba($bg, $gradient), $bg),
-    $brick-bg-image;
+  background: linear-gradient(to left, rgba($bg, $gradient), $bg), $brick-bg-image;
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
   color: $text-color;
-
   .heading,
   #header {
     @extend .theme-panel;
@@ -45,7 +41,6 @@ $gradient: 0.75;
       content: 'Theme: Light Blue';
     }
   }
-
   h1 {
     color: $base-color;
     .article-title & {
@@ -72,12 +67,10 @@ $gradient: 0.75;
   a:focus {
     color: $link;
   }
-
   blockquote {
     color: $soft-black;
     border-bottom: solid $base-color 3px;
   }
-
   .bookcover {
     &:hover {
       .booktitle {
@@ -86,7 +79,6 @@ $gradient: 0.75;
       }
     }
   }
-
   .panel {
     &.panel-default {
       color: $text-color;
@@ -97,34 +89,51 @@ $gradient: 0.75;
       }
     }
   }
-
   .spoiler-content {
     background-color: $base-color;
   }
-
   .relation {
     h4 {
       color: lighten(desaturate($base-color, 48.87), 16.47);
     }
   }
-
   &.user-css-worldmenu {
     background: transparent;
     .worldmenu-inner {
       background: $bg !important;
     }
   }
-
   .timeline-panel {
     background: white !important;
   }
-
+  .milestone-panel {
+    background: transparent !important;
+  }
+  .timeline {
+    &:before {
+      background-color: $base-color;
+    }
+    li {
+      .tl-circ {
+        background: invert($base-color);
+        border-color: $base-color;
+      }
+    }
+    @media #{$hover-only} {
+      li {
+        .tl-circ:hover {
+          border-width: 2px;
+          border-color: invert($base-color);
+          background: $base-color;
+        }
+      }
+    }
+  }
   .cover {
     .nav-strip {
       background-color: $base-color;
     }
   }
-
   #header {
     .backtoworld {
       a {
@@ -132,7 +141,6 @@ $gradient: 0.75;
       }
     }
   }
-
   .character-menu.nav.nav-tabs {
     li.active {
       a,
@@ -146,6 +154,9 @@ $gradient: 0.75;
         background-color: $bg;
       }
     }
+  }
+  #metadata {
+    color: white;
   }
 }
 
@@ -154,14 +165,11 @@ $gradient: 0.75;
   $bg: darken(desaturate(adjust-hue($base-color, 16), 74), 22.55);
   $text-color: $soft-white;
   $link: lighten(desaturate(adjust-hue($base-color, -186), 6.31), 22.55);
-
-  background: linear-gradient(to left, rgba($bg, $gradient), $bg),
-    $brick-bg-image;
+  background: linear-gradient(to left, rgba($bg, $gradient), $bg), $brick-bg-image;
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
   color: $text-color;
-
   .heading,
   #header {
     @extend .theme-panel;
@@ -169,7 +177,6 @@ $gradient: 0.75;
       content: 'Theme: Dark Green';
     }
   }
-
   h1 {
     color: $base-color;
     .article-title & {
@@ -196,12 +203,10 @@ $gradient: 0.75;
   a:focus {
     color: $link;
   }
-
   blockquote {
     color: $soft-black;
     border-bottom: solid $base-color 3px;
   }
-
   .bookcover {
     &:hover {
       .booktitle {
@@ -210,7 +215,6 @@ $gradient: 0.75;
       }
     }
   }
-
   .panel {
     &.panel-default {
       color: $text-color;
@@ -221,34 +225,51 @@ $gradient: 0.75;
       }
     }
   }
-
   .spoiler-content {
     background-color: $base-color;
   }
-
   .relation {
     h4 {
       color: lighten(desaturate($base-color, 48.87), 16.47);
     }
   }
-
   &.user-css-worldmenu {
     background: transparent;
     .worldmenu-inner {
       background: $bg !important;
     }
   }
-
   .timeline-panel {
     background: white !important;
   }
-
+  .milestone-panel {
+    background: transparent !important;
+  }
+  .timeline {
+    &:before {
+      background-color: $base-color;
+    }
+    li {
+      .tl-circ {
+        background: invert($base-color);
+        border-color: $base-color;
+      }
+    }
+    @media #{$hover-only} {
+      li {
+        .tl-circ:hover {
+          border-width: 2px;
+          border-color: invert($base-color);
+          background: $base-color;
+        }
+      }
+    }
+  }
   .cover {
     .nav-strip {
       background-color: $base-color;
     }
   }
-
   #header {
     .backtoworld {
       a {
@@ -256,7 +277,6 @@ $gradient: 0.75;
       }
     }
   }
-
   .character-menu.nav.nav-tabs {
     li.active {
       a,
@@ -270,6 +290,9 @@ $gradient: 0.75;
         background-color: $bg;
       }
     }
+  }
+  #metadata {
+    color: white;
   }
 }
 
@@ -278,14 +301,11 @@ $gradient: 0.75;
   $bg: darken(desaturate(adjust-hue($base-color, 16), 74), 22.55);
   $text-color: $soft-white;
   $link: lighten(desaturate(adjust-hue($base-color, -186), 6.31), 22.55);
-
-  background: linear-gradient(to left, rgba($bg, $gradient), $bg),
-    $rope-bg-image;
+  background: linear-gradient(to left, rgba($bg, $gradient), $bg), $rope-bg-image;
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
   color: $text-color;
-
   .heading,
   #header {
     @extend .theme-panel;
@@ -293,7 +313,6 @@ $gradient: 0.75;
       content: 'Theme: Clay';
     }
   }
-
   h1 {
     color: $base-color;
     .article-title & {
@@ -320,12 +339,10 @@ $gradient: 0.75;
   a:focus {
     color: $link;
   }
-
   blockquote {
     color: $soft-black;
     border-bottom: solid $base-color 3px;
   }
-
   .bookcover {
     &:hover {
       .booktitle {
@@ -334,7 +351,6 @@ $gradient: 0.75;
       }
     }
   }
-
   .panel {
     &.panel-default {
       color: $text-color;
@@ -345,34 +361,51 @@ $gradient: 0.75;
       }
     }
   }
-
   .spoiler-content {
     background-color: $base-color;
   }
-
   .relation {
     h4 {
       color: lighten(desaturate($base-color, 48.87), 16.47);
     }
   }
-
   &.user-css-worldmenu {
     background: transparent;
     .worldmenu-inner {
       background: $bg !important;
     }
   }
-
   .timeline-panel {
     background: white !important;
   }
-
+  .milestone-panel {
+    background: transparent !important;
+  }
+  .timeline {
+    &:before {
+      background-color: $base-color;
+    }
+    li {
+      .tl-circ {
+        background: invert($base-color);
+        border-color: $base-color;
+      }
+    }
+    @media #{$hover-only} {
+      li {
+        .tl-circ:hover {
+          border-width: 2px;
+          border-color: invert($base-color);
+          background: $base-color;
+        }
+      }
+    }
+  }
   .cover {
     .nav-strip {
       background-color: $base-color;
     }
   }
-
   #header {
     .backtoworld {
       a {
@@ -380,7 +413,6 @@ $gradient: 0.75;
       }
     }
   }
-
   .character-menu.nav.nav-tabs {
     li.active {
       a,
@@ -395,6 +427,9 @@ $gradient: 0.75;
       }
     }
   }
+  #metadata {
+    color: white;
+  }
 }
 
 %theme-black {
@@ -402,13 +437,11 @@ $gradient: 0.75;
   $bg: invert(darken(desaturate(adjust-hue($base-color, 16), 74), 22.55));
   $text-color: invert($soft-white);
   $link: lighten(desaturate(adjust-hue($base-color, -186), 6.31), 22.55);
-
   background: linear-gradient(to left, rgba($bg, 0.15), $bg), $marble-bg-image;
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
   color: $text-color;
-
   .heading,
   #header {
     @extend .theme-panel;
@@ -442,12 +475,10 @@ $gradient: 0.75;
   a:focus {
     color: $link;
   }
-
   blockquote {
     color: $soft-black;
     border-bottom: solid $base-color 3px;
   }
-
   .bookcover {
     &:hover {
       .booktitle {
@@ -456,7 +487,6 @@ $gradient: 0.75;
       }
     }
   }
-
   .panel {
     &.panel-default {
       color: saturate(invert($text-color), 10);
@@ -467,34 +497,51 @@ $gradient: 0.75;
       }
     }
   }
-
   .spoiler-content {
     background-color: $base-color;
   }
-
   .relation {
     h4 {
       color: lighten(desaturate($base-color, 48.87), 16.47);
     }
   }
-
   &.user-css-worldmenu {
     background: transparent;
     .worldmenu-inner {
       background: $bg !important;
     }
   }
-
   .timeline-panel {
     background: white !important;
   }
-
+  .milestone-panel {
+    background: transparent !important;
+  }
+  .timeline {
+    &:before {
+      background-color: $base-color;
+    }
+    li {
+      .tl-circ {
+        background: invert($base-color);
+        border-color: $base-color;
+      }
+    }
+    @media #{$hover-only} {
+      li {
+        .tl-circ:hover {
+          border-width: 2px;
+          border-color: invert($base-color);
+          background: $base-color;
+        }
+      }
+    }
+  }
   .cover {
     .nav-strip {
       background-color: $base-color;
     }
   }
-
   #header {
     .backtoworld {
       a {
@@ -502,7 +549,6 @@ $gradient: 0.75;
       }
     }
   }
-
   .character-menu.nav.nav-tabs {
     li.active {
       a,
@@ -517,6 +563,9 @@ $gradient: 0.75;
       }
     }
   }
+  #metadata {
+    color: white;
+  }
 }
 
 %theme-beef {
@@ -524,14 +573,11 @@ $gradient: 0.75;
   $bg: darken(desaturate(adjust-hue($base-color, 16), 74), 22.55);
   $text-color: $soft-white;
   $link: lighten(desaturate(adjust-hue($base-color, -186), 6.31), 22.55);
-
-  background: linear-gradient(to left, rgba($bg, $gradient), $bg),
-    $brick-bg-image;
+  background: linear-gradient(to left, rgba($bg, $gradient), $bg), $brick-bg-image;
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
   color: $text-color;
-
   .heading,
   #header {
     @extend .theme-panel;
@@ -565,12 +611,10 @@ $gradient: 0.75;
   a:focus {
     color: $link;
   }
-
   blockquote {
     color: $soft-black;
     border-bottom: solid $base-color 3px;
   }
-
   .bookcover {
     &:hover {
       .booktitle {
@@ -579,7 +623,6 @@ $gradient: 0.75;
       }
     }
   }
-
   .panel {
     &.panel-default {
       color: $text-color;
@@ -590,34 +633,51 @@ $gradient: 0.75;
       }
     }
   }
-
   .spoiler-content {
     background-color: $base-color;
   }
-
   .relation {
     h4 {
       color: lighten(desaturate($base-color, 48.87), 16.47);
     }
   }
-
   &.user-css-worldmenu {
     background: transparent;
     .worldmenu-inner {
       background: $bg !important;
     }
   }
-
   .timeline-panel {
     background: white !important;
   }
-
+  .milestone-panel {
+    background: transparent !important;
+  }
+  .timeline {
+    &:before {
+      background-color: $base-color;
+    }
+    li {
+      .tl-circ {
+        background: invert($base-color);
+        border-color: $base-color;
+      }
+    }
+    @media #{$hover-only} {
+      li {
+        .tl-circ:hover {
+          border-width: 2px;
+          border-color: invert($base-color);
+          background: $base-color;
+        }
+      }
+    }
+  }
   .cover {
     .nav-strip {
       background-color: $base-color;
     }
   }
-
   #header {
     .backtoworld {
       a {
@@ -625,7 +685,6 @@ $gradient: 0.75;
       }
     }
   }
-
   .character-menu.nav.nav-tabs {
     li.active {
       a,
@@ -640,6 +699,9 @@ $gradient: 0.75;
       }
     }
   }
+  #metadata {
+    color: white;
+  }
 }
 
 %theme-mango {
@@ -647,14 +709,11 @@ $gradient: 0.75;
   $bg: $soft-black;
   $text-color: $soft-white;
   $link: lighten(desaturate(adjust-hue($base-color, -186), 6.31), 22.55);
-
-  background: linear-gradient(to left, rgba($bg, $gradient), $bg),
-    $building-bg-image;
+  background: linear-gradient(to left, rgba($bg, $gradient), $bg), $building-bg-image;
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
   color: $text-color;
-
   .heading,
   #header {
     @extend .theme-panel;
@@ -688,12 +747,10 @@ $gradient: 0.75;
   a:focus {
     color: $link;
   }
-
   blockquote {
     color: $soft-black;
     border-bottom: solid $base-color 3px;
   }
-
   .bookcover {
     &:hover {
       .booktitle {
@@ -702,7 +759,6 @@ $gradient: 0.75;
       }
     }
   }
-
   .panel {
     &.panel-default {
       color: $text-color;
@@ -713,34 +769,51 @@ $gradient: 0.75;
       }
     }
   }
-
   .spoiler-content {
     background-color: $base-color;
   }
-
   .relation {
     h4 {
       color: lighten(desaturate($base-color, 48.87), 16.47);
     }
   }
-
   &.user-css-worldmenu {
     background: transparent;
     .worldmenu-inner {
       background: $bg !important;
     }
   }
-
   .timeline-panel {
     background: white !important;
   }
-
+  .milestone-panel {
+    background: transparent !important;
+  }
+  .timeline {
+    &:before {
+      background-color: $base-color;
+    }
+    li {
+      .tl-circ {
+        background: invert($base-color);
+        border-color: $base-color;
+      }
+    }
+    @media #{$hover-only} {
+      li {
+        .tl-circ:hover {
+          border-width: 2px;
+          border-color: invert($base-color);
+          background: $base-color;
+        }
+      }
+    }
+  }
   .cover {
     .nav-strip {
       background-color: $base-color;
     }
   }
-
   #header {
     .backtoworld {
       a {
@@ -748,7 +821,6 @@ $gradient: 0.75;
       }
     }
   }
-
   .character-menu.nav.nav-tabs {
     li.active {
       a,
@@ -763,6 +835,9 @@ $gradient: 0.75;
       }
     }
   }
+  #metadata {
+    color: white;
+  }
 }
 
 %theme-strawberry-mint {
@@ -770,14 +845,11 @@ $gradient: 0.75;
   $bg: darken(desaturate(adjust-hue($base-color, 16), 74), 22.55);
   $text-color: $soft-white;
   $link: lighten(desaturate(adjust-hue($base-color, -186), 6.31), 22.55);
-
-  background: linear-gradient(to left, rgba($bg, $gradient), $bg),
-    $brick-bg-image;
+  background: linear-gradient(to left, rgba($bg, $gradient), $bg), $brick-bg-image;
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
   color: $text-color;
-
   .heading,
   #header {
     @extend .theme-panel;
@@ -811,12 +883,10 @@ $gradient: 0.75;
   a:focus {
     color: $link;
   }
-
   blockquote {
     color: $soft-black;
     border-bottom: solid $base-color 3px;
   }
-
   .bookcover {
     &:hover {
       .booktitle {
@@ -825,7 +895,6 @@ $gradient: 0.75;
       }
     }
   }
-
   .panel {
     &.panel-default {
       color: $text-color;
@@ -836,34 +905,51 @@ $gradient: 0.75;
       }
     }
   }
-
   .spoiler-content {
     background-color: $base-color;
   }
-
   .relation {
     h4 {
       color: lighten(desaturate($base-color, 48.87), 16.47);
     }
   }
-
   &.user-css-worldmenu {
     background: transparent;
     .worldmenu-inner {
       background: $bg !important;
     }
   }
-
   .timeline-panel {
     background: white !important;
   }
-
+  .milestone-panel {
+    background: transparent !important;
+  }
+  .timeline {
+    &:before {
+      background-color: $base-color;
+    }
+    li {
+      .tl-circ {
+        background: invert($base-color);
+        border-color: $base-color;
+      }
+    }
+    @media #{$hover-only} {
+      li {
+        .tl-circ:hover {
+          border-width: 2px;
+          border-color: invert($base-color);
+          background: $base-color;
+        }
+      }
+    }
+  }
   .cover {
     .nav-strip {
       background-color: $base-color;
     }
   }
-
   #header {
     .backtoworld {
       a {
@@ -871,7 +957,6 @@ $gradient: 0.75;
       }
     }
   }
-
   .character-menu.nav.nav-tabs {
     li.active {
       a,
@@ -886,6 +971,9 @@ $gradient: 0.75;
       }
     }
   }
+  #metadata {
+    color: white;
+  }
 }
 
 %theme-dijon {
@@ -893,14 +981,11 @@ $gradient: 0.75;
   $bg: darken(desaturate(adjust-hue($base-color, 16), 74), 22.55);
   $text-color: $soft-white;
   $link: lighten(desaturate(adjust-hue($base-color, -186), 6.31), 22.55);
-
-  background: linear-gradient(to left, rgba($bg, $gradient), $bg),
-    $bark-bg-image;
+  background: linear-gradient(to left, rgba($bg, $gradient), $bg), $bark-bg-image;
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
   color: $text-color;
-
   .heading,
   #header {
     @extend .theme-panel;
@@ -934,12 +1019,10 @@ $gradient: 0.75;
   a:focus {
     color: $link;
   }
-
   blockquote {
     color: $soft-black;
     border-bottom: solid $base-color 3px;
   }
-
   .bookcover {
     &:hover {
       .booktitle {
@@ -948,7 +1031,6 @@ $gradient: 0.75;
       }
     }
   }
-
   .panel {
     &.panel-default {
       color: $text-color;
@@ -959,34 +1041,51 @@ $gradient: 0.75;
       }
     }
   }
-
   .spoiler-content {
     background-color: $base-color;
   }
-
   .relation {
     h4 {
       color: lighten(desaturate($base-color, 48.87), 16.47);
     }
   }
-
   &.user-css-worldmenu {
     background: transparent;
     .worldmenu-inner {
       background: $bg !important;
     }
   }
-
   .timeline-panel {
     background: white !important;
   }
-
+  .milestone-panel {
+    background: transparent !important;
+  }
+  .timeline {
+    &:before {
+      background-color: $base-color;
+    }
+    li {
+      .tl-circ {
+        background: invert($base-color);
+        border-color: $base-color;
+      }
+    }
+    @media #{$hover-only} {
+      li {
+        .tl-circ:hover {
+          border-width: 2px;
+          border-color: invert($base-color);
+          background: $base-color;
+        }
+      }
+    }
+  }
   .cover {
     .nav-strip {
       background-color: $base-color;
     }
   }
-
   #header {
     .backtoworld {
       a {
@@ -994,7 +1093,6 @@ $gradient: 0.75;
       }
     }
   }
-
   .character-menu.nav.nav-tabs {
     li.active {
       a,
@@ -1009,6 +1107,9 @@ $gradient: 0.75;
       }
     }
   }
+  #metadata {
+    color: white;
+  }
 }
 
 %theme-turquoise {
@@ -1016,14 +1117,11 @@ $gradient: 0.75;
   $bg: darken(desaturate(adjust-hue($base-color, 16), 74), 22.55);
   $text-color: $soft-white;
   $link: lighten(desaturate(adjust-hue($base-color, -186), 6.31), 22.55);
-
-  background: linear-gradient(to left, rgba($bg, $gradient), $bg),
-    $brick-bg-image;
+  background: linear-gradient(to left, rgba($bg, $gradient), $bg), $brick-bg-image;
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
   color: $text-color;
-
   .heading,
   #header {
     @extend .theme-panel;
@@ -1057,12 +1155,10 @@ $gradient: 0.75;
   a:focus {
     color: $link;
   }
-
   blockquote {
     color: $soft-black;
     border-bottom: solid $base-color 3px;
   }
-
   .bookcover {
     &:hover {
       .booktitle {
@@ -1071,7 +1167,6 @@ $gradient: 0.75;
       }
     }
   }
-
   .panel {
     &.panel-default {
       color: $text-color;
@@ -1082,38 +1177,54 @@ $gradient: 0.75;
       }
     }
   }
-
   .spoiler-content {
     background-color: $base-color;
   }
-
   .relation {
     h4 {
       color: lighten(desaturate($base-color, 48.87), 16.47);
     }
   }
-
   .article-panel {
     background: $soft-black;
   }
-
   &.user-css-worldmenu {
     background: transparent;
     .worldmenu-inner {
       background: $bg !important;
     }
   }
-
   .timeline-panel {
     background: white !important;
   }
-
+  .milestone-panel {
+    background: transparent !important;
+  }
+  .timeline {
+    &:before {
+      background-color: $base-color;
+    }
+    li {
+      .tl-circ {
+        background: invert($base-color);
+        border-color: $base-color;
+      }
+    }
+    @media #{$hover-only} {
+      li {
+        .tl-circ:hover {
+          border-width: 2px;
+          border-color: invert($base-color);
+          background: $base-color;
+        }
+      }
+    }
+  }
   .cover {
     .nav-strip {
       background-color: $base-color;
     }
   }
-
   #header {
     .backtoworld {
       a {
@@ -1121,7 +1232,6 @@ $gradient: 0.75;
       }
     }
   }
-
   .character-menu.nav.nav-tabs {
     li.active {
       a,
@@ -1136,6 +1246,9 @@ $gradient: 0.75;
       }
     }
   }
+  #metadata {
+    color: white;
+  }
 }
 
 %theme-grape {
@@ -1143,14 +1256,11 @@ $gradient: 0.75;
   $bg: darken(desaturate(adjust-hue($base-color, 16), 74), 22.55);
   $text-color: $soft-white;
   $link: lighten(desaturate(adjust-hue($base-color, -186), 6.31), 22.55);
-
-  background: linear-gradient(to left, rgba($bg, $gradient), $bg),
-    $marble-bg-image;
+  background: linear-gradient(to left, rgba($bg, $gradient), $bg), $marble-bg-image;
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
   color: $text-color;
-
   .heading,
   #header {
     @extend .theme-panel;
@@ -1184,12 +1294,10 @@ $gradient: 0.75;
   a:focus {
     color: $link;
   }
-
   blockquote {
     color: $soft-black;
     border-bottom: solid $base-color 3px;
   }
-
   .bookcover {
     &:hover {
       .booktitle {
@@ -1198,7 +1306,6 @@ $gradient: 0.75;
       }
     }
   }
-
   .panel {
     &.panel-default {
       color: $text-color;
@@ -1209,34 +1316,51 @@ $gradient: 0.75;
       }
     }
   }
-
   .spoiler-content {
     background-color: $base-color;
   }
-
   .relation {
     h4 {
       color: lighten(desaturate($base-color, 48.87), 16.47);
     }
   }
-
   &.user-css-worldmenu {
     background: transparent;
     .worldmenu-inner {
       background: $bg !important;
     }
   }
-
   .timeline-panel {
     background: white !important;
   }
-
+  .milestone-panel {
+    background: transparent !important;
+  }
+  .timeline {
+    &:before {
+      background-color: $base-color;
+    }
+    li {
+      .tl-circ {
+        background: invert($base-color);
+        border-color: $base-color;
+      }
+    }
+    @media #{$hover-only} {
+      li {
+        .tl-circ:hover {
+          border-width: 2px;
+          border-color: invert($base-color);
+          background: $base-color;
+        }
+      }
+    }
+  }
   .cover {
     .nav-strip {
       background-color: $base-color;
     }
   }
-
   #header {
     .backtoworld {
       a {
@@ -1244,7 +1368,6 @@ $gradient: 0.75;
       }
     }
   }
-
   .character-menu.nav.nav-tabs {
     li.active {
       a,
@@ -1259,6 +1382,9 @@ $gradient: 0.75;
       }
     }
   }
+  #metadata {
+    color: white;
+  }
 }
 
 %theme-gralnum {
@@ -1266,14 +1392,11 @@ $gradient: 0.75;
   $bg: darken(desaturate(adjust-hue($base-color, 16), 74), 22.55);
   $text-color: $soft-white;
   $link: lighten(desaturate(adjust-hue($base-color, -186), 6.31), 22.55);
-
-  background: linear-gradient(to left, rgba($bg, $gradient), $bg),
-    $brick-bg-image;
+  background: linear-gradient(to left, rgba($bg, $gradient), $bg), $brick-bg-image;
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
   color: $text-color;
-
   .heading,
   #header {
     @extend .theme-panel;
@@ -1307,12 +1430,10 @@ $gradient: 0.75;
   a:focus {
     color: $link;
   }
-
   blockquote {
     color: $soft-black;
     border-bottom: solid $base-color 3px;
   }
-
   .bookcover {
     &:hover {
       .booktitle {
@@ -1321,7 +1442,6 @@ $gradient: 0.75;
       }
     }
   }
-
   .panel {
     &.panel-default {
       color: $text-color;
@@ -1332,11 +1452,9 @@ $gradient: 0.75;
       }
     }
   }
-
   .spoiler-content {
     background-color: $base-color;
   }
-
   .relation {
     h4 {
       color: lighten(desaturate($base-color, 48.87), 16.47);
@@ -1348,17 +1466,37 @@ $gradient: 0.75;
       background: $bg !important;
     }
   }
-
   .timeline-panel {
     background: white !important;
   }
-
+  .milestone-panel {
+    background: transparent !important;
+  }
+  .timeline {
+    &:before {
+      background-color: $base-color;
+    }
+    li {
+      .tl-circ {
+        background: invert($base-color);
+        border-color: $base-color;
+      }
+    }
+    @media #{$hover-only} {
+      li {
+        .tl-circ:hover {
+          border-width: 2px;
+          border-color: invert($base-color);
+          background: $base-color;
+        }
+      }
+    }
+  }
   .cover {
     .nav-strip {
       background-color: $base-color;
     }
   }
-
   #header {
     .backtoworld {
       a {
@@ -1366,7 +1504,6 @@ $gradient: 0.75;
       }
     }
   }
-
   .character-menu.nav.nav-tabs {
     li.active {
       a,
@@ -1381,6 +1518,9 @@ $gradient: 0.75;
       }
     }
   }
+  #metadata {
+    color: white;
+  }
 }
 
 %theme-lethe {
@@ -1388,13 +1528,11 @@ $gradient: 0.75;
   $bg: darken(desaturate(adjust-hue($base-color, 16), 74), 22.55);
   $text-color: $soft-white;
   $link: lighten(desaturate(adjust-hue($base-color, -186), 6.31), 22.55);
-
   background: linear-gradient(to left, rgba($bg, 0.3), $bg), $sand-bg-image;
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
   color: $text-color;
-
   .heading,
   #header {
     @extend .theme-panel;
@@ -1428,12 +1566,10 @@ $gradient: 0.75;
   a:focus {
     color: $link;
   }
-
   blockquote {
     color: $soft-black;
     border-bottom: solid $base-color 3px;
   }
-
   .bookcover {
     &:hover {
       .booktitle {
@@ -1442,7 +1578,6 @@ $gradient: 0.75;
       }
     }
   }
-
   .panel {
     &.panel-default {
       color: $text-color;
@@ -1453,11 +1588,9 @@ $gradient: 0.75;
       }
     }
   }
-
   .spoiler-content {
     background-color: $base-color;
   }
-
   .relation {
     h4 {
       color: lighten(desaturate($base-color, 48.87), 16.47);
@@ -1469,17 +1602,37 @@ $gradient: 0.75;
       background: $bg !important;
     }
   }
-
   .timeline-panel {
     background: white !important;
   }
-
+  .milestone-panel {
+    background: transparent !important;
+  }
+  .timeline {
+    &:before {
+      background-color: $base-color;
+    }
+    li {
+      .tl-circ {
+        background: invert($base-color);
+        border-color: $base-color;
+      }
+    }
+    @media #{$hover-only} {
+      li {
+        .tl-circ:hover {
+          border-width: 2px;
+          border-color: invert($base-color);
+          background: $base-color;
+        }
+      }
+    }
+  }
   .cover {
     .nav-strip {
       background-color: $base-color;
     }
   }
-
   #header {
     .backtoworld {
       a {
@@ -1487,7 +1640,6 @@ $gradient: 0.75;
       }
     }
   }
-
   .character-menu.nav.nav-tabs {
     li.active {
       a,
@@ -1502,6 +1654,9 @@ $gradient: 0.75;
       }
     }
   }
+  #metadata {
+    color: white;
+  }
 }
 
 %theme-crimson {
@@ -1509,14 +1664,11 @@ $gradient: 0.75;
   $bg: darken(desaturate(adjust-hue($base-color, 16), 74), 22.55);
   $text-color: $soft-white;
   $link: lighten(desaturate(adjust-hue($base-color, -186), 6.31), 22.55);
-
-  background: linear-gradient(to left, rgba($bg, $gradient), $bg),
-    $fancy_red_wallpaper-bg-image;
+  background: linear-gradient(to left, rgba($bg, $gradient), $bg), $fancy_red_wallpaper-bg-image;
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
   color: $text-color;
-
   .heading,
   #header {
     @extend .theme-panel;
@@ -1550,12 +1702,10 @@ $gradient: 0.75;
   a:focus {
     color: $link;
   }
-
   blockquote {
     color: $soft-black;
     border-bottom: solid $base-color 3px;
   }
-
   .bookcover {
     &:hover {
       .booktitle {
@@ -1564,7 +1714,6 @@ $gradient: 0.75;
       }
     }
   }
-
   .panel {
     &.panel-default {
       color: $text-color;
@@ -1575,11 +1724,9 @@ $gradient: 0.75;
       }
     }
   }
-
   .spoiler-content {
     background-color: $base-color;
   }
-
   .relation {
     h4 {
       color: lighten(desaturate($base-color, 48.87), 16.47);
@@ -1591,17 +1738,37 @@ $gradient: 0.75;
       background: $bg !important;
     }
   }
-
   .timeline-panel {
     background: white !important;
   }
-
+  .milestone-panel {
+    background: transparent !important;
+  }
+  .timeline {
+    &:before {
+      background-color: $base-color;
+    }
+    li {
+      .tl-circ {
+        background: invert($base-color);
+        border-color: $base-color;
+      }
+    }
+    @media #{$hover-only} {
+      li {
+        .tl-circ:hover {
+          border-width: 2px;
+          border-color: invert($base-color);
+          background: $base-color;
+        }
+      }
+    }
+  }
   .cover {
     .nav-strip {
       background-color: $base-color;
     }
   }
-
   #header {
     .backtoworld {
       a {
@@ -1609,7 +1776,6 @@ $gradient: 0.75;
       }
     }
   }
-
   .character-menu.nav.nav-tabs {
     li.active {
       a,
@@ -1624,6 +1790,9 @@ $gradient: 0.75;
       }
     }
   }
+  #metadata {
+    color: white;
+  }
 }
 
 %theme-maevyn {
@@ -1631,14 +1800,11 @@ $gradient: 0.75;
   $bg: darken(desaturate(adjust-hue($base-color, 16), 74), 22.55);
   $text-color: $soft-white;
   $link: lighten(desaturate(adjust-hue($base-color, -186), 6.31), 22.55);
-
-  background: linear-gradient(to left, rgba($bg, $gradient), $bg),
-    $bloodcells-bg-image;
+  background: linear-gradient(to left, rgba($bg, $gradient), $bg), $bloodcells-bg-image;
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
   color: $text-color;
-
   .heading,
   #header {
     @extend .theme-panel;
@@ -1672,12 +1838,10 @@ $gradient: 0.75;
   a:focus {
     color: $link;
   }
-
   blockquote {
     color: $soft-black;
     border-bottom: solid $base-color 3px;
   }
-
   .bookcover {
     &:hover {
       .booktitle {
@@ -1686,7 +1850,6 @@ $gradient: 0.75;
       }
     }
   }
-
   .panel {
     &.panel-default {
       color: $text-color;
@@ -1697,11 +1860,9 @@ $gradient: 0.75;
       }
     }
   }
-
   .spoiler-content {
     background-color: $base-color;
   }
-
   .relation {
     h4 {
       color: lighten(desaturate($base-color, 48.87), 16.47);
@@ -1713,17 +1874,37 @@ $gradient: 0.75;
       background: $bg !important;
     }
   }
-
   .timeline-panel {
     background: white !important;
   }
-
+  .milestone-panel {
+    background: transparent !important;
+  }
+  .timeline {
+    &:before {
+      background-color: $base-color;
+    }
+    li {
+      .tl-circ {
+        background: invert($base-color);
+        border-color: $base-color;
+      }
+    }
+    @media #{$hover-only} {
+      li {
+        .tl-circ:hover {
+          border-width: 2px;
+          border-color: invert($base-color);
+          background: $base-color;
+        }
+      }
+    }
+  }
   .cover {
     .nav-strip {
       background-color: $base-color;
     }
   }
-
   #header {
     .backtoworld {
       a {
@@ -1731,7 +1912,6 @@ $gradient: 0.75;
       }
     }
   }
-
   .character-menu.nav.nav-tabs {
     li.active {
       a,
@@ -1746,7 +1926,9 @@ $gradient: 0.75;
       }
     }
   }
-
+  #metadata {
+    color: white;
+  }
   .table.table-striped {
     tbody {
       tr {
@@ -1763,14 +1945,11 @@ $gradient: 0.75;
   $bg: darken(desaturate(adjust-hue($base-color, 16), 74), 22.55);
   $text-color: $soft-white;
   $link: lighten(desaturate(adjust-hue($base-color, -186), 6.31), 22.55);
-
-  background: linear-gradient(to left, rgba($bg, $gradient), $bg),
-    $brick-bg-image;
+  background: linear-gradient(to left, rgba($bg, $gradient), $bg), $brick-bg-image;
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
   color: $text-color;
-
   .heading,
   #header {
     @extend .theme-panel;
@@ -1804,12 +1983,10 @@ $gradient: 0.75;
   a:focus {
     color: $link;
   }
-
   blockquote {
     color: $soft-black;
     border-bottom: solid $base-color 3px;
   }
-
   .bookcover {
     &:hover {
       .booktitle {
@@ -1818,7 +1995,6 @@ $gradient: 0.75;
       }
     }
   }
-
   .panel {
     &.panel-default {
       color: $text-color;
@@ -1829,11 +2005,9 @@ $gradient: 0.75;
       }
     }
   }
-
   .spoiler-content {
     background-color: $base-color;
   }
-
   .relation {
     h4 {
       color: lighten(desaturate($base-color, 48.87), 16.47);
@@ -1845,17 +2019,37 @@ $gradient: 0.75;
       background: $bg !important;
     }
   }
-
   .timeline-panel {
     background: white !important;
   }
-
+  .milestone-panel {
+    background: transparent !important;
+  }
+  .timeline {
+    &:before {
+      background-color: $base-color;
+    }
+    li {
+      .tl-circ {
+        background: invert($base-color);
+        border-color: $base-color;
+      }
+    }
+    @media #{$hover-only} {
+      li {
+        .tl-circ:hover {
+          border-width: 2px;
+          border-color: invert($base-color);
+          background: $base-color;
+        }
+      }
+    }
+  }
   .cover {
     .nav-strip {
       background-color: $base-color;
     }
   }
-
   #header {
     .backtoworld {
       a {
@@ -1863,7 +2057,6 @@ $gradient: 0.75;
       }
     }
   }
-
   .character-menu.nav.nav-tabs {
     li.active {
       a,
@@ -1878,6 +2071,9 @@ $gradient: 0.75;
       }
     }
   }
+  #metadata {
+    color: white;
+  }
 }
 
 %theme-sky {
@@ -1885,14 +2081,11 @@ $gradient: 0.75;
   $bg: darken(desaturate(adjust-hue($base-color, 16), 74), 22.55);
   $text-color: $soft-white;
   $link: lighten(desaturate(adjust-hue($base-color, -186), 6.31), 22.55);
-
-  background: linear-gradient(to left, rgba($bg, $gradient), $bg),
-    $brick-bg-image;
+  background: linear-gradient(to left, rgba($bg, $gradient), $bg), $brick-bg-image;
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
   color: $text-color;
-
   .heading,
   #header {
     @extend .theme-panel;
@@ -1926,12 +2119,10 @@ $gradient: 0.75;
   a:focus {
     color: $link;
   }
-
   blockquote {
     color: $soft-black;
     border-bottom: solid $base-color 3px;
   }
-
   .bookcover {
     &:hover {
       .booktitle {
@@ -1940,7 +2131,6 @@ $gradient: 0.75;
       }
     }
   }
-
   .panel {
     &.panel-default {
       color: $text-color;
@@ -1951,11 +2141,9 @@ $gradient: 0.75;
       }
     }
   }
-
   .spoiler-content {
     background-color: $base-color;
   }
-
   .relation {
     h4 {
       color: lighten(desaturate($base-color, 48.87), 16.47);
@@ -1967,17 +2155,37 @@ $gradient: 0.75;
       background: $bg !important;
     }
   }
-
   .timeline-panel {
     background: white !important;
   }
-
+  .milestone-panel {
+    background: transparent !important;
+  }
+  .timeline {
+    &:before {
+      background-color: $base-color;
+    }
+    li {
+      .tl-circ {
+        background: invert($base-color);
+        border-color: $base-color;
+      }
+    }
+    @media #{$hover-only} {
+      li {
+        .tl-circ:hover {
+          border-width: 2px;
+          border-color: invert($base-color);
+          background: $base-color;
+        }
+      }
+    }
+  }
   .cover {
     .nav-strip {
       background-color: $base-color;
     }
   }
-
   #header {
     .backtoworld {
       a {
@@ -1985,7 +2193,6 @@ $gradient: 0.75;
       }
     }
   }
-
   .character-menu.nav.nav-tabs {
     li.active {
       a,
@@ -2000,6 +2207,9 @@ $gradient: 0.75;
       }
     }
   }
+  #metadata {
+    color: white;
+  }
 }
 
 %theme-tardis {
@@ -2007,14 +2217,11 @@ $gradient: 0.75;
   $bg: darken(desaturate(adjust-hue($base-color, 16), 74), 22.55);
   $text-color: $soft-white;
   $link: lighten(desaturate(adjust-hue($base-color, -186), 6.31), 22.55);
-
-  background: linear-gradient(to left, rgba($bg, $gradient), $bg),
-    $blue_crest_wallpaper-bg-image;
+  background: linear-gradient(to left, rgba($bg, $gradient), $bg), $blue_crest_wallpaper-bg-image;
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
   color: $text-color;
-
   .heading,
   #header {
     @extend .theme-panel;
@@ -2022,7 +2229,6 @@ $gradient: 0.75;
       content: 'Theme: TARDIS';
     }
   }
-
   h1 {
     color: $base-color;
     .article-title & {
@@ -2049,12 +2255,10 @@ $gradient: 0.75;
   a:focus {
     color: $link;
   }
-
   blockquote {
     color: $soft-black;
     border-bottom: solid $base-color 3px;
   }
-
   .bookcover {
     &:hover {
       .booktitle {
@@ -2063,7 +2267,6 @@ $gradient: 0.75;
       }
     }
   }
-
   .panel {
     &.panel-default {
       color: $text-color;
@@ -2074,11 +2277,9 @@ $gradient: 0.75;
       }
     }
   }
-
   .spoiler-content {
     background-color: $base-color;
   }
-
   .relation {
     h4 {
       color: lighten(desaturate($base-color, 48.87), 16.47);
@@ -2090,17 +2291,37 @@ $gradient: 0.75;
       background: $bg !important;
     }
   }
-
   .timeline-panel {
     background: white !important;
   }
-
+  .milestone-panel {
+    background: transparent !important;
+  }
+  .timeline {
+    &:before {
+      background-color: $base-color;
+    }
+    li {
+      .tl-circ {
+        background: invert($base-color);
+        border-color: $base-color;
+      }
+    }
+    @media #{$hover-only} {
+      li {
+        .tl-circ:hover {
+          border-width: 2px;
+          border-color: invert($base-color);
+          background: $base-color;
+        }
+      }
+    }
+  }
   .cover {
     .nav-strip {
       background-color: $base-color;
     }
   }
-
   #header {
     .backtoworld {
       a {
@@ -2108,7 +2329,6 @@ $gradient: 0.75;
       }
     }
   }
-
   .character-menu.nav.nav-tabs {
     li.active {
       a,
@@ -2123,6 +2343,9 @@ $gradient: 0.75;
       }
     }
   }
+  #metadata {
+    color: white;
+  }
 }
 
 %theme-bright-green {
@@ -2130,14 +2353,11 @@ $gradient: 0.75;
   $bg: darken(desaturate(adjust-hue($base-color, 16), 74), 22.55);
   $text-color: $soft-white;
   $link: lighten(desaturate(adjust-hue($base-color, -186), 6.31), 22.55);
-
-  background: linear-gradient(to left, rgba($bg, $gradient), $bg),
-    $brick-bg-image;
+  background: linear-gradient(to left, rgba($bg, $gradient), $bg), $brick-bg-image;
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
   color: $text-color;
-
   .heading,
   #header {
     @extend .theme-panel;
@@ -2171,12 +2391,10 @@ $gradient: 0.75;
   a:focus {
     color: $link;
   }
-
   blockquote {
     color: $soft-black;
     border-bottom: solid $base-color 3px;
   }
-
   .bookcover {
     &:hover {
       .booktitle {
@@ -2185,7 +2403,6 @@ $gradient: 0.75;
       }
     }
   }
-
   .panel {
     &.panel-default {
       color: $text-color;
@@ -2196,11 +2413,9 @@ $gradient: 0.75;
       }
     }
   }
-
   .spoiler-content {
     background-color: $base-color;
   }
-
   .relation {
     h4 {
       color: lighten(desaturate($base-color, 48.87), 16.47);
@@ -2212,17 +2427,37 @@ $gradient: 0.75;
       background: $bg !important;
     }
   }
-
   .timeline-panel {
     background: white !important;
   }
-
+  .milestone-panel {
+    background: transparent !important;
+  }
+  .timeline {
+    &:before {
+      background-color: $base-color;
+    }
+    li {
+      .tl-circ {
+        background: invert($base-color);
+        border-color: $base-color;
+      }
+    }
+    @media #{$hover-only} {
+      li {
+        .tl-circ:hover {
+          border-width: 2px;
+          border-color: invert($base-color);
+          background: $base-color;
+        }
+      }
+    }
+  }
   .cover {
     .nav-strip {
       background-color: $base-color;
     }
   }
-
   #header {
     .backtoworld {
       a {
@@ -2230,7 +2465,6 @@ $gradient: 0.75;
       }
     }
   }
-
   .character-menu.nav.nav-tabs {
     li.active {
       a,
@@ -2245,6 +2479,9 @@ $gradient: 0.75;
       }
     }
   }
+  #metadata {
+    color: white;
+  }
 }
 
 %theme-grey {
@@ -2252,14 +2489,11 @@ $gradient: 0.75;
   $bg: darken(desaturate(adjust-hue($base-color, 16), 74), 22.55);
   $text-color: $soft-white;
   $link: lighten(desaturate(adjust-hue($base-color, -186), 6.31), 22.55);
-
-  background: linear-gradient(to left, rgba($bg, $gradient), $bg),
-    $brick-bg-image;
+  background: linear-gradient(to left, rgba($bg, $gradient), $bg), $brick-bg-image;
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
   color: $text-color;
-
   .heading,
   #header {
     @extend .theme-panel;
@@ -2293,12 +2527,10 @@ $gradient: 0.75;
   a:focus {
     color: $link;
   }
-
   blockquote {
     color: $soft-black;
     border-bottom: solid $base-color 3px;
   }
-
   .bookcover {
     &:hover {
       .booktitle {
@@ -2307,7 +2539,6 @@ $gradient: 0.75;
       }
     }
   }
-
   .panel {
     &.panel-default {
       color: $text-color;
@@ -2318,11 +2549,9 @@ $gradient: 0.75;
       }
     }
   }
-
   .spoiler-content {
     background-color: $base-color;
   }
-
   .relation {
     h4 {
       color: lighten(desaturate($base-color, 48.87), 16.47);
@@ -2334,17 +2563,37 @@ $gradient: 0.75;
       background: $bg !important;
     }
   }
-
   .timeline-panel {
     background: white !important;
   }
-
+  .milestone-panel {
+    background: transparent !important;
+  }
+  .timeline {
+    &:before {
+      background-color: $base-color;
+    }
+    li {
+      .tl-circ {
+        background: invert($base-color);
+        border-color: $base-color;
+      }
+    }
+    @media #{$hover-only} {
+      li {
+        .tl-circ:hover {
+          border-width: 2px;
+          border-color: invert($base-color);
+          background: $base-color;
+        }
+      }
+    }
+  }
   .cover {
     .nav-strip {
       background-color: $base-color;
     }
   }
-
   #header {
     .backtoworld {
       a {
@@ -2352,7 +2601,6 @@ $gradient: 0.75;
       }
     }
   }
-
   .character-menu.nav.nav-tabs {
     li.active {
       a,
@@ -2367,23 +2615,21 @@ $gradient: 0.75;
       }
     }
   }
+  #metadata {
+    color: white;
+  }
 }
 
 %theme-carnation {
   $base-color: #f5c6ff;
   $bg: darken(desaturate(adjust-hue($base-color, 16), 74), 22.55);
   $text-color: invert($soft-white);
-  $link: invert(
-    lighten(desaturate(adjust-hue($base-color, -186), 6.31), 22.55)
-  );
-
-  background: linear-gradient(to left, rgba($bg, $gradient), $bg),
-    $brick-bg-image;
+  $link: invert( lighten(desaturate(adjust-hue($base-color, -186), 6.31), 22.55));
+  background: linear-gradient(to left, rgba($bg, $gradient), $bg), $brick-bg-image;
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
   color: $text-color;
-
   .heading,
   #header {
     @extend .theme-panel;
@@ -2404,14 +2650,10 @@ $gradient: 0.75;
     color: lighten(desaturate($base-color, 48.87), 16.47);
   }
   h4 {
-    color: invert(
-      lighten(desaturate(adjust-hue($base-color, 156), 35.79), 21.37)
-    );
+    color: invert( lighten(desaturate(adjust-hue($base-color, 156), 35.79), 21.37));
   }
   h5 {
-    color: invert(
-      lighten(desaturate(adjust-hue($base-color, 157), 12.95), 23.53)
-    );
+    color: invert( lighten(desaturate(adjust-hue($base-color, 157), 12.95), 23.53));
   }
   * {
     border-color: $base-color;
@@ -2421,12 +2663,10 @@ $gradient: 0.75;
   a:focus {
     color: $link;
   }
-
   blockquote {
     color: $soft-black;
     border-bottom: solid $base-color 3px;
   }
-
   .bookcover {
     &:hover {
       .booktitle {
@@ -2435,7 +2675,6 @@ $gradient: 0.75;
       }
     }
   }
-
   .panel {
     &.panel-default {
       color: $text-color;
@@ -2446,11 +2685,9 @@ $gradient: 0.75;
       }
     }
   }
-
   .spoiler-content {
     background-color: $base-color;
   }
-
   .relation {
     h4 {
       color: lighten(desaturate($base-color, 48.87), 16.47);
@@ -2462,17 +2699,37 @@ $gradient: 0.75;
       background: $bg !important;
     }
   }
-
   .timeline-panel {
     background: white !important;
   }
-
+  .milestone-panel {
+    background: transparent !important;
+  }
+  .timeline {
+    &:before {
+      background-color: $base-color;
+    }
+    li {
+      .tl-circ {
+        background: invert($base-color);
+        border-color: $base-color;
+      }
+    }
+    @media #{$hover-only} {
+      li {
+        .tl-circ:hover {
+          border-width: 2px;
+          border-color: invert($base-color);
+          background: $base-color;
+        }
+      }
+    }
+  }
   .cover {
     .nav-strip {
       background-color: $base-color;
     }
   }
-
   #header {
     .backtoworld {
       a {
@@ -2480,7 +2737,6 @@ $gradient: 0.75;
       }
     }
   }
-
   .character-menu.nav.nav-tabs {
     li.active {
       a,
@@ -2494,6 +2750,9 @@ $gradient: 0.75;
         background-color: $bg;
       }
     }
+  }
+  #metadata {
+    color: white;
   }
 }
 
@@ -2584,8 +2843,8 @@ $gradient: 0.75;
     }
   }
 
-  .timeline-panel {
-    background: white !important;
+  .timeline-panel, .milestone-panel {
+    background: transparent !important;
   }
 
   .cover {
@@ -2615,6 +2874,10 @@ $gradient: 0.75;
         background-color: $bg;
       }
     }
+  }
+
+  #metadata {
+    color: white;
   }
 } */
 

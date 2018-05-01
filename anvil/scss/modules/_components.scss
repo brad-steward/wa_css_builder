@@ -81,7 +81,6 @@ blockquote {
 }
 
 #metadata {
-  color: $soft-black;
   font-family: 'Courier New', Courier, monospace !important;
 }
 
@@ -99,7 +98,6 @@ img[src='/images/leatherstrip2.png'] {
   opacity: 0;
   height: 140px;
   z-index: -1;
-
   @media #{$threshold-m} {
     height: 185px;
   }

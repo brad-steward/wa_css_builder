@@ -3,12 +3,10 @@
 @import 'modules/themes';
 @import 'modules/animation';
 @import 'modules/characterSheets';
-
 .user-css,
 .user-css-extended {
   @import '_modules';
   @include set-theme();
-
   #header,
   .heading {
     p {
@@ -43,7 +41,6 @@
       a:hover,
       a:focus {
         font-weight: bold;
-
         &.text-danger {
           font-weight: inherit;
           font-style: italic;
@@ -51,13 +48,34 @@
       }
     }
   }
-
   a:hover,
   a:active {
     text-decoration: none !important;
   }
-
   @import '_specificArticles';
+  .heading,
+  #header {
+    h1:before {
+      display: none;
+    }
+  }
+  .comment-form {
+    textarea {
+      color: #333;
+    }
+  }
+  .followers-list {
+    margin-bottom: 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    img.img-avatar-sm {
+      border-radius: 0;
+      margin: 0 auto;
+      display: block;
+      max-width: 100px;
+      max-height: 100px;
+    }
+  }
 }
 
 .user-css-extended {
