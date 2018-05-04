@@ -21,6 +21,25 @@
   .world-author a {
     text-transform: uppercase;
   }
+  .world-maps-list {
+    .list-unstyled {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 5px;
+      .map-box {
+        padding: 10px;
+        margin-bottom: 0;
+      }
+    }
+  }
+  .world-campaigns {
+    .campaign-panel {
+      padding: 0;
+      .details {
+        margin-top: 0;
+      }
+    }
+  }
 }
 
 .user-css-extended {
@@ -88,14 +107,13 @@
       // }
     }
   }
-}
-
-@keyframes scrollRight {
-  from {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(-1000%);
+  .extendedbody-tabs {
+    li,
+    li.active {
+      a {
+        background-color: transparent;
+      }
+    }
   }
 }
 

@@ -146,3 +146,10 @@ $bloodcells-bg-image: url(//worldanvil.com/uploads/images/19c43efcb36c0c29f700cf
 $fancy_red_wallpaper-bg-image: url(//worldanvil.com/uploads/images/fc354ec1b5bb8f176ab88f08d4316ba6.jpg);
 $blue_crest_wallpaper-bg-image: url(//worldanvil.com/uploads/images/ed573acd4afb9885c85a1e8a2eda9128.png);
 $black-gravel-bg-image: url(//worldanvil.com/uploads/images/2f105caae87b0d2a59bc5708f2944a80.jpg);
+/// Animations
+$a_gentlywaft: gentlywaft 8s linear infinite;
+$a_clock: clock 100s infinite linear;
+$a_clock--fast: clock 30s infinite linear;
+$a_clock_reverse: reverseclock 60s infinite linear;
+$a_concentric-rise: concentric-rise 10s infinite reverse ease-in-out;
+$a_concentric-rise2: concentric-rise2 10s infinite reverse ease-in-out;

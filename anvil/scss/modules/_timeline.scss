@@ -24,7 +24,7 @@
 .timeline {
   padding: 0;
   .timeline-entry {
-    margin-bottom: -175px;
+    margin-bottom: -100px;
     text-align: right;
     .header-icon {
       right: unset;
@@ -55,6 +55,8 @@
       border-radius: 0px;
       border-top-width: 5px;
       transition: background-color 0.5s;
+      z-index: 1000;
+      margin-top: 0;
       &:before,
       &:after {
         transition: all 0.5s;
@@ -125,12 +127,16 @@
         }
       }
     }
+    .tl-circ {
+      top: 37px;
+    }
   }
   .milestone {
     transition: background-color 0.5s;
     text-align: center;
     background-color: white;
-    margin-top: 235px;
+    margin-top: 170px;
+    margin-bottom: 15px;
     .milestone-panel {
       color: $soft-black;
       border-radius: 0px;
@@ -238,3 +244,44 @@
     }
   }
 }
+
+#peripheral-content {
+  #timeline {
+    margin-top: 60px;
+  }
+}
+
+/// Stub for potential side scrolling timeline, current issue is with people not being able to side scroll easily without touch controls...
+/*
+.timeline {
+  display: flex;
+  &:before {
+    display: none;
+  }
+}
+
+.timeline-entry {
+  flex-basis: 45%;
+  margin-right: 50px;
+  min-width: 600px;
+  min-height: 400px;
+  margin-bottom: 0;
+  margin-top: 60px;
+  &, &-inverted {
+    text-align: center;
+  }
+}
+
+.tl-circ {
+  bottom: 0;
+  top: unset;
+  display: none;
+}
+
+timeline-panel {
+  width: unset or 100%?
+  float: unset;
+  &:before, &:after {
+    display: none;
+  }
+*/
