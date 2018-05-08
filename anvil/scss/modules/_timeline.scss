@@ -1,3 +1,36 @@
+// %timeline-panel-hover-style {
+//   background-color: $soft-black;
+//   color: white;
+//   .tl-heading {
+//     h4 {
+//       color: #b1c6d0;
+//     }
+//     small {
+//       color: #97aac9;
+//     }
+//     .header-icon {
+//       background: $soft-black;
+//     }
+//   }
+//   .history-timelines {
+//     a {
+//       border-color: white;
+//       background: $soft-black;
+//       &:hover {
+//         background: white;
+//       }
+//     }
+//   }
+//   a,
+//   a:hover,
+//   a:focus {
+//     color: $link-orange;
+//   }
+//   &:after {
+//     border-left-color: $soft-black;
+//     border-right-color: $soft-black;
+//   }
+// }
 .era {
   .era-header {
     p:nth-of-type(2) {
@@ -21,6 +54,7 @@
   }
 }
 
+$gap: 5px;
 .timeline {
   padding: 0;
   .timeline-entry {
@@ -29,12 +63,16 @@
     .header-icon {
       right: unset;
       left: 20px;
-      top: -60px;
+      top: -70px;
       border-width: 5px;
       padding: 0;
       display: flex;
       flex-direction: column;
       justify-content: center;
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 0;
+      height: 70px;
+      width: 60px;
       .ra {
         margin: 0 auto;
         display: block;
@@ -51,7 +89,6 @@
       margin-bottom: 0;
     }
     .timeline-panel {
-      color: $soft-black;
       border-radius: 0px;
       border-top-width: 5px;
       transition: background-color 0.5s;
@@ -60,10 +97,6 @@
       &:before,
       &:after {
         transition: all 0.5s;
-      }
-      &:after {
-        border-left-color: white;
-        border-right-color: white;
       }
       .history-timelines {
         display: flex;
@@ -83,47 +116,11 @@
           flex-basis: 100%;
         }
         a {
-          $gap: 5px;
           flex-basis: calc(33% - (#{$gap} * 2));
           margin: $gap;
           align-self: center;
           padding: #{$gap} 0;
-          border: 2px solid $soft-black;
-          background-color: white;
-        }
-      }
-      @media #{$hover-only} {
-        &:hover {
-          background-color: $soft-black !important;
-          color: white;
-          .tl-heading {
-            h4 {
-              color: #b1c6d0;
-            }
-            small {
-              color: #97aac9;
-            }
-            .header-icon {
-              background: $soft-black;
-            }
-          }
-          .history-timelines {
-            a {
-              border-color: $timeline-tan;
-              &:hover {
-                background: $timeline-tan;
-              }
-            }
-          }
-          a,
-          a:hover,
-          a:focus {
-            color: $link-orange;
-          }
-          &:after {
-            border-left-color: $soft-black;
-            border-right-color: $soft-black;
-          }
+          border: 2px solid;
         }
       }
     }
@@ -134,12 +131,12 @@
   .milestone {
     transition: background-color 0.5s;
     text-align: center;
-    background-color: white;
     margin-top: 170px;
     margin-bottom: 15px;
+    padding: 0;
     .milestone-panel {
-      color: $soft-black;
       border-radius: 0px;
+      padding: 10px;
       .history-timelines {
         display: flex;
         flex-direction: row;
@@ -163,50 +160,12 @@
           margin: $gap;
           align-self: center;
           padding: #{$gap} 0;
-          border: 2px solid $soft-black;
-          background-color: white;
+          border: 2px solid;
         }
       }
       .header-icon {
         left: 50%;
         transform: translateX(-50%);
-      }
-    }
-    @media #{$hover-only} {
-      &:hover {
-        background-color: $soft-black;
-        .milestone-panel {
-          background-color: transparent !important;
-          color: white;
-          .tl-heading {
-            h4 {
-              color: #b1c6d0;
-            }
-            small {
-              color: #97aac9;
-            }
-            .header-icon {
-              background: $soft-black;
-            }
-          }
-          .history-timelines {
-            a {
-              border-color: $timeline-tan;
-              &:hover {
-                background: $timeline-tan;
-              }
-            }
-          }
-          a,
-          a:hover,
-          a:focus {
-            color: $link-orange;
-          }
-          &:after {
-            border-left-color: $soft-black;
-            border-right-color: $soft-black;
-          }
-        }
       }
     }
   }
@@ -217,7 +176,7 @@
       }
       .timeline-entry,
       .timeline-entry-milestone {
-        margin: 40px 0;
+        margin: 75px 0;
         width: 100%;
         .tl-circ {
           display: none;
@@ -236,6 +195,11 @@
             right: unset;
             transform: translateX(-50%);
           }
+          .history-timelines {
+            a {
+              flex-basis: calc(50% - (#{$gap} * 2));
+            }
+          }
         }
       }
       .timeline-entry-milestone {
@@ -251,7 +215,7 @@
   }
 }
 
-/// Stub for potential side scrolling timeline, current issue is with people not being able to side scroll easily without touch controls...
+// #region Stub for potential side scrolling timeline, current issue is with people not being able to side scroll easily without touch controls...
 /*
 .timeline {
   display: flex;
@@ -285,3 +249,5 @@ timeline-panel {
     display: none;
   }
 */
+
+// #endregion

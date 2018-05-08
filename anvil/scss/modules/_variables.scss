@@ -12,61 +12,36 @@ $hover-only: 'not all and (hover: none)';
 // Timeline Colors
 $timeline_era--trace-color: #800000;
 /* Current options: 
-lightblue -- Reserved for lethe,
-darkgreen -- used for vile races category,
-clay,
-crimson, 
-black -- used for the Onyx,
-beef,
-mango, 
-strawberry-mint,
-dijon,
-turquoise -- not balanced
-grape,
-lemon-curd,
-sky -- not balanced,
-tardis,
-bright-green,
-carnation,
-grey
+lightblue -- #067bc2,
+darkgreen -- #0e3f0e,
+clay -- #b52f03,
+crimson -- #b30000, 
+black -- #000 -- used for the Onyx,
+beef -- #beeeef,
+mango -- #f48d07, 
+strawberry-mint -- #dd48e2,
+dijon -- #a5a313,
+turquoise -- #7bf7ce -- not balanced
+grape -- #4f40ad,
+lemon-curd -- #efd702,
+sky -- #8cfffd -- not balanced,
+tardis -- #273391,
+bright-green -- #27ce3a,
+carnation -- #f5c6ff,
+grey -- #9b9796,
+sea_green -- #0c8681,
+muted_mango -- #cd8f1b,
+sage -- #5B9944,
+cobalt -- #1B4358,
+sand -- #c7c77a,
+banana -- #ffcb00,
+gralnum -- #a35308,
+lethe -- #518e4b,
+maevyn -- #b30000
 - any others will produce an error
 */
 
-$theme: 'mango';
-%timeline-panel-hover-style {
-  background-color: $soft-black;
-  color: white;
-  .tl-heading {
-    h4 {
-      color: #b1c6d0;
-    }
-    small {
-      color: #97aac9;
-    }
-    .header-icon {
-      background: $soft-black;
-    }
-  }
-  .history-timelines {
-    a {
-      border-color: white;
-      background: $soft-black;
-      &:hover {
-        background: white;
-      }
-    }
-  }
-  a,
-  a:hover,
-  a:focus {
-    color: $link-orange;
-  }
-  &:after {
-    border-left-color: $soft-black;
-    border-right-color: $soft-black;
-  }
-}
-
+$theme: banana;
 %main-body-only {
   #content {
     .col-md-8 {
@@ -83,10 +58,7 @@ $theme: 'mango';
   }
 }
 
-/*
-Fonts
-*/
-
+// #region Fonts
 $cursive-fallback: Wingdings,
 cursive;
 @import url('https://fonts.googleapis.com/css?family=Indie+Flower');
@@ -134,7 +106,8 @@ $cursive-fallback;
 // In use
 $font_Obscured: Adurnari_Obscured,
 $cursive-fallback;
-/// Images
+// #endregion
+// #region Images
 $brick-bg-image: url(//worldanvil.com/uploads/images/c1cce834ee5296c6729c249c2a8ef483.jpg);
 $building-bg-image: url(//worldanvil.com/uploads/images/4da65aacd32feb135531f73eb45b81bd.jpg);
 $bark-bg-image: url(//worldanvil.com/uploads/images/765ac2d97030a779d1956d4079791bdd.jpg);
@@ -146,10 +119,182 @@ $bloodcells-bg-image: url(//worldanvil.com/uploads/images/19c43efcb36c0c29f700cf
 $fancy_red_wallpaper-bg-image: url(//worldanvil.com/uploads/images/fc354ec1b5bb8f176ab88f08d4316ba6.jpg);
 $blue_crest_wallpaper-bg-image: url(//worldanvil.com/uploads/images/ed573acd4afb9885c85a1e8a2eda9128.png);
 $black-gravel-bg-image: url(//worldanvil.com/uploads/images/2f105caae87b0d2a59bc5708f2944a80.jpg);
-/// Animations
+$blue-fan-bg-image: url(//worldanvil.com/uploads/images/da87af4f077f42e01509374d42eadcf6.jpg);
+// #endregion
+// #region Animations
 $a_gentlywaft: gentlywaft 8s linear infinite;
 $a_clock: clock 100s infinite linear;
 $a_clock--fast: clock 30s infinite linear;
 $a_clock_reverse: reverseclock 60s infinite linear;
 $a_concentric-rise: concentric-rise 10s infinite reverse ease-in-out;
 $a_concentric-rise2: concentric-rise2 10s infinite reverse ease-in-out;
+// #endregion
+$themes-map: ( lightblue: ( base: #067bc2,
+bg: $brick-bg-image,
+tag: 'Light Blue',
+invert: false,
+active: true),
+darkgreen: ( base: #0e3f0e,
+bg: $brick-bg-image,
+tag: 'Dark Green',
+invert: false,
+active: true),
+clay: ( base: #b52f03,
+bg: $rope-bg-image,
+tag: 'Clay',
+invert: false,
+active: true),
+crimson: ( base: #b30000,
+bg: $fancy_red_wallpaper-bg-image,
+tag: 'Crimson',
+invert: true,
+active: true),
+t_black: (base: #000,
+bg: $marble-bg-image,
+tag: 'Black',
+invert: true,
+active: true),
+beef: (base: #beeeef,
+bg: $brick-bg-image,
+tag: 'BEEEEF',
+invert: false,
+active: true),
+mango: (base: #f48d07,
+bg: $brick-bg-image,
+tag: 'Mango',
+invert: false,
+active: true),
+strawberry-mint: (base: #dd48e2,
+bg: $brick-bg-image,
+tag: 'Strawberry Mint',
+invert: false,
+active: true),
+dijon: (base: #a5a313,
+bg: $bark-bg-image,
+tag: 'Dijon',
+invert: false,
+active: true),
+turquoise: (base: #7bf7ce,
+bg: $brick-bg-image,
+tag: 'Turquoise',
+invert: false,
+active: true),
+grape: (base: #4f40ad,
+bg: $marble-bg-image,
+tag: 'Grape',
+invert: false,
+active: true),
+lemon-curd: (base: #efd702,
+bg: $brick-bg-image,
+tag: 'Lemon Curd',
+invert: false,
+active: true),
+sky: (base: #8cfffd,
+bg: $brick-bg-image,
+tag: 'Sky',
+invert: false,
+active: true),
+tardis: ( base: #273391,
+bg: $blue_crest_wallpaper-bg-image,
+tag: 'TARDIS',
+invert: false,
+active: true),
+bright-green: (base: #27ce3a,
+bg: $brick-bg-image,
+tag: 'Bright Green',
+invert: false,
+active: true),
+carnation: (base: #f5c6ff,
+bg: $brick-bg-image,
+tag: 'Carnation',
+invert: true,
+active: true),
+grey: (base: #9b9796,
+bg: $brick-bg-image,
+tag: 'Grey',
+invert: false,
+active: true),
+sea_green: (base: #0c8681,
+bg: $brick-bg-image,
+tag: 'Sea Green',
+invert: false,
+active: true),
+muted_mango: (base: #cd8f1b,
+bg: $brick-bg-image,
+tag: 'Muted Mango',
+invert: false,
+active: true),
+sage: (base: #5b9944,
+bg: $brick-bg-image,
+tag: 'Sage',
+invert: false,
+active: true),
+cobalt: (base: #1b4358,
+bg: $blue-fan-bg-image,
+tag: 'Cobalt',
+invert: false,
+active: true),
+sand: (base: #c7c77a,
+bg: $blue-fan-bg-image,
+tag: 'Sand',
+invert: false,
+active: true),
+banana: (base: #ffcb00,
+bg: $brick-bg-image,
+tag: 'Banana',
+invert: false,
+active: true),
+gralnum: (base: #a35308,
+bg: $brick-bg-image,
+tag: 'Gralnum',
+invert: false,
+active: true),
+lethe: (base: #518e4b,
+bg: $sand-bg-image,
+tag: 'Lethe',
+invert: false,
+active: true),
+maevyn: (base: #b30000,
+bg: $bloodcells-bg-image,
+tag: 'Maevyn',
+invert: false,
+active: true),
+pau: (base: #e29f5d,
+bg: $brick-bg-image,
+tag: 'Pau',
+invert: false,
+active: true),
+doc: (base: #0d10c1,
+bg: $brick-bg-image,
+tag: 'Doc',
+invert: true,
+active: true),
+goz: ( base: #9500d1,
+bg: $brick-bg-image,
+tag: 'Goz',
+invert: false,
+active: true));
+@function strip-unit($value) {
+  @return $value / ($value * 0+1);
+}
+
+@mixin fluid-type($min-vw,
+$max-vw,
+$min-font-size,
+$max-font-size) {
+  $u1: unit($min-vw);
+  $u2: unit($max-vw);
+  $u3: unit($min-font-size);
+  $u4: unit($max-font-size);
+  @if $u1==$u2 and $u1==$u3 and $u1==$u4 {
+    & {
+      font-size: $min-font-size;
+      @media screen and (min-width: $min-vw) {
+        font-size: calc( #{$min-font-size} + #{strip-unit($max-font-size - $min-font-size)} * ((100vw - #{$min-vw}) / #{strip-unit($max-vw - $min-vw)}));
+      }
+      @media screen and (min-width: $max-vw) {
+        font-size: $max-font-size;
+      }
+    }
+  }
+}

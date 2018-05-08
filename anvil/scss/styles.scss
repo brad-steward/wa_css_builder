@@ -5,8 +5,8 @@
 @import 'modules/characterSheets';
 .user-css,
 .user-css-extended {
-  @import '_modules';
-  @include set-theme();
+  @import '_modules'; //@include set-theme();
+  @extend %#{$theme};
   #header,
   .heading {
     p {
@@ -62,18 +62,6 @@
   .comment-form {
     textarea {
       color: #333;
-    }
-  }
-  .followers-list {
-    margin-bottom: 10px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    img.img-avatar-sm {
-      border-radius: 0;
-      margin: 0 auto;
-      display: block;
-      max-width: 100px;
-      max-height: 100px;
     }
   }
 }

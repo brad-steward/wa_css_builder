@@ -2,7 +2,7 @@
 &.article-dc129a9e-a060-4cd5-a13d-e31773858982,
 &.article-e34e9acf-3cb3-4024-8cb2-4186a5f75367,
 &.article-c0169e6e-6f68-4589-8a01-9824c133a708 {
-  @extend %theme-black;
+  @extend %t_black;
   #content {
     .col-md-6.col-md-offset-3 {
       p {
@@ -12,7 +12,6 @@
           transition: opacity 100s ease-in 0s;
           position: relative;
         }
-
         em {
           transition: opacity 100s ease-in 0s;
           position: absolute;
@@ -21,21 +20,17 @@
           width: 100%;
           opacity: 0;
         }
-
         &:hover {
           b {
             opacity: 0;
           }
-
           em {
             opacity: 100;
           }
         }
       }
     }
-  }
-
-  // [concol]
+  } // [concol]
   // #content {
   //   .col-md-6.col-md-offset-3 {
   //     p {
@@ -47,19 +42,35 @@
 
 // Gralnum
 &.article-64f398d9-f033-4946-913f-df038a8b12b1 {
-  @extend %theme-gralnum;
+  @extend %gralnum;
 }
 
 // Akta
 &.article-51722709-b0b6-4116-a3cc-9ebfd0427869 {
-  @extend %theme-lightblue;
+  @extend %lightblue;
 }
 
 // Maevyn
 &.article-5a82b250-af05-4fac-846f-569f19132b30 {
-  @extend %theme-maevyn;
+  @extend %maevyn;
 }
 
+/// Pau
+&.article-babcf63b-7302-4c39-9278-b3b8d20357bc {
+  @extend %pau;
+}
+
+/// Doc
+&.article-6b11d74e-cb40-4a6c-aefc-74a68f2eff74 {
+  @extend %doc;
+}
+
+/// Goz
+&.article-967cad84-d84c-4e14-bb04-527fab11af61 {
+  @extend %goz;
+}
+
+/// Verti
 &.article-a3b4f5c9-3c5e-4f9b-890b-029441ef9410 {
   #cover.row.cover {
     max-height: 500px;
@@ -67,10 +78,120 @@
       margin-top: -280px;
     }
   }
-
   .col-md-8.article-content-left {
     p:last-child {
       font-style: italic;
     }
   }
 }
+
+// #region Theme Tests
+/* Test content: 
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque rhoncus sollicitudin ipsum, eget euismod tellus faucibus quis. Phasellus iaculis ante id auctor convallis. Donec vulputate vestibulum molestie. Sed eu pharetra sapien. Quisque ultricies nibh sit amet bibendum posuere. Nullam congue leo id rhoncus blandit. Duis sagittis efficitur risus, id volutpat felis bibendum sed. Vestibulum et viverra tortor. Ut cursus orci eget diam viverra finibus. Etiam gravida leo ex, in vestibulum mi varius id. Duis ultricies, sem sollicitudin feugiat vestibulum, nibh libero vehicula nulla, vitae feugiat ligula ipsum a diam. Proin placerat magna non odio elementum, in fermentum risus ultricies. Proin eu auctor quam, quis cursus lectus. Proin nibh urna, suscipit feugiat ultricies non, scelerisque in urna. Vivamus mauris eros, mattis aliquet facilisis sit amet, consequat vitae libero. Proin vitae nulla ac lacus ullamcorper pharetra.
+
+[h]Header[/h]
+[h2]Header 2[/h2]
+[h3]Header 3[/h3]
+[sub]subtext[/sub]
+[sup]supertext[/sup]
+[small]small[/small]
+[br]
+[hr]
+[quote]Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque rhoncus sollicitudin ipsum, eget euismod tellus faucibus quis. Phasellus iaculis ante id auctor convallis. Donec vulputate vestibulum molestie. Sed eu pharetra sapien. Quisque ultricies nibh sit amet bibendum posuere. Nullam congue leo id rhoncus blandit. Duis sagittis efficitur risus, id volutpat felis bibendum sed. Vestibulum et viverra tortor. Ut cursus orci eget diam viverra finibus. Etiam gravida leo ex, in vestibulum mi varius id. Duis ultricies, sem sollicitudin feugiat vestibulum, nibh libero vehicula nulla, vitae feugiat ligula ipsum a diam. Proin placerat magna non odio elementum, in fermentum risus ultricies. Proin eu auctor quam, quis cursus lectus. Proin nibh urna, suscipit feugiat ultricies non, scelerisque in urna. Vivamus mauris eros, mattis aliquet facilisis sit amet, consequat vitae libero. Proin vitae nulla ac lacus ullamcorper pharetra.|Lorem Ipsum[/quote]
+
+*/
+
+&.article-5c43d17f-7191-4cee-9f26-5713e160dd70 {
+  @extend %lightblue;
+}
+
+&.article-d701fc4f-7405-4535-add1-e37741d37746 {
+  @extend %darkgreen;
+}
+
+&.article-479961de-8e88-4db4-80c8-df9a6313f83b {
+  @extend %clay;
+}
+
+&.article-687838ca-6ddf-4f63-bda7-10eaa16e4284 {
+  @extend %crimson;
+}
+
+&.article-124bb14b-07a5-4350-b2de-909af15afd78 {
+  @extend %t_black;
+}
+
+&.article-eecf11a8-d127-418e-a211-16b1ab4dd4c2 {
+  @extend %beef;
+}
+
+&.article-31948b80-5f7d-4645-93dc-4466cdf4da3d {
+  @extend %mango;
+}
+
+&.article-cc87b387-a4be-4531-953b-9f99e6c673d5 {
+  @extend %strawberry-mint;
+}
+
+&.article-fb5c3fc7-76e0-4411-93dd-93ba91542113 {
+  @extend %dijon;
+}
+
+&.article-1a39331b-3def-4e1e-87f7-96b478b99656 {
+  @extend %turquoise;
+}
+
+&.article-11e7ac16-a4c2-4883-99a1-53d0e4e0691b {
+  @extend %grape;
+}
+
+&.article-93107968-5a5f-4901-8845-d248de29018b {
+  @extend %lemon-curd;
+}
+
+&.article-756652d2-f10b-4ebd-b7f1-7dbe8bc4c57b {
+  @extend %sky;
+}
+
+&.article-03f33cf9-0dcc-4005-93c0-28be19fc4728 {
+  @extend %tardis;
+}
+
+&.article-22c17150-9df9-403c-bd43-e534b502f4df {
+  @extend %bright-green;
+}
+
+&.article-e37e0a29-bc1b-46e0-ab3c-35dddbcacd1a {
+  @extend %carnation;
+}
+
+&.article-45df8aef-0ff8-4258-9232-493dcac5b5df {
+  @extend %grey;
+}
+
+&.article-ab385942-411c-4363-85e2-774e29bb3400 {
+  @extend %sea_green;
+}
+
+&.article-37fa227c-462e-40a5-8151-e0aae4fd5715 {
+  @extend %muted_mango;
+}
+
+&.article-b2869953-d3fd-4175-a17b-cf1ea9cad067 {
+  @extend %sage;
+}
+
+&.article-81fa02e6-3e4e-4035-b5b8-4408f31e0469 {
+  @extend %cobalt;
+}
+
+&.article-b8dd6ba6-c969-43d0-b66b-a6c4658358bf {
+  @extend %sand;
+}
+
+&.article-4650f7f5-ad02-4a16-ae43-2d5b961e9bf1 {
+  @extend %banana;
+}
+
+// #endregion

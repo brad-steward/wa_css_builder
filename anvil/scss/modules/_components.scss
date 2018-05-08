@@ -43,15 +43,23 @@ blockquote {
   }
 }
 
-// Map blocks on category and homepages
-.map-box {
-  color: $soft-black;
+#content {
+  .article-title h1 {
+    @include fluid-type(300px,
+    750px,
+    32px,
+    50px);
+  }
 }
 
+// Map blocks on category and homepages
+// .map-box {
+//   color: $soft-black;
+// }
 //  Article Sidebar panel
 .panel.panel-default {
-  color: $soft-white;
-  background-color: rgba(0, 0, 0, 0.9);
+  //color: $soft-white;
+  //background-color: rgba(0, 0, 0, 0.9);
   dt {
     color: navajowhite;
     text-transform: uppercase;
@@ -111,6 +119,11 @@ img[src='/images/leatherstrip2.png'] {
     justify-content: center;
     text-align: center;
     flex-basis: 33%;
+    li {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+    }
   }
 }
 
