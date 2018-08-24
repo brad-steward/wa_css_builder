@@ -271,6 +271,9 @@ $value in $themes-map {
       }
       .milestone {
         background: none;
+        .milestone-panel {
+          background: $bg !important;
+        }
       }
     }
     &.user-css-worldmenu {

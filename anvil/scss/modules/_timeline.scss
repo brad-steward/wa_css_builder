@@ -102,12 +102,12 @@ $gap: 5px;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        justify-content: space-evenly;
+        justify-content: center;
         position: relative;
         text-align: center;
         align-items: center;
-        * {
-          flex-basis: 33%;
+        >* {
+          //flex-basis: 33%;
         }
         br {
           display: none;
@@ -119,8 +119,13 @@ $gap: 5px;
           flex-basis: calc(33% - (#{$gap} * 2));
           margin: $gap;
           align-self: center;
-          padding: #{$gap} 0;
+          padding: #{$gap} 1vw;
           border: 2px solid;
+          display: inline-block;
+        }
+        .header-title {
+          width: 100%;
+          flex-basis: 100%;
         }
       }
     }
@@ -141,13 +146,10 @@ $gap: 5px;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        justify-content: space-evenly;
+        justify-content: center;
         position: relative;
         text-align: center;
         align-items: center;
-        * {
-          flex-basis: 33%;
-        }
         br {
           display: none;
         }
@@ -155,12 +157,16 @@ $gap: 5px;
           flex-basis: 100%;
         }
         a {
-          $gap: 5px;
           flex-basis: calc(33% - (#{$gap} * 2));
           margin: $gap;
           align-self: center;
-          padding: #{$gap} 0;
+          padding: #{$gap} 1vw;
           border: 2px solid;
+          display: inline-block;
+        }
+        .header-title {
+          width: 100%;
+          flex-basis: 100%;
         }
       }
       .header-icon {
