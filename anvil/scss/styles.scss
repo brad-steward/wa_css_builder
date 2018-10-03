@@ -3,22 +3,29 @@
 @import 'modules/themes';
 @import 'modules/animation';
 @import 'modules/characterSheets';
+
 .user-css,
 .user-css-extended {
     @import '_modules'; //@include set-theme();
     @extend %#{$theme};
+    font-size: 14px;
+
     #header,
     .heading {
+        .world-title {
+            font-size: 6em;
+        }
+
         p {
             text-align: center;
-        }
-        .subheading {
-            font-family: unset;
-            font-size: unset;
+            font-family: inherit;
+            font-size: 1.15em;
         }
     }
+
     &.page {
         font-family: $font_Metamorphus;
+
         #header {
             h1 {
                 font-family: $font_CinzelDecorative;
@@ -27,59 +34,99 @@
                 letter-spacing: 2px;
             }
         }
-        #content,
-        .world-content {
-            font-size: 1em;
-            h1,
-            h2,
-            h3,
-            h4,
-            h5 {
-                font-family: $font_CinzelDecorative;
-                font-weight: 600;
+
+        &.page {
+            font-family: $font_Metamorphus;
+
+            #header {
+                h1 {
+                    font-family: $font_CinzelDecorative;
+                    text-transform: uppercase;
+                    font-weight: 900;
+                    letter-spacing: 2px;
+                }
             }
-            p {
-                line-height: 1.6em;
+
+            #content,
+            .world-content {
+                font-size: 1em;
+
+                h1,
+                h2,
+                h3,
+                h4,
+                h5 {
+                    font-family: $font_CinzelDecorative;
+                    font-weight: 600;
+                }
+
+                p {
+                    line-height: 1.6em;
+                }
+
+                a,
+                a:hover,
+                a:focus {
+                    font-weight: bold;
+
+                    &.text-danger {
+                        font-weight: inherit;
+                        font-style: italic;
+                    }
+                }
             }
-            a,
-            a:hover,
-            a:focus {
-                font-weight: bold;
-                &.text-danger {
-                    font-weight: inherit;
-                    font-style: italic;
+        }
+
+        a:hover,
+        a:active {
+            text-decoration: none !important;
+        }
+
+        @import '_specificArticles';
+
+        .heading,
+        #header {
+            h1:before {
+                display: none;
+            }
+        }
+
+        .comment-form {
+            textarea {
+                color: #333;
+            }
+        }
+    }
+
+    .user-css-extended {
+        background: unset;
+    }
+
+    .map-wrapper {
+        background: rgba(255, 255, 255, 0.25);
+
+        .legend {
+            bottom: 20px;
+        }
+
+        .compass {
+            img {
+                max-width: 200px;
+                background: rgba(white, .35);
+                border-radius: 100%;
+            }
+        }
+
+        @media #{$hover-only} {
+            .legend {
+                background: rgba(255, 255, 255, 0.5);
+                transition: background 0.5s;
+
+                &:hover {
+                    background: white;
                 }
             }
         }
     }
-    a:hover,
-    a:active {
-        text-decoration: none !important;
-    }
-    @import '_specificArticles';
-    .heading,
-    #header {
-        h1:before {
-            display: none;
-        }
-    }
-    .comment-form {
-        textarea {
-            color: #333;
-        }
-    }
-}
 
-.user-css-extended {
-    background: unset;
-}
-
-#map {
-    background: rgba(255, 255, 255, 0.25);
-    .legend {
-        background: rgba(255, 255, 255, 0.5);
-        &:hover {
-            background: white;
-        }
-    }
 }

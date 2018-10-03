@@ -1,4 +1,5 @@
 $gradient: 0.75;
+
 .theme-panel {
     h1:before {
         position: fixed;
@@ -14,6 +15,7 @@ $gradient: 0.75;
         font-size: 14px;
         opacity: 0.7;
         line-height: normal;
+
         @media #{$threshold-l} {
             transform: none;
             right: calc(50% - 100px);
@@ -33,15 +35,18 @@ $value in $themes-map {
         $text-color: blue;
         $link: lighten(desaturate(adjust-hue($base-color, -186), 6.31), 22.55);
         $invert: map-get($theme-base, invert);
+
         @if $invert {
             $bg: invert($soft-black);
             $text-color: invert($soft-white);
             $link: invert($link);
         }
+
         @else {
             $bg: $soft-black;
             $text-color: $soft-white;
         }
+
         $bg-image: map-get($theme-base, bg);
         $full-bg: linear-gradient(to left, rgba($bg, $gradient), $bg),
         $bg-image;
@@ -50,62 +55,79 @@ $value in $themes-map {
         background-position: center;
         background-size: cover;
         color: $text-color;
+
         /********************************/
         // #region tags
         h1 {
             color: $base-color;
+
             .article-title & {
                 color: $base-color;
             }
         }
+
         h2 {
             color: lighten(desaturate($base-color, 37.72), 9.22);
         }
+
         h3 {
             color: lighten(desaturate($base-color, 48.87), 16.47);
         }
+
         h4 {
             color: lighten(desaturate(adjust-hue($base-color, 156), 35.79), 21.37);
         }
+
         h5,
         h6 {
             color: lighten(desaturate(adjust-hue($base-color, 157), 12.95), 23.53);
         }
+
         * {
             border-color: $base-color;
         }
+
         a,
         a:hover,
         a:focus {
             color: $link;
         }
+
         blockquote {
             color: $soft-black;
             border-bottom: solid $base-color 3px;
+
             .author {
                 color: inherit;
             }
-        } // #endregion
+        }
+
+        // #endregion
         // #region Classes and IDs
         .article-panel {
             background-color: transparentize($color: $bg, $amount: .3);
+
             .heading {
                 color: lighten(desaturate($base-color, 37.72), 9.22);
             }
         }
+
         .artist-credits {
             background: rgba($bg, .5);
         }
+
         .backtoworld a,
         .nav-strip a,
         a.menu-control {
             color: $bg;
         }
+
         .bookcover {
             .booktitle {
                 color: $link;
                 background: rgba($bg, .5);
             }
+
             @media #{$hover-only} {
                 &:hover {
                     .booktitle {
@@ -115,38 +137,46 @@ $value in $themes-map {
                 }
             }
         }
+
         .campaign-panel {
             .btn-primary {
                 background: transparent;
                 color: $link;
             }
         }
+
         .character-menu.nav.nav-tabs {
             li.active {
+
                 a,
                 a:hover,
                 a:focus {
                     background-color: $base-color;
                 }
             }
+
             li:not(.active) {
                 a {
                     background-color: $bg;
                 }
             }
         }
+
         .cover {
             .nav-strip {
                 background-color: $base-color;
             }
         }
+
         .heading,
         #header {
             @extend .theme-panel;
+
             h1:before {
                 content: 'Theme: Template';
             }
         }
+
         #header {
             .backtoworld {
                 a {
@@ -154,17 +184,21 @@ $value in $themes-map {
                 }
             }
         }
+
         .map-box {
             background: $bg;
             color: $link;
         }
+
         #metadata {
             color: white;
         }
+
         .panel {
             &.panel-default {
                 color: $text-color;
                 background-color: rgba($bg, .5);
+
                 a,
                 a:hover,
                 a:focus {
@@ -172,14 +206,17 @@ $value in $themes-map {
                 }
             }
         }
+
         .relation {
             h4 {
                 color: lighten(desaturate($base-color, 48.87), 16.47);
             }
         }
+
         .spoiler-content {
             background-color: $base-color;
         }
+
         .table.table-striped {
             tbody {
                 tr {
@@ -189,16 +226,19 @@ $value in $themes-map {
                 }
             }
         }
+
         .timeline {
             &:before {
                 background-color: $base-color;
             }
+
             li {
                 .tl-circ {
                     background: invert($base-color);
                     border-color: $base-color;
                 }
             }
+
             @media #{$hover-only} {
                 li {
                     .tl-circ:hover {
@@ -208,14 +248,17 @@ $value in $themes-map {
                     }
                 }
             }
+
             .timeline-panel,
             .milestone-panel {
                 background: rgba($bg, .5) !important;
                 color: $text-color;
+
                 &:after {
                     border-left-color: rgba($bg, .5) !important;
                     border-right-color: rgba($bg, .5) !important;
                 }
+
                 .history-timelines {
                     a {
                         border-color: invert($bg);
@@ -223,36 +266,44 @@ $value in $themes-map {
                         color: invert($link);
                     }
                 }
+
                 .tl-heading {
                     .header-icon {
                         background: rgba($bg, .5);
                     }
                 }
+
                 @media #{$hover-only} {
                     .history-timelines {
                         a {
                             background-color: rgba($bg, .5);
                         }
                     }
+
                     &:hover {
                         background-color: $soft-black !important;
                         color: white;
+
                         .tl-heading {
                             h4 {
                                 color: lighten(desaturate(adjust-hue($base-color, 156), 35.79), 21.37);
                             }
+
                             small {
                                 color: lighten(desaturate($base-color, 48.87), 16.47);
                             }
+
                             .header-icon {
                                 background: $bg;
                             }
                         }
+
                         .history-timelines {
                             a {
                                 border-color: invert($bg);
                                 background-color: $bg;
                                 color: invert($link);
+
                                 &:hover {
                                     border-color: $bg;
                                     background-color: invert($bg);
@@ -260,11 +311,13 @@ $value in $themes-map {
                                 }
                             }
                         }
+
                         a,
                         a:hover,
                         a:focus {
                             color: $link;
                         }
+
                         &:after {
                             border-left-color: $bg !important;
                             border-right-color: $bg !important;
@@ -272,21 +325,21 @@ $value in $themes-map {
                     }
                 }
             }
+
             .milestone {
                 background: none;
             }
         }
-        &.user-css-worldmenu {
-            background: transparent;
-            .worldmenu-inner {
-                //background: $full-bg !important;
-                background: transparent !important;
-                .topmenu-content {
-                    background: $full-bg; //background-image: $sand-bg-image;
-                }
-            }
-        } // #endregion
     }
+
+    .milestone {
+        background: none;
+
+        .milestone-panel {
+            background: $bg !important;
+        }
+    }
+}
 }
 
 @mixin set-theme() {
