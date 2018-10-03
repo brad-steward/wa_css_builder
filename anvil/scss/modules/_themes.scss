@@ -340,7 +340,6 @@ $value in $themes-map {
         }
     }
 }
-}
 
 @mixin set-theme() {
     @extend %theme-#{$theme};
