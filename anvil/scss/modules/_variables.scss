@@ -41,21 +41,21 @@ maevyn -- #b30000
 - any others will produce an error
 */
 
-$theme: banana;
+$theme: muted_mango;
 %main-body-only {
-  #content {
-    .col-md-8 {
-      width: 100%;
-      .col-md-6.col-md-offset-3 {
-        width: 100%;
-        text-align: center;
-        margin: 0 auto;
-      }
+    #content {
+        .col-md-8 {
+            width: 100%;
+            .col-md-6.col-md-offset-3 {
+                width: 100%;
+                text-align: center;
+                margin: 0 auto;
+            }
+        }
+        .col-md-4 {
+            display: none;
+        }
     }
-    .col-md-4 {
-      display: none;
-    }
-  }
 }
 
 // #region Fonts
@@ -129,172 +129,233 @@ $a_clock_reverse: reverseclock 60s infinite linear;
 $a_concentric-rise: concentric-rise 10s infinite reverse ease-in-out;
 $a_concentric-rise2: concentric-rise2 10s infinite reverse ease-in-out;
 // #endregion
-$themes-map: ( lightblue: ( base: #067bc2,
+$themes-map: (
+/***/
+
+lightblue: ( base: #067bc2,
 bg: $brick-bg-image,
 tag: 'Light Blue',
 invert: false,
 active: true),
+/***/
+
 darkgreen: ( base: #0e3f0e,
 bg: $brick-bg-image,
 tag: 'Dark Green',
 invert: false,
 active: true),
+/***/
+
 clay: ( base: #b52f03,
 bg: $rope-bg-image,
 tag: 'Clay',
 invert: false,
 active: true),
+/***/
+
 crimson: ( base: #b30000,
 bg: $fancy_red_wallpaper-bg-image,
 tag: 'Crimson',
 invert: true,
 active: true),
+/***/
+
 t_black: (base: #000,
 bg: $marble-bg-image,
 tag: 'Black',
 invert: true,
 active: true),
+/***/
+
 beef: (base: #beeeef,
 bg: $brick-bg-image,
 tag: 'BEEEEF',
 invert: false,
 active: true),
+/***/
+
 mango: (base: #f48d07,
 bg: $brick-bg-image,
 tag: 'Mango',
 invert: false,
 active: true),
+/***/
+
 strawberry-mint: (base: #dd48e2,
 bg: $brick-bg-image,
 tag: 'Strawberry Mint',
 invert: false,
 active: true),
+/***/
+
 dijon: (base: #a5a313,
 bg: $bark-bg-image,
 tag: 'Dijon',
 invert: false,
 active: true),
+/***/
+
 turquoise: (base: #7bf7ce,
 bg: $brick-bg-image,
 tag: 'Turquoise',
 invert: false,
 active: true),
+/***/
+
 grape: (base: #4f40ad,
 bg: $marble-bg-image,
 tag: 'Grape',
 invert: false,
 active: true),
+/***/
+
 lemon-curd: (base: #efd702,
 bg: $brick-bg-image,
 tag: 'Lemon Curd',
 invert: false,
 active: true),
+/***/
+
 sky: (base: #8cfffd,
 bg: $brick-bg-image,
 tag: 'Sky',
 invert: false,
 active: true),
+/***/
+
 tardis: ( base: #273391,
 bg: $blue_crest_wallpaper-bg-image,
 tag: 'TARDIS',
 invert: false,
 active: true),
+/***/
+
 bright-green: (base: #27ce3a,
 bg: $brick-bg-image,
 tag: 'Bright Green',
 invert: false,
 active: true),
+/***/
+
 carnation: (base: #f5c6ff,
 bg: $brick-bg-image,
 tag: 'Carnation',
 invert: true,
 active: true),
+/***/
+
 grey: (base: #9b9796,
 bg: $brick-bg-image,
 tag: 'Grey',
 invert: false,
 active: true),
+/***/
+
 sea_green: (base: #0c8681,
 bg: $brick-bg-image,
 tag: 'Sea Green',
 invert: false,
 active: true),
+/***/
+
 muted_mango: (base: #cd8f1b,
 bg: $brick-bg-image,
 tag: 'Muted Mango',
 invert: false,
 active: true),
+/***/
+
 sage: (base: #5b9944,
 bg: $brick-bg-image,
 tag: 'Sage',
 invert: false,
 active: true),
+/***/
+
 cobalt: (base: #1b4358,
 bg: $blue-fan-bg-image,
 tag: 'Cobalt',
 invert: false,
 active: true),
+/***/
+
 sand: (base: #c7c77a,
 bg: $blue-fan-bg-image,
 tag: 'Sand',
 invert: false,
 active: true),
+/***/
+
 banana: (base: #ffcb00,
 bg: $brick-bg-image,
 tag: 'Banana',
 invert: false,
 active: true),
+/***/
+
 gralnum: (base: #a35308,
 bg: $brick-bg-image,
 tag: 'Gralnum',
 invert: false,
 active: true),
+/***/
+
 lethe: (base: #518e4b,
 bg: $sand-bg-image,
 tag: 'Lethe',
 invert: false,
 active: true),
+/***/
+
 maevyn: (base: #b30000,
 bg: $bloodcells-bg-image,
 tag: 'Maevyn',
 invert: false,
 active: true),
+/***/
+
 pau: (base: #e29f5d,
 bg: $brick-bg-image,
 tag: 'Pau',
 invert: false,
 active: true),
+/***/
+
 doc: (base: #0d10c1,
 bg: $brick-bg-image,
 tag: 'Doc',
 invert: true,
 active: true),
+/***/
+
 goz: ( base: #9500d1,
 bg: $brick-bg-image,
 tag: 'Goz',
 invert: false,
 active: true));
+/***/
+
 @function strip-unit($value) {
-  @return $value / ($value * 0+1);
+    @return $value / ($value * 0+1);
 }
 
 @mixin fluid-type($min-vw,
 $max-vw,
 $min-font-size,
 $max-font-size) {
-  $u1: unit($min-vw);
-  $u2: unit($max-vw);
-  $u3: unit($min-font-size);
-  $u4: unit($max-font-size);
-  @if $u1==$u2 and $u1==$u3 and $u1==$u4 {
-    & {
-      font-size: $min-font-size;
-      @media screen and (min-width: $min-vw) {
-        font-size: calc( #{$min-font-size} + #{strip-unit($max-font-size - $min-font-size)} * ((100vw - #{$min-vw}) / #{strip-unit($max-vw - $min-vw)}));
-      }
-      @media screen and (min-width: $max-vw) {
-        font-size: $max-font-size;
-      }
+    $u1: unit($min-vw);
+    $u2: unit($max-vw);
+    $u3: unit($min-font-size);
+    $u4: unit($max-font-size);
+    @if $u1==$u2 and $u1==$u3 and $u1==$u4 {
+        & {
+            font-size: $min-font-size;
+            @media screen and (min-width: $min-vw) {
+                font-size: calc( #{$min-font-size} + #{strip-unit($max-font-size - $min-font-size)} * ((100vw - #{$min-vw}) / #{strip-unit($max-vw - $min-vw)}));
+            }
+            @media screen and (min-width: $max-vw) {
+                font-size: $max-font-size;
+            }
+        }
     }
-  }
 }
